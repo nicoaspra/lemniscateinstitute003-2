@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Rate of Change</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" href="/images/logo/logo.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="" />
+  <meta name="twitter:card" content="" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:creator" content="" />
+
+   <!-- Add Slick Carousel CSS -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+   <!-- Add Slick Carousel theme CSS (optional) -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+</head>
+<body class='page '>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a>
+      <!-- <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a> -->
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a>
+      <!-- <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a> -->
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+    <div class="phoneContent">
+    <div class="phoneContent-header">
+            <b>Mobile Notice</b>
+    </div>
+        It seems that you are on your mobile phone, which means that the <b>screen's width is narrow</b> for some equations. For the best viewing experience, you can view this website in <b>landscape mode</b>.
+</div>  
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">Rate of Change</h1>
+          
+            <p style="color:#d02f5d"></pstyle>
+              <a href="/team">
+                Author | Engr. Nico O. Aspra, M.Eng., RMP, LPT
+              </a>
+            </p>
+          
+
+          $$
+  <!-- \definecolor{colorA}{rgb}{0.25, 0.51, 0.43}	
+  \definecolor{colorB}{rgb}{0.89, 0.04, 0.36}	 -->
+$$
+          <!-- <p style="color:#d02f5d"></pstyle>Author | Engr. Nico O. Aspra, M.Eng., RMP, LPT</p> -->
+          <!-- <a href="">Engr. Nico O. Aspra, M.Eng., RMP, LPT</a> -->
+          <!-- <br> -->
+
+          <!-- <div class="deskContent">Content for desktop</div> -->
+        <div class="content">
+          <p>The rate of change indicates how fast a variable is changing with respect to another variable. For example, “How fast is the volume changing with respect to its radius?’’ or “how fast is the position of an object changing with respect to time?’’. But remember that this is also what a derivative intends to measure. So, the Rate of Change is an application of derivatives. And to understand this more clearly, let’s have some examples.</p>
+
+<hr />
+<p>$\example{1}$
+Find the rate of change of an area of a square with respect to its side.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>We have already learned how to explicitly express one variable as a function of another in our lesson in <a href="../DC-1.6-graph-of-functions">Functions</a>. In this example, before we can differentiate to find the rate of change, we must first represent the area of the square as a function of the length of its side.</p>
+
+\[\begin{align*}
+	\text{Let: } A &amp;= \text{area of the square} &amp;\\
+		   x &amp;= \text{length of the side of the square} 
+\end{align*}\]
+
+<p>Hence, the equation for the area of a square is,</p>
+
+\[\begin{align*}
+	A &amp;= x^2 
+\end{align*}\]
+
+<p>Then, differentiate $A$ with respect to $x$,</p>
+
+\[\begin{align*}
+	A+\D{A} &amp;= (x+\Dx)^2 \\
+	\D{A} &amp;= \cancel{x^2}+2x\Dx+\Dx^2 - (\cancel{x^2}) \\
+	\frac{\D{A}}{\Dx} &amp;= \frac{\cancel{\Dx}(2x+\Dx)}{\cancel{\Dx}} \\
+	\frac{dA}{dx} &amp;= 2x		\tagans
+\end{align*}\]
+
+<p>Therefore, the rate of change of the area of the square with respect to its side is equal to twice the length of its side.</p>
+
+
+</details>
+
+<hr />
+<p>$\example{2}$
+A spherical balloon has a volume of $V=\frac{4}{3}\pi r^3$. Determine how fast its volume is increasing with respect to its radius in $(\mathrm{in^3/in})$ when $r=5\un{in}$.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>To determine the rate of change of the volume $V$ with respect to the radius $r$, differentiate $V$ with respect to $r$,</p>
+
+\[\begin{align*}
+	V+\D{V} &amp;= \frac{4}{3}\pi(r+\D{r})^3 \\
+	\D{V} &amp;= \frac{4}{3}\pi(r^3+3r^2\D{r}+3r\D{r}^2+\D{r}^3) - \frac{4}{3}\pi r^3 \\
+	&amp;= \cancel{\frac{4}{3}\pi r^3} +4\pi r^2\D{r}+4\pi r\D{r}^2+\frac{4}{3}\pi\D{r}^3 - \cancel{\frac{4}{3}\pi r^3} \\
+	\frac{\D V}{\D r} &amp;= \frac{\cancel{\D r}(4\pi r^2+4\pi r\D{r}+\frac{4}{3}\pi\D{r}^2)}{\cancel{\D r}} \\
+	\frac{dV}{dr} &amp;= \lim_{\D r\to 0} (4\pi r^2+4\pi r\D{r}+\frac{4}{3}\pi\D{r}^2) \\
+	&amp;= 4\pi r^2 
+\end{align*}\]
+
+<p>At $r=5\un{in}$,</p>
+
+\[\begin{align*}
+	&amp;= 4\pi (5\un{in})^2 \\
+    \frac{dV}{dr} &amp;= 100\pi\un{in^2} \qquad{\text{or}}\qquad 
+        100\pi\un{in^3/in}		\tagans
+\end{align*}\]
+
+
+</details>
+
+<hr />
+<p>$\example{3}$
+A right circular cone’s radius increases as its height remains constant ($h=10\un{cm}$). Find the rate of change of the cone’s volume with respect to its radius.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+\[\begin{align*}
+	\text{Let: } V &amp;= \text{volume of the cone} \hspace{100cm} \\
+		   r &amp;= \text{radius of the base oh the cone} \\
+		   h &amp;= \text{height of the cone}  
+\end{align*}\]
+
+<figure style="text-align: center;">
+  <img src="/images/content/DC/DC-3.4.1.png" alt="my alt text" width="100px" />
+  <figcaption><em>
+</em></figcaption>
+</figure>
+
+<p>Hence, the equation for the volume of a cone is,</p>
+
+\[\begin{align*}
+	V &amp;= \frac{1}{3}\pi r^2 h 
+\end{align*}\]
+
+<p>Then, differentiate $V$ with respect to $r$,</p>
+
+\[\begin{align*}
+	V+\D{V} &amp;= \frac{1}{3}\pi (r+\D{r})^2 h \\
+	\D{V} &amp;= \frac{1}{3}\pi (r^2+2r\D{r}+\D{r}^2) h - \frac{1}{3}\pi r^2 h \\
+	&amp;= \cancel{\frac{1}{3}\pi r^2 h} + \frac{2}{3}\pi r\D{r}h+\frac{1}{3}\pi\D{r}^2 h - \cancel{\frac{1}{3}\pi r^2 h} \\
+	&amp;= \frac{2}{3}\pi r\D{r}h+\frac{1}{3}\pi\D{r}^2 h \\
+	\frac{\D V}{\D r} &amp;= \cancel{\D r}\br{ \frac{2}{3}\pi rh+\frac{1}{3}\pi\D{r} h } \cdot \frac{1}{\cancel{\D r}} \\
+	\frac{dV}{dr} &amp;= \lim_{\D r\to 0}  \br{ \frac{2}{3}\pi rh+\frac{1}{3}\pi\D{r} h } \\
+	&amp;= \frac{2}{3}\pi rh 
+\end{align*}\]
+
+<p>Since $h=10\un{cm}$,</p>
+
+\[\begin{align*}
+	&amp;= \frac{2}{3}\pi r (10) \\
+	\frac{dV}{dr} &amp;= \frac{20}{3}\pi r \un{cm^3/cm} 	\tagans
+\end{align*}\]
+
+
+</details>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Displaystyle -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+  var TEX = MathJax.InputJax.TeX;
+  var PREFILTER = TEX.prefilterMath;
+  TEX.Augment({
+  prefilterMath: function (math,displaymode,script) {
+  math = "\\displaystyle{"+math+"}";
+  return PREFILTER.call(TEX,math,displaymode,script);
+  }
+  });
+  });
+</script>
+
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- //assets/js/MathJax.js -->
+<!-- <script src="http://lemniscateinstitute.com/assets/js/MathJax.js"> -->
+<!-- <script type="text/javascript" src="../../assets/js/MathJax.js"> -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      availableFonts: ["TeX"],
+      styles: {".MathJax": {color: "#5C5A5A"}} 
+    },
+    tex2jax: {
+      inlineMath: [['$','$'],["\\(","\\)"]]},
+      displayMath: [ ['$$','$$'], ['\[','\]'] ],
+    TeX: {
+      extensions: ["AMSmath.js", "AMSsymbols.js", "color.js", "autoload-all.js"],
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    showProcessingMessages: false,
+    messageStyle: "none",
+    imageFont: null,
+    "AssistiveMML": { disabled: true }
+  });
+</script>
+
+<!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script> -->
+
+
+
+
+
+
+
+
+
+<!-- <div style="display:none">
+  \(
+    \newcommand{\CC}{\mathbf{C}}
+  \)
+</div> -->
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        CC: '{\\bf R}',
+        un: ['\\;\\mathrm{#1}',1],
+        x:  '{\\times}',
+        ohm: '{\\Omega}',
+        st:['{^{\\text{st}}}'],
+        nd:['{^{\\text{nd}}}'],
+        rd:['{^{\\text{rd}}}'],
+        nth:['{^{\\text{th}}}'],
+
+        br: ['\\left(#1\\right)',1],
+        brk: ['\\left[#1\\right]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbbrk: ['\\Biggl[#1\\Biggr]',1],
+        brv: ['\\left|#1\\right|',1],
+        brc: ['\\left\\{#1\\right\\}',1],
+
+        Dy: '{\\Delta y}',
+        Dx: '{\\Delta x}',
+        D: '{\\Delta}',
+        dydx: '{\\frac{dy}{dx}}',
+        ddx: '{\\frac{d}{dx}}',
+        ddu: '{\\frac{d}{du}}',
+        ddy: '{\\frac{d}{dy}}',
+        ddw: '{\\frac{d}{dw}}',
+        ddt: '{\\frac{d}{dt}}',
+        pd: ['\\frac{\\partial#1}{\\partial#2}',2],
+        ufrac: ['\\frac{\\text{#1}}{\\text{#2}}',2],
+        Ncancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\un{#4}}',4],
+        Dcancel: ['\\frac{#1 \\un{#2}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        NDcancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        
+        degg: '{^{\\circ}}',
+        degC: '{^{\\circ}\\mathrm{C}}',
+        degF: '{^{\\circ}\\mathrm{F}}',
+        tagans: '{\\tag{ans.}}',
+        tcA: ['\\color{colorA}{#1}',1],
+        tcB: ['\\color{colorB}{#1}',1],
+        tcAal: ['\\tcA{\\text{#1}}',1],
+        tcBal: ['\\tcB{\\text{#1}}',1],
+        typB: ['\\tcB{\\text{#1}}',1],
+        tcxA: ['\\tcA{\\text{#1}}',1],
+        tcxB: ['\\tcB{\\text{#1}}',1],
+        example: ['\\tcA{\\text{Example #1:}}',1],
+        For: ['\\tcB{\\text{For (#1):}}',1],
+        solution:  '\\tcB{\\textit{Solution:}}',
+        required:  '\\tcB{\\textit{Required:}}',
+        case: ['\\tcB{\\text{Case #1:}}',1],
+        rule: ['\\tcB{\\textbf{Rule #1:}\\text{ #2}}',2],
+        ubrace: ['\\underbrace{#1}_{\\tcAal{#2}}',2],
+        ubraces: ['\\underbrace{#1}_{\\substack{\\tcAal{#2} \\\\ \\tcAal{#3}}}',3],
+        given: '\\tcB{\\textit{Given:}}',
+        thrm: ['\\tcB{\\text{#1}}',1],
+        vv: ['\\overrightarrow{#1}',1],
+        eref: ['\\tcAal{Equation}\\,\\ref{#1}',1],
+        fref: ['\\tcAal{Figure}\\,#1',1],
+        tref: ['\\tcAal{Table}\\,#1',1],
+      }
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="PageNavigation">
+  
+    <a class="prev" href="/services/calculus/DC-3.3-slope-of-a-curve/">&laquo; Slope of a Curve</a>
+  
+  
+    <a class="next" href="/services/calculus/DC-3.5-average-and-instantaneous-velocity/">Average and Instantaneous Velocity &raquo;</a>
+  
+</div> -->
+
+
+
+<!-- <div class="PageNavigation">
+    <a class="prev" href="../DC-3.3-slope-of-a-curve">&laquo; </a> <a class="next" href="../DC-3.5-average-and-instantaneous-velocity"> &raquo;</a>
+</div> -->
+
+
+
+<div class="PageNavigation">
+  <a class="prev" href="../DC-3.3-slope-of-a-curve">&laquo; Previous</a> 
+  <a class="next" href="../DC-3.5-average-and-instantaneous-velocity">Next &raquo;</a>
+</div>
+
+
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h5 class="footer-title">&copy 2022 Lemniscate Institute</h5>
+          <!-- <h5 class="footer-title">Lemniscate Institute</h5> -->
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/services/">Courses</a>
+            </li>
+            
+            <!-- <li class="">
+              &copy 2021 Lemniscate Institute -->
+            </li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>
+
+
+
+
+
+

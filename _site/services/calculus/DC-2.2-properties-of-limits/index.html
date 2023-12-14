@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Properties of Limits</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" href="/images/logo/logo.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="" />
+  <meta name="twitter:card" content="" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:creator" content="" />
+
+   <!-- Add Slick Carousel CSS -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+   <!-- Add Slick Carousel theme CSS (optional) -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+</head>
+<body class='page '>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a>
+      <!-- <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a> -->
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a>
+      <!-- <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a> -->
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+    <div class="phoneContent">
+    <div class="phoneContent-header">
+            <b>Mobile Notice</b>
+    </div>
+        It seems that you are on your mobile phone, which means that the <b>screen's width is narrow</b> for some equations. For the best viewing experience, you can view this website in <b>landscape mode</b>.
+</div>  
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">Properties of Limits</h1>
+          
+            <p style="color:#d02f5d"></pstyle>
+              <a href="/team">
+                Author | Engr. Nico O. Aspra, M.Eng., RMP, LPT
+              </a>
+            </p>
+          
+
+          $$
+  <!-- \definecolor{colorA}{rgb}{0.25, 0.51, 0.43}	
+  \definecolor{colorB}{rgb}{0.89, 0.04, 0.36}	 -->
+$$
+          <!-- <p style="color:#d02f5d"></pstyle>Author | Engr. Nico O. Aspra, M.Eng., RMP, LPT</p> -->
+          <!-- <a href="">Engr. Nico O. Aspra, M.Eng., RMP, LPT</a> -->
+          <!-- <br> -->
+
+          <!-- <div class="deskContent">Content for desktop</div> -->
+        <div class="content">
+          <p>In this lesson, we will now be solving for limits. However, in order for us to simplify the solutions, we must first look at the different basic properties of limits. Below are some of the commonly used properties.</p>
+
+<p>$\thrm{Property 1:}$
+The limit of any <strong>constant</strong> is equal to the constant.</p>
+
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(64, 130, 110, 0.9);
+border-radius:7px;
+padding:10px;
+margin:5px;">
+    $$\begin{align}
+		\lim_{x \to a} {c} = c
+    \end{align}$$
+</p>
+
+<p>$\thrm{Property 2:}$
+The limit of the <strong>product of a constant and a function</strong> is equal to the product of the constant and the limit of the function.</p>
+
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(64, 130, 110, 0.9);
+border-radius:7px;
+padding:10px;
+margin:5px;">
+    $$\begin{align}
+		\lim_{x \to a} {c \,f(x)}= c \lim_{x \to a} f(x)
+    \end{align}$$
+</p>
+
+<p>$\thrm{Property 3:}$
+The limit of the <strong>sum or difference</strong> of two or more functions is equal to the sum or difference of their limits.</p>
+
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(64, 130, 110, 0.9);
+border-radius:7px;
+padding:10px;
+margin:5px;">
+    $$\begin{align}
+		\lim_{x \to a} \left[ f(x) + g(x) \right] = \lim_{x \to a} f(x) + \lim_{x \to a}g(x)
+    \end{align}$$
+</p>
+
+<p>$\thrm{Property 4:}$
+The limit of the <strong>product of two or more functions</strong> is equal to the product of their limits.</p>
+
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(64, 130, 110, 0.9);
+border-radius:7px;
+padding:10px;
+margin:5px;">
+    $$\begin{align}
+		\lim_{x \to a} \left[ f(x) \cdot g(x) \right] = \lim_{x \to a}{f(x)} \cdot \lim_{x \to a}{g(x)} 
+    \end{align}$$
+</p>
+
+<p>$\thrm{Property 5:}$
+The limit of the <strong>quotient of two or more functions</strong> is equal to the quotient of their limits, provided the limit of the devisor is not zero.</p>
+
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(64, 130, 110, 0.9);
+border-radius:7px;
+padding:10px;
+margin:5px;">
+    $$\begin{align}
+		\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{\lim_{x \to a} f(x) }{ \lim_{x \to a} g(x) }  , \hspace{10pt} where: \,   \lim_{x \to a} g(x) \neq 0
+    \end{align}$$
+</p>
+
+<p>$\thrm{Property 6:}$
+The limit of a <strong>power of a function</strong> is equal to the power of the limit.</p>
+
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(64, 130, 110, 0.9);
+border-radius:7px;
+padding:10px;
+margin:5px;">
+    $$\begin{align}
+		\lim_{x \to a} \left[ f(x) \right] ^n =\left[ \lim_{x \to a} f(x) \right]^n
+    \end{align}$$
+</p>
+
+<p>$\thrm{Property 7:}$
+The limit of the <strong>root of a function</strong> is equal to the root of their limits.</p>
+
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(64, 130, 110, 0.9);
+border-radius:7px;
+padding:10px;
+margin:5px;">
+    $$\begin{align}
+		\lim_{x \to a}{ \sqrt[n]{f(x)} } = \sqrt[n]{ \lim_{x \to a} {f(x)} }
+    \end{align}$$
+</p>
+
+<p>$\thrm{Property 8:}$
+The limit of $\frac{ \sin \theta }{\theta}$ as $\theta$ approaches zero is equal to 1, given that the angle $\theta$ is in radians.</p>
+
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(64, 130, 110, 0.9);
+border-radius:7px;
+padding:10px;
+margin:5px;">
+    $$\begin{align}
+		\lim_{\theta \to 0}{\frac{ \sin \theta }{\theta}} =1 , \hspace{10pt} where: \theta \; \text{is in radians}
+    \end{align}$$
+</p>
+
+<hr />
+<p>$\example{1}$
+Evaluate: $ \lim_{x \to 2} \br{x^2+2x+3} $</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+\[\begin{align*}
+		\lim_{x \to 2} \br{x^2+2x+3} &amp;=  \lim_{x \to 2} {x^2} +  \lim_{x \to 2} {2x} +  \lim_{x \to 2} {3} \\
+		&amp;=  \br{ \,\lim_{x \to 2} {x}}^2 +  2 \br{ \,\lim_{x \to 2} {x} } + 3 \\
+		&amp;= (2)^2+2(2)+3 \\
+		&amp;= 11		\tagans
+\end{align*}\]
+
+
+</details>
+
+<hr />
+<p>$\example{2}$
+Evaluate: $ \lim_{t \to 3} \br{t^5+10-2t^2-5t^3} $</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+\[\begin{align*}
+	\lim_{t \to 3} \br{t^5+10-2t^2-5t^3} &amp;=  \lim_{t \to 3} {t^5} +  \lim_{t \to 3} {10} - \lim_{t \to 3} {2t^2} - \lim_{t \to 3} {5t^3} \\
+		&amp;=  \br{ \,\lim_{t \to 3} {t}}^5 + 10 - 2 \br{ \,\lim_{t \to 3} {t} }^2 - 5 \br{ \,\lim_{t\to 3} {t} }^3 \\
+		&amp;= (3)^5+10+2(3)^2+5(3)^3 \\
+		&amp;= 100		\tagans
+\end{align*}\]
+
+
+</details>
+
+<hr />
+<p>$\example{3}$
+Evaluate: $ \lim_{x \to 1} \br{ \frac{3x^2-2}{x^3+2x^2-x+5} } $</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+\[\begin{align*}
+	\lim_{x \to 1} \br{ \frac{3x^2-2}{x^3+2x^2-x+5} }
+		&amp;=  \frac{ \lim_{x \to 1} \br{3x^2-2} }{ \lim_{x \to 1} \br{x^3+2x^2-x+5}  } \\
+		&amp;= \frac{3(1)^2-2}{(1)^3+2(1)^2-(1)+5} \\
+		&amp;= \frac{1}{7}		\tagans
+\end{align*}\]
+
+
+</details>
+
+<hr />
+<p>$\example{4}$
+Evaluate: $ \lim_{y \to 8} { \left[ \frac{5(2-y)^2}{y^2-4} \right] } $</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>By Theorem 05,
+\(\begin{align*}
+	\lim_{y \to 8} { \left[ \frac{5(2-y)^2}{y^2-4} \right] }
+		&amp;=  \frac{ \lim_{y \to 8} { \left[ 5(2-y)^2 \right] } }{ \lim_{y \to 8} \br{y^2-4}  } \\
+		&amp;= \frac{5(2-8)^2}{(8)^2-4} \\
+		&amp;= 3		\tagans
+\end{align*}\)</p>
+
+
+</details>
+
+<hr />
+<p>$\example{5}$
+Evaluate: $ \lim_{x \to 1} \br{ \frac{x^2-1}{x^2+3x-4} } $</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>Factor both the numerator and the denominator,</p>
+
+\[\begin{align*}
+	\lim_{x \to 1} \br{ \frac{x^2-1}{x^2+3x-4} } 
+		&amp;=  \lim_{x \to 1} { \left[ \frac{ \cancel{(x-1)}(x+1)}{ \cancel{(x-1)}(x+4)} \right] }  \\
+		&amp;= \lim_{x \to 1} \br{ \frac{x+1}{x+4} }  \\
+		&amp;= \frac{1+1}{1+4} \\
+		&amp;= \frac{2}{5}		\tagans
+\end{align*}\]
+
+
+</details>
+
+<hr />
+<p>$\example{6}$
+Evaluate: $ \lim_{y \to 2}{ \sqrt{ \frac{y^3-y^2-y-2}{2y^3-5y^2+5y-6} } } $</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>Factor both the numerator and the denominator,</p>
+
+\[\begin{align*}
+	\lim_{y \to 2}{ \sqrt{ \frac{y^3-y^2-y-2}{2y^3-5y^2+5y-6} } }
+		&amp;=  \lim_{y \to 2}{ \sqrt{ \frac{ \cancel{(y-2)}(y^2+y+1)}{ \cancel{(y-2)}(2y^2-y+3)} } }  \\
+		&amp;=  \sqrt{ \frac{(2)^2+2+1}{2(2)^2-2+3} } \\
+		&amp;= \sqrt{ \frac{7}{9} } \\
+		&amp;= \frac{ \sqrt{7} }{3}		\tagans
+\end{align*}\]
+
+
+</details>
+
+<hr />
+<p>$\example{7}$
+Evaluate: $ \lim_{\phi \to 0}{\frac{ \sin 5\phi }{5\phi }} $</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>$\text{Let:} \, \theta = 5\phi $ <br />
+$\text{If:} \, \phi = 0, \; \text{then,} \, \theta=0$</p>
+
+<p>Thus,</p>
+
+\[\begin{align*}
+        \lim_{\phi \to 0}{\frac{ \sin 5\phi }{5\phi }} &amp;= \lim_{\theta \to 0}{\frac{ \sin \theta}{\theta }} \\
+        &amp;=1 \tagans
+\end{align*}\]
+
+
+</details>
+
+<hr />
+<p>$\example{8}$
+Evaluate: $ \lim_{x \to 0}{\frac{ \tan x}{x}} $</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+\[\begin{align*}
+    \lim_{x \to 0}{\frac{ \tan x}{x}} &amp;= \lim_{x \to 0}{\frac{ \sin x}{x \cos x}} \\
+    &amp;= \lim_{x \to 0}{\frac{ \sin x}{x} \cdot \frac{1}{\cos x}} \\
+    &amp;= \lim_{x \to 0}{\frac{ \sin x}{x} \cdot \lim_{x \to 0}\frac{1}{\cos x}} \\
+    &amp;= (1)(1) \\
+    &amp;=1 \tagans
+\end{align*}\]
+
+
+</details>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Displaystyle -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+  var TEX = MathJax.InputJax.TeX;
+  var PREFILTER = TEX.prefilterMath;
+  TEX.Augment({
+  prefilterMath: function (math,displaymode,script) {
+  math = "\\displaystyle{"+math+"}";
+  return PREFILTER.call(TEX,math,displaymode,script);
+  }
+  });
+  });
+</script>
+
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- //assets/js/MathJax.js -->
+<!-- <script src="http://lemniscateinstitute.com/assets/js/MathJax.js"> -->
+<!-- <script type="text/javascript" src="../../assets/js/MathJax.js"> -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      availableFonts: ["TeX"],
+      styles: {".MathJax": {color: "#5C5A5A"}} 
+    },
+    tex2jax: {
+      inlineMath: [['$','$'],["\\(","\\)"]]},
+      displayMath: [ ['$$','$$'], ['\[','\]'] ],
+    TeX: {
+      extensions: ["AMSmath.js", "AMSsymbols.js", "color.js", "autoload-all.js"],
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    showProcessingMessages: false,
+    messageStyle: "none",
+    imageFont: null,
+    "AssistiveMML": { disabled: true }
+  });
+</script>
+
+<!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script> -->
+
+
+
+
+
+
+
+
+
+<!-- <div style="display:none">
+  \(
+    \newcommand{\CC}{\mathbf{C}}
+  \)
+</div> -->
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        CC: '{\\bf R}',
+        un: ['\\;\\mathrm{#1}',1],
+        x:  '{\\times}',
+        ohm: '{\\Omega}',
+        st:['{^{\\text{st}}}'],
+        nd:['{^{\\text{nd}}}'],
+        rd:['{^{\\text{rd}}}'],
+        nth:['{^{\\text{th}}}'],
+
+        br: ['\\left(#1\\right)',1],
+        brk: ['\\left[#1\\right]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbbrk: ['\\Biggl[#1\\Biggr]',1],
+        brv: ['\\left|#1\\right|',1],
+        brc: ['\\left\\{#1\\right\\}',1],
+
+        Dy: '{\\Delta y}',
+        Dx: '{\\Delta x}',
+        D: '{\\Delta}',
+        dydx: '{\\frac{dy}{dx}}',
+        ddx: '{\\frac{d}{dx}}',
+        ddu: '{\\frac{d}{du}}',
+        ddy: '{\\frac{d}{dy}}',
+        ddw: '{\\frac{d}{dw}}',
+        ddt: '{\\frac{d}{dt}}',
+        pd: ['\\frac{\\partial#1}{\\partial#2}',2],
+        ufrac: ['\\frac{\\text{#1}}{\\text{#2}}',2],
+        Ncancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\un{#4}}',4],
+        Dcancel: ['\\frac{#1 \\un{#2}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        NDcancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        
+        degg: '{^{\\circ}}',
+        degC: '{^{\\circ}\\mathrm{C}}',
+        degF: '{^{\\circ}\\mathrm{F}}',
+        tagans: '{\\tag{ans.}}',
+        tcA: ['\\color{colorA}{#1}',1],
+        tcB: ['\\color{colorB}{#1}',1],
+        tcAal: ['\\tcA{\\text{#1}}',1],
+        tcBal: ['\\tcB{\\text{#1}}',1],
+        typB: ['\\tcB{\\text{#1}}',1],
+        tcxA: ['\\tcA{\\text{#1}}',1],
+        tcxB: ['\\tcB{\\text{#1}}',1],
+        example: ['\\tcA{\\text{Example #1:}}',1],
+        For: ['\\tcB{\\text{For (#1):}}',1],
+        solution:  '\\tcB{\\textit{Solution:}}',
+        required:  '\\tcB{\\textit{Required:}}',
+        case: ['\\tcB{\\text{Case #1:}}',1],
+        rule: ['\\tcB{\\textbf{Rule #1:}\\text{ #2}}',2],
+        ubrace: ['\\underbrace{#1}_{\\tcAal{#2}}',2],
+        ubraces: ['\\underbrace{#1}_{\\substack{\\tcAal{#2} \\\\ \\tcAal{#3}}}',3],
+        given: '\\tcB{\\textit{Given:}}',
+        thrm: ['\\tcB{\\text{#1}}',1],
+        vv: ['\\overrightarrow{#1}',1],
+        eref: ['\\tcAal{Equation}\\,\\ref{#1}',1],
+        fref: ['\\tcAal{Figure}\\,#1',1],
+        tref: ['\\tcAal{Table}\\,#1',1],
+      }
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="PageNavigation">
+  
+    <a class="prev" href="/services/calculus/DC-2.1-introduction-to-limits/">&laquo; Introduction to Limits</a>
+  
+  
+    <a class="next" href="/services/calculus/DC-2.3-limits-at-infinity/">Limits at Infinity &raquo;</a>
+  
+</div> -->
+
+
+
+<!-- <div class="PageNavigation">
+    <a class="prev" href="../DC-2.1-introduction-to-limits">&laquo; </a> <a class="next" href="../DC-2.3-limits-at-infinity"> &raquo;</a>
+</div> -->
+
+
+
+<div class="PageNavigation">
+  <a class="prev" href="../DC-2.1-introduction-to-limits">&laquo; Previous</a> 
+  <a class="next" href="../DC-2.3-limits-at-infinity">Next &raquo;</a>
+</div>
+
+
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h5 class="footer-title">&copy 2022 Lemniscate Institute</h5>
+          <!-- <h5 class="footer-title">Lemniscate Institute</h5> -->
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/services/">Courses</a>
+            </li>
+            
+            <!-- <li class="">
+              &copy 2021 Lemniscate Institute -->
+            </li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>
+
+
+
+
+
+

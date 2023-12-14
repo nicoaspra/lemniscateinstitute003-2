@@ -1,1 +1,1 @@
-# lemniscateinstitute003-2
+[Lemniscate Institute](lemniscateinstitute.com)

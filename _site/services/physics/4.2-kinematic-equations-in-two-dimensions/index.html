@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Kinematic Equations in Two Dimensions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" href="/images/logo/logo.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="" />
+  <meta name="twitter:card" content="" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:creator" content="" />
+
+   <!-- Add Slick Carousel CSS -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+   <!-- Add Slick Carousel theme CSS (optional) -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+</head>
+<body class='page '>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a>
+      <!-- <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a> -->
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a>
+      <!-- <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a> -->
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+    <div class="phoneContent">
+    <div class="phoneContent-header">
+            <b>Mobile Notice</b>
+    </div>
+        It seems that you are on your mobile phone, which means that the <b>screen's width is narrow</b> for some equations. For the best viewing experience, you can view this website in <b>landscape mode</b>.
+</div>  
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">Kinematic Equations in Two Dimensions</h1>
+          
+            <p style="color:#d02f5d"></pstyle>
+              <a href="/team">
+                Author | Engr. Nico O. Aspra, M.Eng., RMP, LPT
+              </a>
+            </p>
+          
+
+          $$
+  <!-- \definecolor{colorA}{rgb}{0.25, 0.51, 0.43}	
+  \definecolor{colorB}{rgb}{0.89, 0.04, 0.36}	 -->
+$$
+          <!-- <p style="color:#d02f5d"></pstyle>Author | Engr. Nico O. Aspra, M.Eng., RMP, LPT</p> -->
+          <!-- <a href="">Engr. Nico O. Aspra, M.Eng., RMP, LPT</a> -->
+          <!-- <br> -->
+
+          <!-- <div class="deskContent">Content for desktop</div> -->
+        <div class="content">
+          <p>In two-dimensional kinematics, $x$ and $y$ motions are treated independently so that equations in one-dimensional kinematics can be utilized. But in this section, we will give different variables to each component so that we will not be confused about what motion we are referring to.</p>
+
+<center><p><em>$\tcAal{Table 1:}$ Variables in Two-Dimensional Kinematics</em></p></center>
+
+\[\begin{array}{ccc}
+	\hline
+	\text{Variable} &amp; \text{$x$-component} &amp; \text{$y$-component} \\
+	\hline
+	\text{displacement}	    &amp; x		    &amp; y \\
+	\text{initial velocity}	&amp; v_{ix}	&amp; v_{iy} \\
+	\text{final velocity}	&amp; v_{fx}	&amp; v_{fy} \\
+	\text{acceleration}	    &amp; a_{x}		&amp; a_{y} \\
+	\text{time elapsed}	    &amp; t			&amp; t	 \\
+	\hline
+\end{array}\]
+
+<p>Substituting the distinct variables into the four kinematic equations, we obtain the following:</p>
+
+<center><p><em>$\tcAal{Table 2:}$ Kinematics Equations with Constant Acceleration in Two-Dimensional Motion</em></p></center>
+
+\[\begin{array}{cc}
+	\hline
+	\text{$x$-component} &amp; \text{$y$-component} \\
+	\hline
+	v_{fx} = v_{ix}+a_{x}t			    &amp; v_{fy} = v_{iy}+a_{y}t	\\
+	x = \br{ \dfrac{v_{ix}+v_{fx}}{2}}t 	&amp; y = \br{ \dfrac{v_{iy}+v_{fy}}{2} }t \\
+	x = v_{ix}t+\frac{1}{2}a_{x}t^2	    &amp; y = v_{iy}t+\frac{1}{2}a_{y}t^2 \\
+	{v_{fx}}^2 = {v_{ix}}^2+2a_{x}x	    &amp; {v_{fy}}^2 = {v_{iy}}^2+2a_{y}y \\	
+	\hline
+\end{array}\]
+
+<p>As you may have seen, the time $t$ is the same for the $x$ and $y$ motions. Due to the fact that time is a scalar quantity, time will be identical for both components.</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/phys1/phys1-4.2.0.png" alt="my alt text" width="600px" />
+  <figcaption><em><p>Figure 1: Breaking down a two-dimensional motion into two components</p>
+</em></figcaption>
+</figure>
+
+<hr />
+<p>$\example{1}$
+If an object was thrown horizontally at a velocity of 10 m/s from a cliff that has a height of 30 m, determine (a) its initial $x$-component velocity,  (b)  its  initial  $y$-component  velocity,  (c)  its  final  $x$-component velocity, (d) its final $y$-component velocity, (e) its final resultant velocity, (f) its angle at which it strikes the ground, and (g) the distance from the base of the cliff where the projectile lands</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>$\given$<br />
+$v_i=10\un{m/s}$<br />
+$y=30\un{m}$</p>
+
+<p>$\required$ <br />
+(a) $v_{ix}$ <br />
+(b) $v_{iy}$ <br />
+(c) $v_{f_x}$ <br />
+(d) $v_{f_y}$ <br />
+(e) $v_{f}$ <br />
+(f) $\theta_f$ <br />
+(g) $x$</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/phys1/phys1-4.2.1.png" alt="my alt text" width="550px" />
+  <figcaption><em>
+</em></figcaption>
+</figure>
+
+<p>$\For{a}$<br />
+The ball was thrown <strong>horizontally</strong>, so the angle from the horizontal is zero, $\theta=0$.</p>
+
+\[\begin{align*}
+	v_{ix} &amp;= v_{i} \cos\theta \\
+	&amp;= (10\un{m/s}) \cos(0) \\
+	&amp;= 10\un{m/s}		\tagans
+\end{align*}\]
+
+<p>$\For{b}$</p>
+
+\[\begin{align*}
+	v_{iy} &amp;= v_{i} \sin\theta \\
+	&amp;= (10\un{m/s}) \sin(0) \\
+	&amp;= 0\un{m/s}		\tagans
+\end{align*}\]
+
+<p>$\For{c}$<br />
+The motion in the $x$ direction is <strong>not influenced</strong> by the gravity, so there is no acceleration, thus, the velocity in the $x$ direction is constant.</p>
+
+\[\begin{align*}
+	v_{x} &amp;= v_{ix} = v_{fx} \\
+	v_{fx} &amp;= 10\un{m/s}	\tagans
+\end{align*}\]
+
+<figure style="text-align: center;">
+  <img src="/images/content/phys1/phys1-4.2.2.png" alt="my alt text" width="550px" />
+  <figcaption><em>
+</em></figcaption>
+</figure>
+
+<p>$\For{d}$ <br />
+The motion in the $y$ direction is <strong>influenced</strong> by the gravity, so the ball accelerates at a downward direction, $a_y=g=9.81\un{m/s^2}$</p>
+
+\[\begin{align*}
+	{v_{fy}}^2 &amp;= {v_{iy}}^2+2a_{y}y \\
+	{v_{fy}} &amp;= \sqrt{ {v_{iy}}^2+2gy } \\
+	&amp;= \sqrt{ 0^2+2(9.81\un{m/s^2})(30\un{m}) } \\
+	&amp;= 24.26 \un{m/s}		\tagans
+\end{align*}\]
+
+<p>$\For{e}$<br />
+The final velocity is the resultant vector of its components, \(\vv{v}_f = \vv{v}_{fx}+\vv{v}_{fy}\),</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/phys1/phys1-4.2.3.png" alt="my alt text" width="130px" />
+  <figcaption><em>
+</em></figcaption>
+</figure>
+
+\[\begin{align*}
+	v_f &amp;= \sqrt{ {v_{fx}}^2+{v_{fy}}^2 } \\
+	&amp;= \sqrt{ (10\un{m/s})^2 + (24.26\un{m/s})^2 } \\
+	&amp;=  26.24 \un{m/s} 	\tagans
+\end{align*}\]
+
+<p>$\For{f}$<br />
+Use the tangent function to evaluate the angle at which it strikes the ground,</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/phys1/phys1-4.2.4.png" alt="my alt text" width="130px" />
+  <figcaption><em>
+</em></figcaption>
+</figure>
+
+\[\begin{align*}
+	\tan\theta_f &amp;= \frac{v_{fy}}{v_{fx}} \\
+	\theta_f &amp;= \tan^{-1} \frac{v_{fy}}{v_{fx}} \\
+	&amp;= \tan^{-1} \frac{24.26\un{m/s}}{10\un{m/s}} \\
+	&amp;= 67.60\degg		\tagans
+\end{align*}\]
+
+<p>$\For{g}$<br />
+There’s no acceleration in the horizontal direction, so we can evaluate the displacement in the $x$-axis using the equation $x=v_xt$. But this equation requires $t$; however, since the time in the $x$ and $y$ directions are just the same, we can first find $t$ from the vertical direction,</p>
+
+\[\begin{align*}
+	y &amp;= v_{iy}t + \frac{1}{2} gt^2 \\
+	30\un{m} &amp;= (0\un{m/s})t + \frac{1}{2} (9.81\un{m/s^2})t^2 \\
+	t &amp;= \sqrt{ \frac{2(30\un{m})}{9.81\un{m/s^2}} } \\
+	&amp;= 2.473 \un{s}
+\end{align*}\]
+
+<p>Then substituting the time to the equation gives us,</p>
+
+\[\begin{align*}
+	x &amp;= v_xt \\
+	&amp;= (10\un{m/s})(2.473\un{s}) \\
+	&amp;= 24.73\un{m}		\tagans
+\end{align*}\]
+
+
+</details>
+
+<hr />
+<p>$\example{2}$
+A projectile was launched at a velocity of 100 m/s at a 60 degree angle and fell at the same level it was launched. Determine 
+(a) its initial $x$-component velocity, 
+(b) its initial $y$-component velocity, 
+(c) the time to reach its maximum height, 
+(d) the maximum height reached, 
+(e) the time of flight, 
+(f) its final $x$-component velocity, 
+(g) its final $y$-component velocity, 
+(h) its final resultant velocity, 
+(i) its angle at which it strikes the ground, and 
+(j) the range of the projectile.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>$\given$ <br />
+$v_1=100\un{m/s}$<br />
+$\theta_1=30\degg$</p>
+
+<p>$\required$ <br />
+(a) $v_{1x}$ <br />
+(b) $v_{1y}$ <br />
+(c) $t_{1-2}$ <br />
+(d) $y$ <br />
+(e) $t_{1-3}$ <br />
+(f) $v_{3x}$ <br />
+(g) $v_{3y}$ <br />
+(h) $v_{3}$ <br />
+(i) $\theta_3$ <br />
+(j) $x$</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/phys1/phys1-4.2.5.png" alt="my alt text" width="450px" />
+  <figcaption><em>
+</em></figcaption>
+</figure>
+
+<p>$\For{a}$</p>
+
+\[\begin{align*}
+	v_{1x} &amp;= v_{1} \cos\theta_1 \\
+	&amp;= (100\un{m/s}) \cos(60\degg) \\
+	&amp;= 50\un{m/s}		\tagans
+\end{align*}\]
+
+<figure style="text-align: center;">
+  <img src="/images/content/phys1/phys1-4.2.6.png" alt="my alt text" width="180px" />
+  <figcaption><em>
+</em></figcaption>
+</figure>
+
+<p>$\For{b}$</p>
+
+\[\begin{align*}
+	v_{1y} &amp;= v_{1} \sin\theta_1 \\
+	&amp;= (100\un{m/s}) \sin(60\degg) \\
+	&amp;= 86.60\un{m/s}		\tagans
+\end{align*}\]
+
+<figure style="text-align: center;">
+  <img src="/images/content/phys1/phys1-4.2.7.png" alt="my alt text" width="200px" />
+  <figcaption><em>
+</em></figcaption>
+</figure>
+
+<p>$\For{c}$<br />
+Consider the projectile moving from point 1 to point 2, the motion of the projectile is going upward, but the gravitational acceleration is in a downward direction. Hence, the ball is decelerating,</p>
+
+\[\begin{align*}
+	{v_{2y}} &amp;= {v_{1y}}+(-g)t_{1-2} \\
+	{v_{2y}} &amp;= {v_{1y}}-gt_{1-2} \\
+	t_{1-2} &amp;= \frac{v_{1y}-v_{2y}}{g} \\
+	&amp;= \frac{86.60\un{m/s}-0\un{m/s}}{9.81\un{m/s^2}} \\
+	&amp;= 8.83\un{s}		\tagans
+\end{align*}\]
+
+<p>$\For{d}$<br />
+The maximum height reached by the projectile before it stopped rising is the vertical displacement $y$,</p>
+
+\[\begin{align*}
+	y &amp;= \br{ \frac{v_{1y}+v_{2y}}{2} } t_{1-2} \\
+	&amp;= \br{ \frac{86.60\un{m/s}+0\un{m/s}}{2} } (8.83\un{s}) \\
+	&amp;= 382.34\un{m}	\tagans
+\end{align*}\]
+
+<p>$\For{e}$<br />
+The time of flight is the time for the whole duration of the projectile suspended in the air from the point it was launched till it was dropped. Since we’ve already solved the time from point 1 to point 2, what’s left to find is for the second half of its flight, which is when the time the projectile is falling $t_{2-3}$.</p>
+
+\[\begin{align*}
+	y &amp;= v_{2y}t_{2-3}+\frac{1}{2}g(t_{2-3})^2 \\
+	382.34\un{m} &amp;= (0\un{m/s})t_{2-3} + \frac{1}{2}(9.81\un{m/s^2})(t_{2-3})^2 \\
+	t_{2-3} &amp;= \sqrt{ \frac{2(382.34\un{m})}{9.81\un{m/s^2}} } \\
+	&amp;= 8.83\un{s}	
+\end{align*}\]
+
+<p>Hence, the total time is,</p>
+
+\[\begin{align*}
+	t_{1-3} &amp;= t_{1-2}+t_{2-3} \\
+	&amp;= 8.83\un{s} + 8.83\un{s} \\
+	&amp;= 17.66 \un{s}		\tagans
+\end{align*}\]
+
+<p>$\For{f}$<br />
+The motion in the $x$ direction is <strong>not influenced</strong> by the gravity, so there is no acceleration, thus, the velocity in the $x$ direction is constant.</p>
+
+\[\begin{align*}
+	v_{x} &amp;= v_{1x} = v_{2x} = v_{3x} \\
+	v_{3x} &amp;= 50\un{m/s}	\tagans
+\end{align*}\]
+
+<p>$\For{g}$<br />
+The projectile from point 2 to point 3 is moving downwards, so the projectile is accelerating,</p>
+
+\[\begin{align*}
+	v_{3y} &amp;= v_{2y}+g(t_{2-3}) \\
+	&amp;= 0\un{m/s}+(9.81\un{m/s^2})(8.83\un{s}) \\
+	&amp;= 86.60\un{m/s}        \tagans
+\end{align*}\]
+
+<p>$\For{h}$</p>
+
+\[\begin{align*}
+	v_3 &amp;= \sqrt{ {v_{3x}}^2+{v_{3y}}^2 } \\
+	&amp;= \sqrt{ (50\un{m/s})^2+(86.60\un{m/s})^2 } \\
+	&amp;= 100\un{m/s}		\tagans
+\end{align*}\]
+
+<p>$\For{i}$<br />
+Use the tangent function to evaluate the angle at which it strikes the ground,</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/phys1/phys1-4.2.8.png" alt="my alt text" width="130px" />
+  <figcaption><em>
+</em></figcaption>
+</figure>
+
+\[\begin{align*}
+	\tan\theta_3 &amp;= \frac{v_{3y}}{v_{3x}} \\
+	\theta_3 &amp;= \tan^{-1} \frac{v_{3y}}{v_{3x}} \\
+	&amp;= \tan^{-1} \frac{86.61\un{m/s}}{50\un{m/s}} \\
+	&amp;= 60\degg		\tagans
+\end{align*}\]
+
+<p>$\For{j}$<br />
+The range of the projectile is the horizontal distance from its starting point to the end point. And since there is no acceleration in the $x$ direction,</p>
+
+\[\begin{align*}
+	x &amp;= v_x(t_{1-3}) \\
+	&amp;= 50\un{m/s}(17.66\un{s}) \\
+	&amp;= 883\un{m}		\tagans
+\end{align*}\]
+
+
+</details>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Displaystyle -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+  var TEX = MathJax.InputJax.TeX;
+  var PREFILTER = TEX.prefilterMath;
+  TEX.Augment({
+  prefilterMath: function (math,displaymode,script) {
+  math = "\\displaystyle{"+math+"}";
+  return PREFILTER.call(TEX,math,displaymode,script);
+  }
+  });
+  });
+</script>
+
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- //assets/js/MathJax.js -->
+<!-- <script src="http://lemniscateinstitute.com/assets/js/MathJax.js"> -->
+<!-- <script type="text/javascript" src="../../assets/js/MathJax.js"> -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      availableFonts: ["TeX"],
+      styles: {".MathJax": {color: "#5C5A5A"}} 
+    },
+    tex2jax: {
+      inlineMath: [['$','$'],["\\(","\\)"]]},
+      displayMath: [ ['$$','$$'], ['\[','\]'] ],
+    TeX: {
+      extensions: ["AMSmath.js", "AMSsymbols.js", "color.js", "autoload-all.js"],
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    showProcessingMessages: false,
+    messageStyle: "none",
+    imageFont: null,
+    "AssistiveMML": { disabled: true }
+  });
+</script>
+
+<!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script> -->
+
+
+
+
+
+
+
+
+
+<!-- <div style="display:none">
+  \(
+    \newcommand{\CC}{\mathbf{C}}
+  \)
+</div> -->
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        CC: '{\\bf R}',
+        un: ['\\;\\mathrm{#1}',1],
+        x:  '{\\times}',
+        ohm: '{\\Omega}',
+        st:['{^{\\text{st}}}'],
+        nd:['{^{\\text{nd}}}'],
+        rd:['{^{\\text{rd}}}'],
+        nth:['{^{\\text{th}}}'],
+
+        br: ['\\left(#1\\right)',1],
+        brk: ['\\left[#1\\right]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbbrk: ['\\Biggl[#1\\Biggr]',1],
+        brv: ['\\left|#1\\right|',1],
+        brc: ['\\left\\{#1\\right\\}',1],
+
+        Dy: '{\\Delta y}',
+        Dx: '{\\Delta x}',
+        D: '{\\Delta}',
+        dydx: '{\\frac{dy}{dx}}',
+        ddx: '{\\frac{d}{dx}}',
+        ddu: '{\\frac{d}{du}}',
+        ddy: '{\\frac{d}{dy}}',
+        ddw: '{\\frac{d}{dw}}',
+        ddt: '{\\frac{d}{dt}}',
+        pd: ['\\frac{\\partial#1}{\\partial#2}',2],
+        ufrac: ['\\frac{\\text{#1}}{\\text{#2}}',2],
+        Ncancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\un{#4}}',4],
+        Dcancel: ['\\frac{#1 \\un{#2}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        NDcancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        
+        degg: '{^{\\circ}}',
+        degC: '{^{\\circ}\\mathrm{C}}',
+        degF: '{^{\\circ}\\mathrm{F}}',
+        tagans: '{\\tag{ans.}}',
+        tcA: ['\\color{colorA}{#1}',1],
+        tcB: ['\\color{colorB}{#1}',1],
+        tcAal: ['\\tcA{\\text{#1}}',1],
+        tcBal: ['\\tcB{\\text{#1}}',1],
+        typB: ['\\tcB{\\text{#1}}',1],
+        tcxA: ['\\tcA{\\text{#1}}',1],
+        tcxB: ['\\tcB{\\text{#1}}',1],
+        example: ['\\tcA{\\text{Example #1:}}',1],
+        For: ['\\tcB{\\text{For (#1):}}',1],
+        solution:  '\\tcB{\\textit{Solution:}}',
+        required:  '\\tcB{\\textit{Required:}}',
+        case: ['\\tcB{\\text{Case #1:}}',1],
+        rule: ['\\tcB{\\textbf{Rule #1:}\\text{ #2}}',2],
+        ubrace: ['\\underbrace{#1}_{\\tcAal{#2}}',2],
+        ubraces: ['\\underbrace{#1}_{\\substack{\\tcAal{#2} \\\\ \\tcAal{#3}}}',3],
+        given: '\\tcB{\\textit{Given:}}',
+        thrm: ['\\tcB{\\text{#1}}',1],
+        vv: ['\\overrightarrow{#1}',1],
+        eref: ['\\tcAal{Equation}\\,\\ref{#1}',1],
+        fref: ['\\tcAal{Figure}\\,#1',1],
+        tref: ['\\tcAal{Table}\\,#1',1],
+      }
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="PageNavigation">
+  
+    <a class="prev" href="/services/physics/4.1-introduction-of-two-dimensional-motion/">&laquo; Introduction to Two-Dimensional Motion</a>
+  
+  
+    <a class="next" href="/services/physics/5.1-introduction-to-force-and-mass/">Introduction to Force and Mass &raquo;</a>
+  
+</div> -->
+
+
+
+<!-- <div class="PageNavigation">
+    <a class="prev" href="../4.1-introduction-of-two-dimensional-motion">&laquo; </a> <a class="next" href="../5.1-introduction-to-force-and-mass"> &raquo;</a>
+</div> -->
+
+
+
+<div class="PageNavigation">
+  <a class="prev" href="../4.1-introduction-of-two-dimensional-motion">&laquo; Previous</a> 
+  <a class="next" href="../5.1-introduction-to-force-and-mass">Next &raquo;</a>
+</div>
+
+
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h5 class="footer-title">&copy 2022 Lemniscate Institute</h5>
+          <!-- <h5 class="footer-title">Lemniscate Institute</h5> -->
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/services/">Courses</a>
+            </li>
+            
+            <!-- <li class="">
+              &copy 2021 Lemniscate Institute -->
+            </li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>
+
+
+
+
+
+

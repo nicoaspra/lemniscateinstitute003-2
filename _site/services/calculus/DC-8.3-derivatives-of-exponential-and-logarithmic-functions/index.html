@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Derivatives of Exponential and Logarithmic Functions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" href="/images/logo/logo.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="" />
+  <meta name="twitter:card" content="" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:creator" content="" />
+
+   <!-- Add Slick Carousel CSS -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+   <!-- Add Slick Carousel theme CSS (optional) -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+</head>
+<body class='page '>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a>
+      <!-- <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a> -->
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a>
+      <!-- <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a> -->
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+    <div class="phoneContent">
+    <div class="phoneContent-header">
+            <b>Mobile Notice</b>
+    </div>
+        It seems that you are on your mobile phone, which means that the <b>screen's width is narrow</b> for some equations. For the best viewing experience, you can view this website in <b>landscape mode</b>.
+</div>  
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">Derivatives of Exponential and Logarithmic Functions</h1>
+          
+            <p style="color:#d02f5d"></pstyle>
+              <a href="/team">
+                Author | Engr. Nico O. Aspra, M.Eng., RMP, LPT
+              </a>
+            </p>
+          
+
+          $$
+  <!-- \definecolor{colorA}{rgb}{0.25, 0.51, 0.43}	
+  \definecolor{colorB}{rgb}{0.89, 0.04, 0.36}	 -->
+$$
+          <!-- <p style="color:#d02f5d"></pstyle>Author | Engr. Nico O. Aspra, M.Eng., RMP, LPT</p> -->
+          <!-- <a href="">Engr. Nico O. Aspra, M.Eng., RMP, LPT</a> -->
+          <!-- <br> -->
+
+          <!-- <div class="deskContent">Content for desktop</div> -->
+        <div class="content">
+          <p>In the previous lesson, we have reviewed the concepts and the handling of exponential and logarithmic functions. It is essential to develop a strong understanding of the basic rules and laws governing such functions’ analysis before attempting to try to understand its derivative.</p>
+
+<p>Just as algebraic functions, differentiating exponential and logarithmic functions have its own set of rules. For the following formulas, let $u$ be a function of $x$; $a$ as a constant; and $e$ is the Euler’s number.</p>
+
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(64, 130, 110, 0.9);
+border-radius:7px;
+padding:10px;
+margin:5px;">
+    $$\begin{align}
+	\text{Logarithmic Funcion to Base $a$:} &amp;&amp;&amp; d(\log_a u) = \frac{du}{u\,\ln a} 
+		\label{eq:differential of the Logarithmic Funcion to Base a}\\
+	\text{Natural Logarithmic Function:} &amp;&amp;&amp; d(\ln u) = \frac{du}{u}
+		\label{eq:differential of Natural Logarithmic Function}\\
+	\text{Exponential Function, $e^u$:} &amp;&amp;&amp; d(e^u) = e^u\,du 
+		\label{eq:differential of Exponential Function e^u}\\
+	\text{Exponential Function, $a^u$:} &amp;&amp;&amp; d(a^u) = a^u\ln a\,du 
+		\label{eq:differential of Exponential Function a^u}
+    \end{align}$$
+</p>
+
+<hr />
+<p>$\example{1}$
+Find the derivative of the function $y = \log_5 (2x+3)$</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+\[\begin{align*}
+	\text{Let:}\quad a &amp;= 5  \hspace{100cm} \\
+	u &amp;= 2x+3 &amp; \\
+	du &amp;= 2\,dx
+\end{align*}\]
+
+<p>To solve for the derivative of the function, use $\eref{eq:differential of the Logarithmic Funcion to Base a}$,</p>
+
+\[\begin{align*}
+	d(y) &amp;= d\br{\log_5 (2x+3)} \\
+	dy &amp;= \frac{2\,dx}{(2x+3)\ln 5} \qquad\tcA{d(\log_a u) = \frac{du}{u\,\ln a}} \\
+	\dydx &amp;= \frac{2}{(2x+3)\ln 5}	\tagans
+\end{align*}\]
+
+
+</details>
+
+<hr />
+<p>$\example{2}$
+Find the derivative of the function $y = \log_e (5-2x)$</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+\[\begin{align*}
+	\text{Let:}\quad a &amp;= e \hspace{100cm} \\
+	u &amp;= 5-2x &amp; \\
+	du &amp;= -2\,dx
+\end{align*}\]
+
+<p>To solve for the derivative of the function, use $\eref{eq:differential of the Logarithmic Funcion to Base a}$,</p>
+
+\[\begin{align*}
+	d(y) &amp;= d\br{\log_e (5-2x)} \\
+	dy &amp;= \frac{-2\,dx}{(5-2x)\ln e}
+\end{align*}\]
+
+<p>But form the Properties of Natural Logarithms, $\ln e = 1$. Thus,</p>
+
+\[\begin{align*}
+	\dydx &amp;= -\frac{2}{(5-2x)(1)} \\
+	&amp;= -\frac{2}{5-2x}	\tagans
+\end{align*}\]
+
+
+</details>
+
+<hr />
+<p>$\example{3}$
+Find the derivative of the function $y = \ln (5-2x)$</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+\[\begin{align*}
+	\text{Let:}\quad u &amp;= 5-2x \hspace{100cm} \\
+	du &amp;= -2\,dx
+\end{align*}\]
+
+<p>To solve for the derivative of the function, use $\eref{eq:differential of Natural Logarithmic Function}$,</p>
+
+\[\begin{align*}
+	d(y) &amp;= d\br{\ln (5-2x)} \\
+	dy &amp;= \frac{-2\,dx}{5-2x} \\
+	\dydx &amp;= -\frac{2}{5-2x}	\tagans
+\end{align*}\]
+
+<p>As you may have noticed, the answer is the same as the previous example. With this, we can verify that $\log_e u$ is equal to $\ln u$.</p>
+
+
+</details>
+
+<hr />
+<p>$\example{4}$ 
+Differentiate the function $y = \ln\sqrt{2x^2-5x+3}$ with respect to $x$.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+\[\begin{align*}
+	\text{Let:}\quad u &amp;= \sqrt{2x^2-5x+3} \hspace{100cm} \\
+	du &amp;= d\br{\sqrt{2x^2-5x+3}} \\
+	&amp;= d\br{(2x^2-5x+3)^{1/2}} \\
+	&amp;= \frac12(2x^2-5x+3)^{-1/2}\cdot d(2x^2-5x+3) \\
+	&amp;= \frac{1}{2\sqrt{2x^2-5x+3}} \cdot (4x-5) \,dx \\
+	&amp;= \frac{4x-5}{2\sqrt{2x^2-5x+3}} \,dx \\
+\end{align*}\]
+
+<p>To solve for the derivative of the function, use $\eref{eq:differential of Natural Logarithmic Function},$</p>
+
+\[\begin{align*}
+	d(y) &amp;= d\br{\ln\sqrt{2x^2-5x+3}} \\
+	dy &amp;= \frac{\frac{4x-5}{2\sqrt{2x^2-5x+3}} \,dx}{\sqrt{2x^2-5x+3}} \\
+	dy &amp;= \frac{4x-5}{2\sqrt{2x^2-5x+3} \cdot \sqrt{2x^2-5x+3}} \,dx \\
+	\dydx &amp;= \frac{4x-5}{2\br{\sqrt{2x^2-5x+3}}^2} \\
+	&amp;= \frac{4x-5}{2\br{2x^2-5x+3}} 	\tagans
+\end{align*}\]
+
+
+</details>
+
+<hr />
+<p>$\example{5}$ 
+Determine the differential of the function $y = 5e^{3x}$.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>To solve for the differential of the function, use $\eref{eq:differential of Exponential Function e^u}$,</p>
+
+\[\begin{align*}
+	d(y) &amp;= d\br{5e^{3x}} \\
+	dy &amp;= 5e^{3x} \cdot d(3x) \\
+	&amp;= 5e^{3x} \cdot 3\,dx \\
+	&amp;= 15e^{3x} \,dx	\tagans
+\end{align*}\]
+
+
+</details>
+
+<hr />
+<p>$\example{6}$ 
+Find the derivative of the function with respect to $t$: $x = e^{3t}e^{2t^2}$.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>To solve for the derivative of the function, use $\eref{eq:differential of Exponential Function e^u}$,</p>
+
+\[\begin{align*}
+	d(x) &amp;= d\br{e^{3t}e^{2t^2}} \\
+	dx &amp;= d\br{e^{3t+2t^2}} \qquad\tcA{a^m+a^n = a^{m+n}} \\
+	&amp;= e^{3t+2t^2} \cdot d(3t+2t^2) \\
+	&amp;= e^{3t+2t^2} \cdot (3+4t)\,dt \\
+	\frac{dx}{dt} &amp;= (3+4t)e^{3t+2t^2}	\tagans
+\end{align*}\]
+
+
+</details>
+
+<hr />
+<p>$\example{7}$ 
+Determine the differential of the function $w = 125\br{5^{3v}}$.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>To solve for the differential of the function, use $\eref{eq:differential of Exponential Function a^u}$,</p>
+
+\[\begin{align*}
+	d(w) &amp;= d\br{125\br{5^{3v}}} \\
+	dw &amp;= d\br{5^3\cdot 5^{3v}} \\
+	&amp;= d\br{5^{3+3v}} \\
+	&amp;= 5^{3+3v} \ln 5 \cdot d\br{3+3v} \\
+	&amp;= 5^{3+3v} \ln 5 \cdot 3 \,dv \\
+	&amp;= 3\ln 5\cdot 5^{3+3v} \,dv 		\tagans
+\end{align*}\]
+
+
+</details>
+
+<!-- ---
+$\example{}$
+$\ln{y} = 8x+3$ -->
+
+<hr />
+<p>$\example{8}$ 
+Find the derivative of $y$ with respect to $x$ of the function
+$e^{\frac12 y} = x^2-1$.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>In this example, the given equation is expressed as an <a href="../DC-4.4-implicit-differentiation">implicit function</a>. Hence, to determine its derivative, we can differentiate the given equation explicitly.
+ <!-- with respect to $x$. -->
+\(\begin{align*}
+	d\br{e^{\frac12 y}} &amp;= d\br{x^2-1} \\
+	e^{\frac12 y} \cdot d\br{\frac12 y} &amp;= 2x\,dx \\
+	e^{y/2} \cdot \frac12 \,dy &amp;= 2x\,dx \\
+	\dydx &amp;= \frac{4x}{e^{y/2}}		\tagans
+\end{align*}\)</p>
+
+
+</details>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Displaystyle -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+  var TEX = MathJax.InputJax.TeX;
+  var PREFILTER = TEX.prefilterMath;
+  TEX.Augment({
+  prefilterMath: function (math,displaymode,script) {
+  math = "\\displaystyle{"+math+"}";
+  return PREFILTER.call(TEX,math,displaymode,script);
+  }
+  });
+  });
+</script>
+
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- //assets/js/MathJax.js -->
+<!-- <script src="http://lemniscateinstitute.com/assets/js/MathJax.js"> -->
+<!-- <script type="text/javascript" src="../../assets/js/MathJax.js"> -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      availableFonts: ["TeX"],
+      styles: {".MathJax": {color: "#5C5A5A"}} 
+    },
+    tex2jax: {
+      inlineMath: [['$','$'],["\\(","\\)"]]},
+      displayMath: [ ['$$','$$'], ['\[','\]'] ],
+    TeX: {
+      extensions: ["AMSmath.js", "AMSsymbols.js", "color.js", "autoload-all.js"],
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    showProcessingMessages: false,
+    messageStyle: "none",
+    imageFont: null,
+    "AssistiveMML": { disabled: true }
+  });
+</script>
+
+<!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script> -->
+
+
+
+
+
+
+
+
+
+<!-- <div style="display:none">
+  \(
+    \newcommand{\CC}{\mathbf{C}}
+  \)
+</div> -->
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        CC: '{\\bf R}',
+        un: ['\\;\\mathrm{#1}',1],
+        x:  '{\\times}',
+        ohm: '{\\Omega}',
+        st:['{^{\\text{st}}}'],
+        nd:['{^{\\text{nd}}}'],
+        rd:['{^{\\text{rd}}}'],
+        nth:['{^{\\text{th}}}'],
+
+        br: ['\\left(#1\\right)',1],
+        brk: ['\\left[#1\\right]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbbrk: ['\\Biggl[#1\\Biggr]',1],
+        brv: ['\\left|#1\\right|',1],
+        brc: ['\\left\\{#1\\right\\}',1],
+
+        Dy: '{\\Delta y}',
+        Dx: '{\\Delta x}',
+        D: '{\\Delta}',
+        dydx: '{\\frac{dy}{dx}}',
+        ddx: '{\\frac{d}{dx}}',
+        ddu: '{\\frac{d}{du}}',
+        ddy: '{\\frac{d}{dy}}',
+        ddw: '{\\frac{d}{dw}}',
+        ddt: '{\\frac{d}{dt}}',
+        pd: ['\\frac{\\partial#1}{\\partial#2}',2],
+        ufrac: ['\\frac{\\text{#1}}{\\text{#2}}',2],
+        Ncancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\un{#4}}',4],
+        Dcancel: ['\\frac{#1 \\un{#2}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        NDcancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        
+        degg: '{^{\\circ}}',
+        degC: '{^{\\circ}\\mathrm{C}}',
+        degF: '{^{\\circ}\\mathrm{F}}',
+        tagans: '{\\tag{ans.}}',
+        tcA: ['\\color{colorA}{#1}',1],
+        tcB: ['\\color{colorB}{#1}',1],
+        tcAal: ['\\tcA{\\text{#1}}',1],
+        tcBal: ['\\tcB{\\text{#1}}',1],
+        typB: ['\\tcB{\\text{#1}}',1],
+        tcxA: ['\\tcA{\\text{#1}}',1],
+        tcxB: ['\\tcB{\\text{#1}}',1],
+        example: ['\\tcA{\\text{Example #1:}}',1],
+        For: ['\\tcB{\\text{For (#1):}}',1],
+        solution:  '\\tcB{\\textit{Solution:}}',
+        required:  '\\tcB{\\textit{Required:}}',
+        case: ['\\tcB{\\text{Case #1:}}',1],
+        rule: ['\\tcB{\\textbf{Rule #1:}\\text{ #2}}',2],
+        ubrace: ['\\underbrace{#1}_{\\tcAal{#2}}',2],
+        ubraces: ['\\underbrace{#1}_{\\substack{\\tcAal{#2} \\\\ \\tcAal{#3}}}',3],
+        given: '\\tcB{\\textit{Given:}}',
+        thrm: ['\\tcB{\\text{#1}}',1],
+        vv: ['\\overrightarrow{#1}',1],
+        eref: ['\\tcAal{Equation}\\,\\ref{#1}',1],
+        fref: ['\\tcAal{Figure}\\,#1',1],
+        tref: ['\\tcAal{Table}\\,#1',1],
+      }
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="PageNavigation">
+  
+    <a class="prev" href="/services/calculus/DC-8.2-logarithmic-functions/">&laquo; Logarithmic Functions</a>
+  
+  
+    <a class="next" href="/services/calculus/DC-9.1-angles/">Angles &raquo;</a>
+  
+</div> -->
+
+
+
+<!-- <div class="PageNavigation">
+    <a class="prev" href="../DC-8.2-logarithmic-functions">&laquo; </a> <a class="next" href="../DC-9.1-angles"> &raquo;</a>
+</div> -->
+
+
+
+<div class="PageNavigation">
+  <a class="prev" href="../DC-8.2-logarithmic-functions">&laquo; Previous</a> 
+  <a class="next" href="../DC-9.1-angles">Next &raquo;</a>
+</div>
+
+
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h5 class="footer-title">&copy 2022 Lemniscate Institute</h5>
+          <!-- <h5 class="footer-title">Lemniscate Institute</h5> -->
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/services/">Courses</a>
+            </li>
+            
+            <!-- <li class="">
+              &copy 2021 Lemniscate Institute -->
+            </li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>
+
+
+
+
+
+

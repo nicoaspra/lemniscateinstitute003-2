@@ -1,0 +1,135 @@
+<!-- Displaystyle -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+  var TEX = MathJax.InputJax.TeX;
+  var PREFILTER = TEX.prefilterMath;
+  TEX.Augment({
+  prefilterMath: function (math,displaymode,script) {
+  math = "\\displaystyle{"+math+"}";
+  return PREFILTER.call(TEX,math,displaymode,script);
+  }
+  });
+  });
+</script>
+
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- {{site.baseurl}}/assets/js/MathJax.js -->
+<!-- <script src="{{ base.url | prepend: site.url }}/assets/js/MathJax.js"> -->
+<!-- <script type="text/javascript" src="../../assets/js/MathJax.js"> -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      availableFonts: ["TeX"],
+      styles: {".MathJax": {color: "#5C5A5A"}} 
+    },
+    tex2jax: {
+      inlineMath: [['$','$'],["\\(","\\)"]]},
+      displayMath: [ ['$$','$$'], ['\[','\]'] ],
+    TeX: {
+      extensions: ["AMSmath.js", "AMSsymbols.js", "color.js", "autoload-all.js"],
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    showProcessingMessages: false,
+    messageStyle: "none",
+    imageFont: null,
+    "AssistiveMML": { disabled: true }
+  });
+</script>
+
+<!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script> -->
+
+
+
+
+
+
+
+
+
+<!-- <div style="display:none">
+  \(
+    \newcommand{\CC}{\mathbf{C}}
+  \)
+</div> -->
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        CC: '{\\bf R}',
+        un: ['\\;\\mathrm{#1}',1],
+        x:  '{\\times}',
+        ohm: '{\\Omega}',
+        st:['{^{\\text{st}}}'],
+        nd:['{^{\\text{nd}}}'],
+        rd:['{^{\\text{rd}}}'],
+        nth:['{^{\\text{th}}}'],
+
+        br: ['\\left(#1\\right)',1],
+        brk: ['\\left[#1\\right]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbbrk: ['\\Biggl[#1\\Biggr]',1],
+        brv: ['\\left|#1\\right|',1],
+        brc: ['\\left\\{#1\\right\\}',1],
+
+        Dy: '{\\Delta y}',
+        Dx: '{\\Delta x}',
+        D: '{\\Delta}',
+        dydx: '{\\frac{dy}{dx}}',
+        ddx: '{\\frac{d}{dx}}',
+        ddu: '{\\frac{d}{du}}',
+        ddy: '{\\frac{d}{dy}}',
+        ddw: '{\\frac{d}{dw}}',
+        ddt: '{\\frac{d}{dt}}',
+        pd: ['\\frac{\\partial#1}{\\partial#2}',2],
+        ufrac: ['\\frac{\\text{#1}}{\\text{#2}}',2],
+        Ncancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\un{#4}}',4],
+        Dcancel: ['\\frac{#1 \\un{#2}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        NDcancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        
+        degg: '{^{\\circ}}',
+        degC: '{^{\\circ}\\mathrm{C}}',
+        degF: '{^{\\circ}\\mathrm{F}}',
+        tagans: '{\\tag{ans.}}',
+        tcA: ['\\color{colorA}{#1}',1],
+        tcB: ['\\color{colorB}{#1}',1],
+        tcAal: ['\\tcA{\\text{#1}}',1],
+        tcBal: ['\\tcB{\\text{#1}}',1],
+        typB: ['\\tcB{\\text{#1}}',1],
+        tcxA: ['\\tcA{\\text{#1}}',1],
+        tcxB: ['\\tcB{\\text{#1}}',1],
+        example: ['\\tcA{\\text{Example #1:}}',1],
+        For: ['\\tcB{\\text{For (#1):}}',1],
+        solution:  '\\tcB{\\textit{Solution:}}',
+        required:  '\\tcB{\\textit{Required:}}',
+        case: ['\\tcB{\\text{Case #1:}}',1],
+        rule: ['\\tcB{\\textbf{Rule #1:}\\text{ #2}}',2],
+        ubrace: ['\\underbrace{#1}_{\\tcAal{#2}}',2],
+        ubraces: ['\\underbrace{#1}_{\\substack{\\tcAal{#2} \\\\ \\tcAal{#3}}}',3],
+        given: '\\tcB{\\textit{Given:}}',
+        thrm: ['\\tcB{\\text{#1}}',1],
+        vv: ['\\overrightarrow{#1}',1],
+        eref: ['\\tcAal{Equation}\\,\\ref{#1}',1],
+        fref: ['\\tcAal{Figure}\\,#1',1],
+        tref: ['\\tcAal{Table}\\,#1',1],
+      }
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+

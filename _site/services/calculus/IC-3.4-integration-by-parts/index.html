@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Integration by Parts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" href="/images/logo/logo.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="" />
+  <meta name="twitter:card" content="" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:creator" content="" />
+
+   <!-- Add Slick Carousel CSS -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+   <!-- Add Slick Carousel theme CSS (optional) -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+</head>
+<body class='page '>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a>
+      <!-- <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a> -->
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a>
+      <!-- <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a> -->
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+    <div class="phoneContent">
+    <div class="phoneContent-header">
+            <b>Mobile Notice</b>
+    </div>
+        It seems that you are on your mobile phone, which means that the <b>screen's width is narrow</b> for some equations. For the best viewing experience, you can view this website in <b>landscape mode</b>.
+</div>  
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">Integration by Parts</h1>
+          
+            <p style="color:#d02f5d"></pstyle>
+              <a href="/team">
+                Authors | <br> Engr. Nico O. Aspra, M.Eng., RMP, LPT  <br> Engr. Pee Jay N. Gealone
+              </a>
+            </p>
+          
+
+          $$
+  <!-- \definecolor{colorA}{rgb}{0.25, 0.51, 0.43}	
+  \definecolor{colorB}{rgb}{0.89, 0.04, 0.36}	 -->
+$$
+          <!-- <p style="color:#d02f5d"></pstyle>Author | Engr. Nico O. Aspra, M.Eng., RMP, LPT  <br> Engr. Pee Jay N. Gealone</p> -->
+          <!-- <a href="">Engr. Nico O. Aspra, M.Eng., RMP, LPT  <br> Engr. Pee Jay N. Gealone</a> -->
+          <!-- <br> -->
+
+          <!-- <div class="deskContent">Content for desktop</div> -->
+        <div class="content">
+          <p>Integration by parts is a method of integration that can be used to evaluate integrals of a <strong>product of two functions</strong> that cannot be solved using the basic formulas of integration, which we have discussed from our previous lessons.</p>
+
+<p>The formula for Integration by Parts is derived from the differential of the product of two functions. Consider $\eref{eq:diff of products of two functions, by parts}$, where $u$ and $dv$ are both functions of $x$.</p>
+
+\[\begin{align}
+	d(uv) &amp;= u\,dv+v\,du \label{eq:diff of products of two functions, by parts}
+\end{align}\]
+
+<p>Then integrate the equation,</p>
+
+\[\begin{align}
+	\int d(uv) &amp;= \int\br{u\,dv+v\,du} \nonumber \\
+	uv &amp;= \int u\,dv+ \int v\,du \nonumber
+\end{align}\]
+
+<p>Hence, rearranging the function gives us the <strong>formula for the Integration by Parts</strong>, which is,</p>
+
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(64, 130, 110, 0.9);
+border-radius:7px;
+padding:10px;
+margin:5px;">
+    $$\begin{align}
+        \int u\,dv = uv - \int v\,du
+        \label{eq:integration by parts}
+    \end{align}$$
+</p>
+
+<p>However, we need to remember that we would only resort to integration by parts if all of the methods from the previous lessons can no longer be used to evaluate the integral.</p>
+
+<hr />
+<p>$\example{1}$
+Evaluate the integral $\int x^2\ln x \,dx$</p>
+
+<p>$\solution$ <br />
+In using the formula for integration by parts, we must first choose the $u$ and $dv$ from the integrand. The $u$ from the two functions when differentiated must be simpler than $u$ itself, and the $dv$ must be a function that can be easily integrated. In this example, the logarithmic function “$\ln x$’’ is simpler to differentiate than to integrate. Thus, <br />
+\(\begin{align*}
+	\text{Let:}\qquad u &amp;= \ln x &amp;  dv &amp;= x^2\,dx &amp;&amp;&amp;&amp;&amp;&amp;&amp;\\
+\end{align*}\)</p>
+
+<p>But in order to use the formula, we still need $du$ and $v$. To solve for $du$, differentiate $u$; and for $v$, integrate $dv$, <br />
+\(\begin{align*}
+	\phantom{Let:-} d(u) &amp;= d(\ln x) &amp;  \int dv &amp;= \int x^2\,dx \\
+	du &amp;= \frac{1}{x}\,dx &amp; v &amp;= \frac{x^3}{3}
+\end{align*}\)</p>
+
+<p>Then substituting to $\eref{eq:integration by parts}$ gives us,</p>
+
+\[\begin{align*}
+	\int x^2\ln x \,dx &amp;= uv-\int v\,du \\
+        &amp;= \ln x \cdot \frac{x^3}{3} - \int \frac{x^3}{3} \cdot \frac{1}{x}\,dx \\
+        &amp;= \frac{x^3}{3} \ln x - \frac13\int x^2\,dx \\
+        &amp;= \frac{x^3}{3} \ln x - \frac13 \cdot \frac{x^3}{3}+C \\
+        &amp;= \frac{x^3}{3} \ln x - \frac{x^3}{9}+C		\tagans
+\end{align*}\]
+
+<hr />
+
+<p><strong>LIATE</strong> is an acronym that can be used to help in choosing the $u$ and $dv$ from the integral to be evaluated. Whichever comes first out of the list from the two functions of the integral must be the $u$.</p>
+
+\[\begin{array}{cl}
+    \textbf{L} &amp; \text{Logarithmic Functions} \\
+    \textbf{I} &amp; \text{Inverse Trigonometric Functions} \\
+    \textbf{A} &amp; \text{Algebraic Functions} \\
+    \textbf{T} &amp; \text{Trigonometric Functions} \\
+    \textbf{E} &amp; \text{Exponential Functions}
+\end{array}\]
+
+<p>From the previous example, the integral is composed of logarithmic and algebraic functions, since logarithmic function comes first before the algebraic function based from the acronym LIATE, hence, “$\ln x$’’ must be the $u$ and the algebraic function “$x^2$’’ be the $dv$.</p>
+
+<hr />
+<p>$\example{2}$
+Evaluate the integral $\int x e^x\,dx$</p>
+
+<p>$\solution$ <br />
+Since $x$ is an algebraic function and $e^x$ is an exponential function, <br />
+\(\begin{align*}
+	\text{Let:}\qquad u &amp;= x &amp;  dv &amp;= e^x\,dx &amp;&amp;&amp;&amp;&amp;&amp;&amp;\\
+	du &amp;= dx &amp; v &amp;= e^x
+\end{align*}\)</p>
+
+<p>Thus,</p>
+
+\[\begin{align*}
+	\int x e^x\,dx &amp;= xe^x-\int e^x\,dx \\
+	&amp;= xe^x-e^x+C	\tagans
+\end{align*}\]
+
+<hr />
+<p>$\example{3}$
+Evaluate the integral $\int \ln(\sin x)\cos x\,dx$</p>
+
+<p>$\solution$ <br />
+Since $\ln(\sin x)$ is a logarithmic function and $\cos x$ is a trigonometric function, <br />
+\(\begin{align*}
+	\text{Let:}\qquad u &amp;= \ln(\sin x) &amp;  dv &amp;= \cos x\,dx &amp;&amp;&amp;&amp;&amp;&amp;&amp;\\
+	du &amp;= \frac{\cos x}{\sin x}\,dx &amp; v &amp;= \sin x
+\end{align*}\)</p>
+
+<p>Thus,</p>
+
+\[\begin{align*}
+	\int \ln(\sin x)\cos x\,dx &amp;= \ln(\sin x)\cdot\sin x - \int \cancel{\sin x} \cdot \frac{\cos x}{\cancel{\sin x}}\,dx \\
+	&amp;= \ln(\sin x)\cdot\sin x - \int \cos x\,dx \\
+	&amp;= \ln(\sin x)\cdot\sin x - \sin x + C		\tagans
+\end{align*}\]
+
+<hr />
+<p>$\example{4}$
+Evaluate the integral $\int x^3\sqrt{x^2+2}\,dx$</p>
+
+<p>$\solution$ <br />
+In this case, both functions are algebraic hence the acronym cannot be used to determine the $u$ and $dv$ of the integral. But by inspection, $x\sqrt{x^2+2}\,dx$ can be integrated by using the power formula so let this be the $dv$ and $x^2$, which will be the remaining factor of the integrand be the $u$.</p>
+
+\[\int x^3\sqrt{x^2+2}\,dx = \int x^2\cdot x\sqrt{x^2+2}\,dx\]
+
+\[\begin{align*}
+	\text{Let:}\qquad u &amp;= x^2 &amp;  dv &amp;= x\sqrt{x^2+2}\,dx &amp;&amp;&amp;&amp;&amp;&amp;&amp;\\
+	du &amp;= 2x\,dx &amp; v &amp;= \int x\sqrt{x^2+2}\,dx \\
+	&amp;&amp;&amp;= \int x\br{x^2+2}^{1/2} \,dx \\
+	&amp;&amp;&amp;= \frac12 \int x\br{x^2+2}^{1/2} (2x\,dx) \\
+	&amp;&amp;&amp;= \frac{1}{2}\cdot\frac{3}{2}(x^2+2)^{3/2} \\
+	&amp;&amp;v&amp;= \frac{1}{3}(x^2+2)^{3/2} \\
+\end{align*}\]
+
+<p>Thus,</p>
+
+\[\begin{align*}
+	\int x^3\sqrt{x^2+2}\,dx &amp;= x^2 \cdot \frac{1}{3}(x^2+2)^{3/2} - \int \frac{1}{3}(x^2+2)^{3/2} \cdot 2x\,dx \\
+	&amp;= \frac13 x^2(x^2+2)^{3/2}-\frac13\int(x^2+2)^{3/2}(2x\,dx) \\
+	&amp;= \frac13 x^2(x^2+2)^{3/2}-\frac13\cdot\frac{(x^2+2)^{5/2}}{5/2}+C \\
+	&amp;= \frac13 x^2(x^2+2)^{3/2}-\frac{2}{15}(x^2+2)^{5/2}+C		\tagans
+\end{align*}\]
+
+<hr />
+<p>$\example{5}$
+Evaluate the integral $\int x^2 \sin x \,dx$</p>
+
+<p>$\solution$ <br />
+Since $x^2$ is an algebraic function and $\sin x$ is a trigonometric function, <br />
+\(\begin{align*}
+	\text{Let:}\qquad u &amp;= x^2 &amp;  dv &amp;= \sin\,dx &amp;&amp;&amp;&amp;&amp;&amp;&amp;\\
+	du &amp;= 2x\,dx &amp; v &amp;= -\cos{x}
+\end{align*}\)</p>
+
+\[\begin{align*}
+	\int x^2 \sin x\,dx &amp;= -x^2\cos{x}-\int(-\cos{x}\cdot 2x\,dx) \\
+	&amp;= -x^2\cos{x} + 2\int x\cos{x} \,dx
+\end{align*}\]
+
+<p>We still cannot integrate $\int x\cos{x}\,dx$ using the basic integration formulas, thus we can again use integration by parts for the second time, <br />
+\(\begin{align*}
+	\text{Let:}\qquad u &amp;= x &amp;  dv &amp;= \cos\,dx &amp;&amp;&amp;&amp;&amp;&amp;&amp;\\
+	du &amp;= dx &amp; v &amp;= \sin{x}
+\end{align*}\)</p>
+
+\[\begin{align*}
+	\int x^2 \sin x\,dx &amp;= -x^2\cos{x} + 2\brk{ x\sin{x} - \int \sin{x}\,dx } \\
+	&amp;= -x^2\cos{x} + 2\brk{ x\sin{x} - (-\cos{x}) } + C \\
+	&amp;= -x^2\cos{x} + 2x\sin{x} +2\cos{x}+ C		\tagans
+\end{align*}\]
+
+<hr />
+<p>$\example{6}$
+Evaluate the integral $\int x^3 (\ln x)^2 \,dx$</p>
+
+<p>$\solution$ <br />
+Since $(\ln x)^2$ is a logarithmic function and $x^3$ is an algebraic function, <br />
+\(\begin{align*}
+	\text{Let:}\qquad u &amp;= (\ln x)^2 &amp;  dv &amp;= x^3\,dx &amp;&amp;&amp;&amp;&amp;&amp;&amp;\\
+	du &amp;= 2\ln{x}\cdot\frac{dx}{x} &amp; v &amp;= \frac{x^4}{4} \\
+	&amp;= \frac{2\ln{x}}{x}\,dx
+\end{align*}\)</p>
+
+\[\begin{align*}
+	\int x^3 (\ln x)^2 \,dx &amp;= \frac{x^4}{4}(\ln x)^2 - \int \frac{x^4}{4}\cdot\frac{2\ln{x}}{x}\,dx \\
+	&amp;= \frac{x^4}{4}(\ln x)^2 - \frac12\int x^3\ln{x}\,dx \\
+\end{align*}\]
+
+<p>In this case, $\int x^3\ln{x}\,dx$ still needs integration by parts. Hence, <br />
+\(\begin{align*}
+	\text{Let:}\qquad u &amp;= \ln x &amp;  dv &amp;= x^3\,dx &amp;&amp;&amp;&amp;&amp;&amp;&amp;\\
+	du &amp;= \frac{dx}{x} &amp; v &amp;= \frac{x^4}{4}
+\end{align*}\)</p>
+
+\[\begin{align*}
+	\int x^3 (\ln x)^2 \,dx &amp;= \frac{x^4}{4}(\ln x)^2 - \frac12\brk{ \frac{x^4}{4}\ln{x} - \int \frac{x^4}{4}\cdot\frac{dx}{x} } \\
+	&amp;= \frac{x^4}{4}(\ln x)^2 - \frac12\brk{ \frac{x^4}{4}\ln{x} - \frac14\int x^3\,dx } \\
+	&amp;= \frac{x^4}{4}(\ln x)^2 - \frac12\brk{ \frac{x^4}{4}\ln{x} - \frac14\cdot\frac{x^4}{4} } + C \\
+	&amp;= \frac{x^4}{4}(\ln x)^2 - \frac{x^4}{8}\ln{x} + \frac{x^4}{32} + C		\tagans
+\end{align*}\]
+
+<hr />
+<p>$\example{7}$
+Evaluate the integral $\int e^x\sin x\,dx$</p>
+
+<p>$\solution$ <br />
+Since $\sin{x}$ is a trigonometric function and $e^x$ is an exponential function, <br />
+\(\begin{align*}
+	\text{Let:}\qquad u &amp;= \sin{x} &amp;  dv &amp;= e^x\,dx &amp;&amp;&amp;&amp;&amp;&amp;&amp;\\
+	du &amp;= \cos{x}\,dx &amp; v &amp;= e^x
+\end{align*}\)</p>
+
+\[\int e^x\sin x\,dx = e^x\sin{x}-\int e^x\cos{x}\,dx\]
+
+<p>$\int e^x\cos{x}\,dx$ still needs integration by parts. Hence, <br />
+\(\begin{align*}
+	\text{Let:}\qquad u &amp;= \cos{x} &amp;  dv &amp;= e^x\,dx &amp;&amp;&amp;&amp;&amp;&amp;&amp;\\
+	du &amp;= -\sin{x}\,dx &amp; v &amp;= e^x
+\end{align*}\)</p>
+
+\[\begin{align*}
+	\int e^x\sin x\,dx &amp;= e^x\sin{x}-\brk{ e^x\cos{x}-\int e^x(-\sin{x}\,dx) } \\
+	&amp;= e^x\sin{x}-e^x\cos{x}-\int e^x\sin{x}\,dx 
+\end{align*}\]
+
+<p>In this case, the original integral appears again. If this happens, we no longer need to perform another integration by parts, rather we can transpose the integral that have appeared to the other side, which can then be combined to the original integral. Hence, simplifying the function would be a much more straightforward solution.</p>
+
+\[\begin{align*}
+\int e^x\sin x\,dx+\int e^x\sin x\,dx &amp;= e^x\sin{x}-e^x\cos{x}+C \\
+	2\int e^x\sin x\,dx &amp;= e^x\sin{x}-e^x\cos{x}+C \\
+	\int e^x\sin x\,dx &amp;= \frac12\br{e^x\sin{x}-e^x\cos{x}}+C		\tagans
+\end{align*}\]
+
+<hr />
+<p>$\example{8}$
+Evaluate the integral $\int 3^x x\,dx$</p>
+
+<p>$\solution$ <br />
+Since $x$ is a algebraic function and $3^x$ is an exponential function, <br />
+\(\begin{align*}
+	\text{Let:}\qquad u &amp;= x &amp;  dv &amp;= 3^x\,dx &amp;&amp;&amp;&amp;&amp;&amp;&amp;\\
+	du &amp;= dx &amp; v &amp;= \frac{3^x}{\ln{3}}
+\end{align*}\)</p>
+
+\[\begin{align*}
+	\int 3^x x\,dx &amp;= x\cdot\frac{3^x}{\ln{3}} - \int \frac{3^x}{\ln{3}}\,dx \\
+	&amp;= \frac{3^x x}{\ln 3}-\frac{1}{\ln3}\int 3^x\,dx \\
+	&amp;= \frac{3^x x}{\ln 3}-\frac{1}{\ln3}\cdot\frac{3^x}{\ln{3}}+C \\
+	&amp;= \frac{3^x x}{\ln 3}-\frac{3^x}{\ln^2{3}}+C		\tagans
+\end{align*}\]
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Displaystyle -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+  var TEX = MathJax.InputJax.TeX;
+  var PREFILTER = TEX.prefilterMath;
+  TEX.Augment({
+  prefilterMath: function (math,displaymode,script) {
+  math = "\\displaystyle{"+math+"}";
+  return PREFILTER.call(TEX,math,displaymode,script);
+  }
+  });
+  });
+</script>
+
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- //assets/js/MathJax.js -->
+<!-- <script src="http://lemniscateinstitute.com/assets/js/MathJax.js"> -->
+<!-- <script type="text/javascript" src="../../assets/js/MathJax.js"> -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      availableFonts: ["TeX"],
+      styles: {".MathJax": {color: "#5C5A5A"}} 
+    },
+    tex2jax: {
+      inlineMath: [['$','$'],["\\(","\\)"]]},
+      displayMath: [ ['$$','$$'], ['\[','\]'] ],
+    TeX: {
+      extensions: ["AMSmath.js", "AMSsymbols.js", "color.js", "autoload-all.js"],
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    showProcessingMessages: false,
+    messageStyle: "none",
+    imageFont: null,
+    "AssistiveMML": { disabled: true }
+  });
+</script>
+
+<!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script> -->
+
+
+
+
+
+
+
+
+
+<!-- <div style="display:none">
+  \(
+    \newcommand{\CC}{\mathbf{C}}
+  \)
+</div> -->
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        CC: '{\\bf R}',
+        un: ['\\;\\mathrm{#1}',1],
+        x:  '{\\times}',
+        ohm: '{\\Omega}',
+        st:['{^{\\text{st}}}'],
+        nd:['{^{\\text{nd}}}'],
+        rd:['{^{\\text{rd}}}'],
+        nth:['{^{\\text{th}}}'],
+
+        br: ['\\left(#1\\right)',1],
+        brk: ['\\left[#1\\right]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbbrk: ['\\Biggl[#1\\Biggr]',1],
+        brv: ['\\left|#1\\right|',1],
+        brc: ['\\left\\{#1\\right\\}',1],
+
+        Dy: '{\\Delta y}',
+        Dx: '{\\Delta x}',
+        D: '{\\Delta}',
+        dydx: '{\\frac{dy}{dx}}',
+        ddx: '{\\frac{d}{dx}}',
+        ddu: '{\\frac{d}{du}}',
+        ddy: '{\\frac{d}{dy}}',
+        ddw: '{\\frac{d}{dw}}',
+        ddt: '{\\frac{d}{dt}}',
+        pd: ['\\frac{\\partial#1}{\\partial#2}',2],
+        ufrac: ['\\frac{\\text{#1}}{\\text{#2}}',2],
+        Ncancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\un{#4}}',4],
+        Dcancel: ['\\frac{#1 \\un{#2}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        NDcancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        
+        degg: '{^{\\circ}}',
+        degC: '{^{\\circ}\\mathrm{C}}',
+        degF: '{^{\\circ}\\mathrm{F}}',
+        tagans: '{\\tag{ans.}}',
+        tcA: ['\\color{colorA}{#1}',1],
+        tcB: ['\\color{colorB}{#1}',1],
+        tcAal: ['\\tcA{\\text{#1}}',1],
+        tcBal: ['\\tcB{\\text{#1}}',1],
+        typB: ['\\tcB{\\text{#1}}',1],
+        tcxA: ['\\tcA{\\text{#1}}',1],
+        tcxB: ['\\tcB{\\text{#1}}',1],
+        example: ['\\tcA{\\text{Example #1:}}',1],
+        For: ['\\tcB{\\text{For (#1):}}',1],
+        solution:  '\\tcB{\\textit{Solution:}}',
+        required:  '\\tcB{\\textit{Required:}}',
+        case: ['\\tcB{\\text{Case #1:}}',1],
+        rule: ['\\tcB{\\textbf{Rule #1:}\\text{ #2}}',2],
+        ubrace: ['\\underbrace{#1}_{\\tcAal{#2}}',2],
+        ubraces: ['\\underbrace{#1}_{\\substack{\\tcAal{#2} \\\\ \\tcAal{#3}}}',3],
+        given: '\\tcB{\\textit{Given:}}',
+        thrm: ['\\tcB{\\text{#1}}',1],
+        vv: ['\\overrightarrow{#1}',1],
+        eref: ['\\tcAal{Equation}\\,\\ref{#1}',1],
+        fref: ['\\tcAal{Figure}\\,#1',1],
+        tref: ['\\tcAal{Table}\\,#1',1],
+      }
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="PageNavigation">
+  
+    <a class="prev" href="/services/calculus/IC-3.3-trigonometric-functions/">&laquo; Trigonometric Functions</a>
+  
+  
+    <a class="next" href="/services/calculus/IC-3.5-tabular-integration-by-parts/">Tabular Integration by Parts &raquo;</a>
+  
+</div> -->
+
+
+
+<!-- <div class="PageNavigation">
+    <a class="prev" href="../IC-3.3-trigonometric-functions">&laquo; </a> <a class="next" href="../IC-3.5-tabular-integration-by-parts"> &raquo;</a>
+</div> -->
+
+
+
+<div class="PageNavigation">
+  <a class="prev" href="../IC-3.3-trigonometric-functions">&laquo; Previous</a> 
+  <a class="next" href="../IC-3.5-tabular-integration-by-parts">Next &raquo;</a>
+</div>
+
+
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h5 class="footer-title">&copy 2022 Lemniscate Institute</h5>
+          <!-- <h5 class="footer-title">Lemniscate Institute</h5> -->
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/services/">Courses</a>
+            </li>
+            
+            <!-- <li class="">
+              &copy 2021 Lemniscate Institute -->
+            </li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>
+
+
+
+
+
+

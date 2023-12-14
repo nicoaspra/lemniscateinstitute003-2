@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Higher Order Derivatives</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" href="/images/logo/logo.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="" />
+  <meta name="twitter:card" content="" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:creator" content="" />
+
+   <!-- Add Slick Carousel CSS -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+   <!-- Add Slick Carousel theme CSS (optional) -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+</head>
+<body class='page '>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a>
+      <!-- <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a> -->
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a>
+      <!-- <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a> -->
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+    <div class="phoneContent">
+    <div class="phoneContent-header">
+            <b>Mobile Notice</b>
+    </div>
+        It seems that you are on your mobile phone, which means that the <b>screen's width is narrow</b> for some equations. For the best viewing experience, you can view this website in <b>landscape mode</b>.
+</div>  
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">Higher Order Derivatives</h1>
+          
+            <p style="color:#d02f5d"></pstyle>
+              <a href="/team">
+                Author | Engr. Nico O. Aspra, M.Eng., RMP, LPT
+              </a>
+            </p>
+          
+
+          $$
+  <!-- \definecolor{colorA}{rgb}{0.25, 0.51, 0.43}	
+  \definecolor{colorB}{rgb}{0.89, 0.04, 0.36}	 -->
+$$
+          <!-- <p style="color:#d02f5d"></pstyle>Author | Engr. Nico O. Aspra, M.Eng., RMP, LPT</p> -->
+          <!-- <a href="">Engr. Nico O. Aspra, M.Eng., RMP, LPT</a> -->
+          <!-- <br> -->
+
+          <!-- <div class="deskContent">Content for desktop</div> -->
+        <div class="content">
+          <p>Differentiation of previously differentiated functions is still possible. The process of successively differentiating a function is referred to as <strong>Successive Differentiation</strong>. For instance, the second derivative of a function is achieved by differentiating the first derivative, and differentiating it again yields the third derivative, provided that it is still differentiable. Thus, through Successive Differentiation, <strong>Higher-Order Derivatives</strong> are obtained.</p>
+
+<p>Higher-Order Derivatives can be interpreted differently in various applications; for instance, in Physics, the second derivative of an object’s displacement with respect to time is referred to as acceleration. In Polynomial Curves, on the other hand, the second derivative of a function is utilized to determine the polynomial’s points of inflection. 
+However, before applying this concept to various fields, let us first familiarize ourselves with its notations and solve some fundamental problems.</p>
+
+<h2 id="notation-of-higher-order-derivatives">Notation of Higher Order Derivatives</h2>
+
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(118, 165, 151, 0.9);
+border-radius:0px;
+padding:10px;
+margin:5px;">
+    
+    $\tcBal{Leibniz's Notation}$ 
+    $$
+    \begin{align}
+        \frac{d^2y}{dx^2} &amp;=\frac{d}{dx}\br{\dydx}  &amp; \text{second derivative}      
+            \nonumber\\
+		\frac{d^3y}{dx^3} &amp;=\frac{d}{dx}\br{\frac{d^{2}y}{dx^2}} &amp; \text{third derivative}		
+            \nonumber\\
+		 &amp;\cdots  
+            \nonumber\\
+		\frac{d^ny}{dx^n} &amp;=\frac{d}{dx}\br{ \frac{d^{n-1}y}{dx^{n-1}} } &amp; \phantom{asdssssssss}\text{$n^{\text{th}}$ derivative} 
+            \nonumber\\
+    \end{align}
+    $$
+    $\tcBal{Lagrange's Notation}$ 
+    $$
+    \begin{align}
+	 	y'' &amp;= f''(x) = \frac{d}{dx}\br{\dydx}  &amp; \text{second derivative} 
+            \nonumber\\
+		y''' &amp;= f'''(x) = \frac{d}{dx}\br{\frac{d^{2}y}{dx^2}} &amp; \text{third derivative}		
+            \nonumber\\
+		&amp;\cdots  
+            \nonumber\\
+		y^n &amp;= f^n(x) = \frac{d}{dx}\br{ \frac{d^{n-1}y}{dx^{n-1}} } &amp; \text{$n^{\text{th}}$ derivative} 
+            \nonumber
+    \end{align}
+    $$
+    
+</p>
+
+<hr />
+<p>$\example{1}$
+Find the second derivative of the function $y = x^3+3x+2$.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>Differentiate the function,</p>
+
+\[\begin{align*}
+	\ddx\br{y} &amp;= \ddx\br{x^3+3x+2} \\
+	\dydx &amp;= 3x^2+3
+\end{align*}\]
+
+<p>Then differentiate again,</p>
+
+\[\begin{align*}
+	\ddx\br{\dydx} &amp;= \ddx\br{3x^2+3} \\
+	\frac{d^2y}{dx^2} &amp;= 6x		\tagans
+\end{align*}\]
+
+
+</details>
+
+<hr />
+<p>$\example{2}$
+Find $\frac{d^4y}{dx^4}$ of the function $y = x^5-3x^4+7x^2+5$.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>Differentiate the function four (4) times,
+\(\begin{align*}
+	\ddx\br{y} &amp;= \ddx\br{x^5-3x^4+7x^2+5} \\
+	\dydx &amp;= 5x^4-12x^3+14x \\
+	\ddx\br{\dydx} &amp;= \ddx\br{5x^4-12x^3+14x} \\
+	\frac{d^2y}{dx^2} &amp;= 20x^3-36x^2+14 \\
+	\ddx\br{\frac{d^2y}{dx^2}} &amp;= \ddx\br{20x^3-36x^2+14} \\
+	\frac{d^3y}{dx^3} &amp;= 60x^2-72x \\
+	\ddx\br{\frac{d^3y}{dx^3}} &amp;= \ddx\br{60x^2-72x} \\
+	\frac{d^4y}{dx^4} &amp;= 120x-72		\tagans
+\end{align*}\)</p>
+
+
+</details>
+
+<hr />
+<p>$\example{3}$
+Find $f’’‘(x)$ of the function $f(x)=\frac{5}{a\sqrt{x}}-\frac{1}{x^3}$, where $a$ is a constant.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>Express the radical as a power with a rational exponent,</p>
+
+\[\begin{align*}
+	f(x) &amp;= \frac{5}{a\sqrt{x}}-\frac{1}{x^3} \\
+	&amp;= \frac{5}{a}x^{-\frac{1}{2}} - x^{-3} 
+\end{align*}\]
+
+<p>Differentiate the function three (3) times,</p>
+
+\[\begin{align*}
+	f'(x) &amp;= \ddx\br{\frac{5}{a}x^{-\frac{1}{2}} - x^{-3}} \\
+	&amp;= \br{-\frac{1}{2}} \frac{5}{a} x^{-\frac{1}{2}-1}-(-3)x^{-3-1} \\
+	&amp;= -\frac{5}{2a}x^{-\frac{3}{2}}+3x^{-4} \\
+	f''(x) &amp;= \ddx\br{-\frac{5}{2a}x^{-\frac{3}{2}}+3x^{-4}} \\
+	&amp;= \frac{15}{4a}x^{-\frac{5}{2}}-12x^{-5} \\
+	f'''(x) &amp;= \ddx\br{\frac{15}{4a}x^{-\frac{5}{2}}-12x^{-5}} \\
+	&amp;= -\frac{75}{8a}x^{-\frac{7}{2}} + 60x^{-6} \\
+	&amp;= \frac{60}{x^6} - \frac{75}{8ax^{\frac{7}{2}}}	\tagans
+\end{align*}\]
+
+
+</details>
+
+<hr />
+<p>$\example{4}$
+Determine on what $n^{th}$ derivative of $y=5x^3-x^2+7$ will have a value of zero. ($y^n = 0$)</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>Differentiate the function until its value becomes zero.</p>
+
+\[\begin{align*}
+	\ddx\br{y} &amp;= \ddx\br{5x^3-x^2+7} \\
+	y' &amp;= 15x^2-2x \\
+	\ddx\br{y'} &amp;= \ddx\br{15x^2-2x} \\
+	y'' &amp;= 10x-2 \\
+	\ddx\br{y''} &amp;= \ddx\br{10x-2} \\
+	y''' &amp;= 10 \\
+	\ddx\br{y'''} &amp;= \ddx\br{10} \\
+	y^{(4)} &amp;= 0
+\end{align*}\]
+
+<p>Therefore, the value will become zero at the 4$\nth$ derivative.</p>
+
+
+</details>
+
+<hr />
+
+<h2 id="acceleration">Acceleration</h2>
+<p>Acceleration is an important concept when it comes to motion. To better understand how acceleration works, let’s have an example.</p>
+
+<p>If you are travelling at a rate of 50 m/s, then after a second your rate increases to 60 m/s, and 70 m/s after the next second. This indicates that you are increasing your pace as time passes or that you are “accelerating.’’ According to our example, you are accelerating at a rate of 10 m/s per second, which is expressed as 10 m/s/s or 10 $\mathrm{m/s^2}$. With this, we can now define acceleration mathematically. It is the change in velocity with respect to time. Thus, acceleration can be denoted as,</p>
+
+<!-- Say you are traveling at a rate of 50 m/s, then after a second, your rate becomes 60 m/s, and 70 m/s after the next second. The increase in velocity means you are speeding up as the time passes by, or we could say, "you are accelerating.'' From our example, you are accelerating 10 m/s for every second or 10 m/s/s or 10 $\mathrm{m/s^2}$. With this, we can now define what acceleration is, its the rate of change in velocity with respect to time, -->
+
+\[a=\frac{dv}{dt}\]
+
+<p>However, since velocity is the rate of change of displacement with respect to time ${ v=\frac{ds}{dt} }$, we can also represent acceleration as the second derivative of displacement with respect to time,</p>
+
+\[a=\frac{d}{dt}v=\frac{d}{dt} \br{ \frac{ds}{dt} } =\frac{d^2s}{dt^2}\]
+
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(64, 130, 110, 0.9);
+border-radius:7px;
+padding:10px;
+margin:5px;">
+    $$\begin{align}
+        a = \frac{dv}{dt} = \frac{d^2s}{dt^2}
+    \end{align}$$
+</p>
+
+<hr />
+<p>$\example{5}$
+An astronaut on the moon throws a rock vertically upward with a velocity of 5 m/s and catches it at the same position where it was thrown. 
+<!-- How long did it take to be caught? ($g_{moon} = 1.62 \un{m/s^2}$) -->
+The displacement of the rock is defined by the equation $s = 5t-0.18t^2 \un{m}$.
+Determine the rock’s
+(a) velocity after 7 s, and
+(b) its acceleration in $\mathrm{m/s^2}$.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>$\For{a}$ <br />
+Differentiate the function with respect to time $t$,</p>
+
+\[\begin{align*}
+	\frac{d}{dt}\br{s} &amp;= \frac{d}{dt}\br{5t-0.18t^2} \\
+	\frac{ds}{dt} &amp;= 5-0.36t
+\end{align*}\]
+
+<p>At $t=7\un{s}$,</p>
+
+\[\begin{align*}
+	v &amp;= 5-0.36(7) \\
+	&amp;= 2.48 \un{m/s}	\tagans
+\end{align*}\]
+
+<p>$\For{b}$<br />
+Then differentiating again gives us the acceleration of the rock.
+\(\begin{align*}
+	\frac{d}{dt}\br{\frac{ds}{dt}} &amp;= \frac{d}{dt}\br{5-0.36t} \\
+	\frac{d^2s}{dt^2} &amp;= -0.36 \\
+	a &amp;= -0.36 \un{m/s^2}		\tagans
+\end{align*}\)</p>
+
+
+</details>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Displaystyle -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+  var TEX = MathJax.InputJax.TeX;
+  var PREFILTER = TEX.prefilterMath;
+  TEX.Augment({
+  prefilterMath: function (math,displaymode,script) {
+  math = "\\displaystyle{"+math+"}";
+  return PREFILTER.call(TEX,math,displaymode,script);
+  }
+  });
+  });
+</script>
+
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- //assets/js/MathJax.js -->
+<!-- <script src="http://lemniscateinstitute.com/assets/js/MathJax.js"> -->
+<!-- <script type="text/javascript" src="../../assets/js/MathJax.js"> -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      availableFonts: ["TeX"],
+      styles: {".MathJax": {color: "#5C5A5A"}} 
+    },
+    tex2jax: {
+      inlineMath: [['$','$'],["\\(","\\)"]]},
+      displayMath: [ ['$$','$$'], ['\[','\]'] ],
+    TeX: {
+      extensions: ["AMSmath.js", "AMSsymbols.js", "color.js", "autoload-all.js"],
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    showProcessingMessages: false,
+    messageStyle: "none",
+    imageFont: null,
+    "AssistiveMML": { disabled: true }
+  });
+</script>
+
+<!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script> -->
+
+
+
+
+
+
+
+
+
+<!-- <div style="display:none">
+  \(
+    \newcommand{\CC}{\mathbf{C}}
+  \)
+</div> -->
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        CC: '{\\bf R}',
+        un: ['\\;\\mathrm{#1}',1],
+        x:  '{\\times}',
+        ohm: '{\\Omega}',
+        st:['{^{\\text{st}}}'],
+        nd:['{^{\\text{nd}}}'],
+        rd:['{^{\\text{rd}}}'],
+        nth:['{^{\\text{th}}}'],
+
+        br: ['\\left(#1\\right)',1],
+        brk: ['\\left[#1\\right]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbbrk: ['\\Biggl[#1\\Biggr]',1],
+        brv: ['\\left|#1\\right|',1],
+        brc: ['\\left\\{#1\\right\\}',1],
+
+        Dy: '{\\Delta y}',
+        Dx: '{\\Delta x}',
+        D: '{\\Delta}',
+        dydx: '{\\frac{dy}{dx}}',
+        ddx: '{\\frac{d}{dx}}',
+        ddu: '{\\frac{d}{du}}',
+        ddy: '{\\frac{d}{dy}}',
+        ddw: '{\\frac{d}{dw}}',
+        ddt: '{\\frac{d}{dt}}',
+        pd: ['\\frac{\\partial#1}{\\partial#2}',2],
+        ufrac: ['\\frac{\\text{#1}}{\\text{#2}}',2],
+        Ncancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\un{#4}}',4],
+        Dcancel: ['\\frac{#1 \\un{#2}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        NDcancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        
+        degg: '{^{\\circ}}',
+        degC: '{^{\\circ}\\mathrm{C}}',
+        degF: '{^{\\circ}\\mathrm{F}}',
+        tagans: '{\\tag{ans.}}',
+        tcA: ['\\color{colorA}{#1}',1],
+        tcB: ['\\color{colorB}{#1}',1],
+        tcAal: ['\\tcA{\\text{#1}}',1],
+        tcBal: ['\\tcB{\\text{#1}}',1],
+        typB: ['\\tcB{\\text{#1}}',1],
+        tcxA: ['\\tcA{\\text{#1}}',1],
+        tcxB: ['\\tcB{\\text{#1}}',1],
+        example: ['\\tcA{\\text{Example #1:}}',1],
+        For: ['\\tcB{\\text{For (#1):}}',1],
+        solution:  '\\tcB{\\textit{Solution:}}',
+        required:  '\\tcB{\\textit{Required:}}',
+        case: ['\\tcB{\\text{Case #1:}}',1],
+        rule: ['\\tcB{\\textbf{Rule #1:}\\text{ #2}}',2],
+        ubrace: ['\\underbrace{#1}_{\\tcAal{#2}}',2],
+        ubraces: ['\\underbrace{#1}_{\\substack{\\tcAal{#2} \\\\ \\tcAal{#3}}}',3],
+        given: '\\tcB{\\textit{Given:}}',
+        thrm: ['\\tcB{\\text{#1}}',1],
+        vv: ['\\overrightarrow{#1}',1],
+        eref: ['\\tcAal{Equation}\\,\\ref{#1}',1],
+        fref: ['\\tcAal{Figure}\\,#1',1],
+        tref: ['\\tcAal{Table}\\,#1',1],
+      }
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="PageNavigation">
+  
+    <a class="prev" href="/services/calculus/DC-4.1-differentiation-and-its-rules-for-algebraic-functions/">&laquo; Differentiation and its Rules for Algebraic Functions</a>
+  
+  
+    <a class="next" href="/services/calculus/DC-4.3-the-chain-rule/">The Chain Rule &raquo;</a>
+  
+</div> -->
+
+
+
+<!-- <div class="PageNavigation">
+    <a class="prev" href="../DC-4.1-differentiation-and-its-rules-for-algebraic-functions">&laquo; </a> <a class="next" href="../DC-4.3-the-chain-rule"> &raquo;</a>
+</div> -->
+
+
+
+<div class="PageNavigation">
+  <a class="prev" href="../DC-4.1-differentiation-and-its-rules-for-algebraic-functions">&laquo; Previous</a> 
+  <a class="next" href="../DC-4.3-the-chain-rule">Next &raquo;</a>
+</div>
+
+
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h5 class="footer-title">&copy 2022 Lemniscate Institute</h5>
+          <!-- <h5 class="footer-title">Lemniscate Institute</h5> -->
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/services/">Courses</a>
+            </li>
+            
+            <!-- <li class="">
+              &copy 2021 Lemniscate Institute -->
+            </li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>
+
+
+
+
+
+

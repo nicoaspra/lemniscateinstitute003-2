@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Area Under a Curve</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" href="/images/logo/logo.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="" />
+  <meta name="twitter:card" content="" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:creator" content="" />
+
+   <!-- Add Slick Carousel CSS -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+   <!-- Add Slick Carousel theme CSS (optional) -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+</head>
+<body class='page '>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a>
+      <!-- <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a> -->
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a>
+      <!-- <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a> -->
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+    <div class="phoneContent">
+    <div class="phoneContent-header">
+            <b>Mobile Notice</b>
+    </div>
+        It seems that you are on your mobile phone, which means that the <b>screen's width is narrow</b> for some equations. For the best viewing experience, you can view this website in <b>landscape mode</b>.
+</div>  
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">Area Under a Curve</h1>
+          
+            <p style="color:#d02f5d"></pstyle>
+              <a href="/team">
+                Authors | <br> Engr. Nico O. Aspra, M.Eng., RMP, LPT  <br> Engr. Pee Jay N. Gealone
+              </a>
+            </p>
+          
+
+          $$
+  <!-- \definecolor{colorA}{rgb}{0.25, 0.51, 0.43}	
+  \definecolor{colorB}{rgb}{0.89, 0.04, 0.36}	 -->
+$$
+          <!-- <p style="color:#d02f5d"></pstyle>Author | Engr. Nico O. Aspra, M.Eng., RMP, LPT  <br> Engr. Pee Jay N. Gealone</p> -->
+          <!-- <a href="">Engr. Nico O. Aspra, M.Eng., RMP, LPT  <br> Engr. Pee Jay N. Gealone</a> -->
+          <!-- <br> -->
+
+          <!-- <div class="deskContent">Content for desktop</div> -->
+        <div class="content">
+          <h1 id="general-equation-of-a-plane-area">General Equation of a Plane Area</h1>
+
+<p>In solving for the area, there are two methods that can be taken into consideration. We can use a <strong>horizontal strip</strong> or a <strong>vertical strip</strong>, either of these will yield the same result. However, there are some problems that are preferably solved using one method than the other since it is much simpler. 
+In order for us to determine what method to use, we fist need to learn the formulas of each method and how it is used.</p>
+
+<h2 id="considering-a-vertical-strip">Considering a Vertical Strip</h2>
+<p>In using the vertical strip to solve for the area, consider $\fref{1}$. The rectangular element of the vertical strip has a width of $dx$ and has a length of $y$. The lower and upper limits of the area are the left and right boundaries, respectively.</p>
+
+<p>Moreover, the length of the strip $y$ is equal to the difference of the upper and lower boundaries $y=y_2-y_1$, this is oftentimes neglected in some references. However, it is a necessary detail in order to fully define the area. Also, in order for us not be confused when dealing with more than one curve, which we will tackle in the succeeding lessons. Mathematically, we can denote the formula as,</p>
+
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(64, 130, 110, 0.9);
+border-radius:7px;
+padding:10px;
+margin:5px;">
+    $$\begin{align}
+	A = \int_{x_1}^{x_2} y\,dx
+	\label{eq:area of integration using vertical strip}
+    \end{align}$$
+</p>
+
+\[\begin{align*}
+	\text{Where:}\quad y &amp;= y_2-y_1 &amp; \\
+	y_1 &amp;= \text{equation of lower curve (bottom boundary)} \\
+	y_2 &amp;= \text{equation of upper curve (top boundary)} \\
+	x_1 &amp;= \text{lower limit (left boundary)} \\
+	x_2 &amp;= \text{upper limit (right boundary)}
+\end{align*}\]
+
+<figure style="text-align: center;">
+  <img src="/images/content/IC/IC-6.2.1.png" alt="my alt text" width="250px" />
+  <figcaption><em><p>Figure 1: Area under a curve using a vertical strip</p>
+</em></figcaption>
+</figure>
+
+<h2 id="considering-a-horizontal-strip">Considering a Horizontal Strip</h2>
+<p>The steps in solving the area using the horizontal strip are not that different from using the vertical strip. The significant difference between the two methods is the orientation of its boundaries. In using the horizontal strip in integrating for the area, the limits are the bottom and top boundaries, while the integrand is the difference between the right and left boundaries, $x=x_2-x_1$. Mathematically, the formula is expressed as,</p>
+
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(64, 130, 110, 0.9);
+border-radius:7px;
+padding:10px;
+margin:5px;">
+    $$\begin{align}
+	A = \int_{y_1}^{y_2} x\,dy
+	\label{eq:area of integration using horizontal strip}
+    \end{align}$$
+</p>
+
+\[\begin{align*}
+	\text{Where:}\quad x &amp;= x_2-x_1 &amp; \\
+	x_1 &amp;= \text{equation of left curve (left boundary)} \\
+	x_2 &amp;= \text{equation of right curve (right boundary)} \\
+	y_1 &amp;= \text{lower limit (bottom boundary)} \\
+	y_2 &amp;= \text{upper limit (top boundary)}
+\end{align*}\]
+
+<figure style="text-align: center;">
+  <img src="/images/content/IC/IC-6.2.2.png" alt="my alt text" width="250px" />
+  <figcaption><em><p>Figure 2: Area under a curve using a horizontal strip</p>
+</em></figcaption>
+</figure>
+
+<p>To fully understand how to use these equations and how each can be more beneficial to use than the other. Let us have some examples.</p>
+
+<hr />
+<p>$\example{1}$ 
+Compute the area bounded by the curve $y=x^2+1$, the $x$-axis, $x=0$, and $x=2$.</p>
+
+<p>$\solution$ <br />
+In solving for the area, the first step that we need to undergo everytime is to graph the boundaries. With this, we can visualize the graph and identify the position of each boundary with respect to each other.</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/IC/IC-6.2.3.png" alt="my alt text" width="230px" />
+  <figcaption><em>
+</em></figcaption>
+</figure>
+
+<p>$\typB{Considering a Vertical Strip,}$</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/IC/IC-6.2.4.png" alt="my alt text" width="230px" />
+  <figcaption><em>
+</em></figcaption>
+</figure>
+
+\[\begin{align*}
+	A &amp;= \int_{x_1}^{x^2} y\,dx \\
+	  &amp;= \int_{x_1}^{x^2} \brk{y_2-y_1}\,dx \\
+	  &amp;= \int_{0}^{2} \brk{(x^2+1)-0}\,dx \\
+	  &amp;= \brk{\frac{x^3}{3}+x}_0^2 \\
+	  &amp;= \brk{\frac{2^3}{3}+2} - \cancel{\brk{\frac{0^3}{3}+0}} \\
+	  &amp;= \frac{14}{3}\un{units^2}		\tagans
+\end{align*}\]
+
+<hr />
+<p>$\example{2}$ 
+Solve for the area bounded by the curve $y=x^2-4$ and the $x$-axis.</p>
+
+<p>$\solution$ <br />
+$\typB{Considering a Vertical Strip,}$ <br />
+In this example, the left and right boundaries are defined by a point of intersection of the curve and the $x$-axis. Moreover, the curve is located below the $x$-axis. The steps in solving this type of problem are similar to the previous example, just that we will give a greater emphasis on the top and bottom boundaries, since in this case, the upper boundary is now the $x$-axis.</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/IC/IC-6.2.5.png" alt="my alt text" width="250px" />
+  <figcaption><em>
+</em></figcaption>
+</figure>
+
+<p>Before we can use the equation of the area, we still need to solve for the limits, which in this case are the points of intersection between the curve and the $x$-axis. To do that, we can first equate the two equations of the intersecting curves,</p>
+
+\[\begin{align*}
+	y_1 &amp;= y_2 \\
+	x^2-4 &amp;= 0 \\
+	(x+2)(x-2) &amp;= 0 \\
+	x+2 = 0   \qquad&amp;;\qquad   x-2 = 0 
+\end{align*}\]
+
+<p>Solving for $x$ gives us,</p>
+
+\[\begin{align*}
+	x_1 = -2   \qquad&amp;;\qquad   x_2 = 2 
+\end{align*}\]
+
+<p>With all the parameters ready for substitution, we can now use $\eref{eq:area of integration using vertical strip}$,</p>
+
+\[\begin{align*}
+	A &amp;= \int_{x_1}^{x^2} y\,dx \\
+	  &amp;= \int_{x_1}^{x^2} \brk{y_2-y_1}\,dx \\
+	  &amp;= \int_{-2}^{2} \brk{0-(x^2-4)}\,dx \\
+	  &amp;= \int_{-2}^{2} \brk{-x^2+4}\,dx \\
+	  &amp;= \brk{-\frac{x^3}{3}+4x}_{-2}^2 \\
+	  &amp;= \brk{-\frac{2^3}{3}+4(2)} - \brk{-\frac{(-2)^3}{3}+4(-2)} \\
+	  &amp;= \brk{-\frac83+8}-\brk{\frac83-8} \\
+	  &amp;= \frac{32}{3}\un{units^2}		\tagans
+\end{align*}\]
+
+<p>$\typB{Considering a Horizontal Strip,}$ <br />
+Using the horizontal strip, we cannot directly input the given parameters to the equation since the area’s left and right boundaries are of the same curve; doing so will lead to misdefined boundaries. However, a workaround in this situation is to first consider half of the area and double the result after since the area is symmetrical about the $y$-axis, which creates a mirror image of the other half.</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/IC/IC-6.2.6.png" alt="my alt text" width="230px" />
+  <figcaption><em>
+</em></figcaption>
+</figure>
+
+<p>Before we can use the formula, we must first find the limits of the area. In this case, the top boundary is defined by $x$-axis or $y=0$, and the bottom boundary is a point of intersection between the curve and the $y$-axis. To solve for the point, we can equate the equations of the intersecting curves just as we did in the previous example,</p>
+
+\[\begin{align*}
+	x_2 &amp;= x_1 \\
+	\sqrt{y+4} &amp;= 0 \\
+	y+4 &amp;= 0 \\
+	y &amp;= -4
+\end{align*}\]
+
+<p>Hence, the lower and upper limits are $y_1=-4$ and $y_2=0$, respectively.</p>
+
+\[\begin{align*}
+	A_{\text{half}} &amp;= \frac{A}{2} = \int_{y_1}^{y_2} x\,dy \\
+	A &amp;= 2\int_{y_1}^{y_2} x\,dy \\
+	  &amp;= 2\int_{y_1}^{y_2} \brk{x_2-x_1}\,dy \\
+	  &amp;= 2\int_{-4}^{0} \brk{\sqrt{y+4}-0}\,dy \\
+	  &amp;= 2\brk{\frac23(y+4)^{3/2}}_{-4}^{0} \\
+	  &amp;= 2\brk{\brk{\frac23(0+4)^{3/2}} - \brk{\frac23\cancel{(-4+4)}^{3/2}}} \\
+	  &amp;= 2\cdot\frac{16}{3} \\
+	  &amp;= \frac{32}{3}\un{units^2}		\tagans
+\end{align*}\]
+
+<hr />
+<p>$\example{3}$ 
+Find the area of the region bounded by the function $x=y^2-2y-3$ and the axes at the third quadrant.</p>
+
+<p>$\solution$ <br />
+Graphing the bounded area gives us,</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/IC/IC-6.2.7.png" alt="my alt text" width="250px" />
+  <figcaption><em>
+</em></figcaption>
+</figure>
+
+<p>By inspection, we can see that using a horizontal strip is easier to solve the problem. Thus,</p>
+
+<p>$\typB{Considering a Horizontal Strip,}$</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/IC/IC-6.2.8.png" alt="my alt text" width="250px" />
+  <figcaption><em>
+</em></figcaption>
+</figure>
+
+<p>The lower limit of the area in considering a horizontal strip is the $x$-axis or $y=0$, and the upper limit is the intersection of the the curve and the $y$-axis. Hence, equating the curves gives us,</p>
+
+\[\begin{align*}
+	x_1 &amp;= x_2 \\
+	y^2-2y-3 &amp;= 0 \\
+	\end{align*}\]
+
+<p>To solve for $y$, we can use the method of “Completing the Square’’</p>
+
+\[\begin{align*}
+	(y^2-2y {\tcA{+1}})-3 \tcA{-1} &amp;= 0 \qquad\qquad \tcA{y^2-2y+1=(y-1)^2} \\
+	(y-1)^2-4 &amp;= 0 \\
+	(y-1)^2 &amp;= 4 \\
+	y &amp;= \pm\sqrt{4}+1
+\end{align*}\]
+
+<p>Breaking down the two possible result of the sqare root gives us,</p>
+
+\[\begin{align*}
+	y = -\sqrt{4}+1		\qquad&amp;;\qquad   y = +\sqrt{4}+1 \\
+	y = -2+1			\qquad&amp;;\qquad   y = 2+1 \\
+	y = -1				\qquad&amp;;\qquad   y = 3
+\end{align*}\]
+
+<p>Since the curves intersect at two points, it is expected that we will have two results. However, in our case we only need one, specifically the $y=3$. Hence, the lower and upper limits are $y_1=0$ and $y_2=3$, respectively.</p>
+
+\[\begin{align*}
+	A &amp;= \int_{y_1}^{y^2} x\,dy \\
+	  &amp;= \int_{0}^{3} \brk{(y^2-2y-3)-0}\,dy \\
+	  &amp;= \brk{\frac{x^3}{3}-\frac{2y^2}{2}-3x}_0^3 \\
+	  &amp;= \brk{\frac{3^3}{3}-\frac{2(3)^2}{2}-3(3)} - \cancel{\brk{\frac{0^3}{3}-\frac{2(0)^2}{2}-3(0)}} \\
+	  &amp;= -9\un{units^2}		\tagans
+\end{align*}\]
+
+<hr />
+<p>$\example{4}$ 
+Find the area of the region bounded by the function $x^2-6x+8$, the $x$-axis, and the vertical lines $x=0$ and $x=5$.</p>
+
+<p>$\solution$ <br />
+Graphing the bounded area gives us,</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/IC/IC-6.2.9.png" alt="my alt text" width="250px" />
+  <figcaption><em>
+</em></figcaption>
+</figure>
+
+<p>The area is divided into three parts, each having different boundaries. In this case, we must treat each sub-area differently, ultimately summing up the values to determine the whole area. By inspection, we can also see that using a vertical stip is easier to solve the problem.</p>
+
+<p>First, we need to pinpoint the intersection points between the curve and the $x$-axis since it serves as the new limits for the sub-areas.</p>
+
+\[\begin{align*}
+	y_2 &amp;= y_1 \\
+	x^2-6x+8 &amp;= 0 \\
+\end{align*}\]
+
+<p>By “Completing the Square’’,</p>
+
+\[\begin{align*}
+	(x^2-6x {\tcA{+9}})+8 \tcA{-9} &amp;= 0 \\
+	(x-3)^2-1 &amp;= 0 \\
+	x &amp;= \pm\sqrt{1}+3
+\end{align*}\]
+
+<p>Breaking down the two possible result of the sqare root gives us,</p>
+
+\[\begin{align*}
+	x = -\sqrt{1}+3		\qquad&amp;;\qquad   x = +\sqrt{1}+3 \\
+	x = -1+3			\qquad&amp;;\qquad   x = 1+3 \\
+	x = 2				\qquad&amp;;\qquad   x = 4 \\
+\end{align*}\]
+
+<figure style="text-align: center;">
+  <img src="/images/content/IC/IC-6.2.10.png" alt="my alt text" width="250px" />
+  <figcaption><em>
+</em></figcaption>
+</figure>
+
+<p>Hence,</p>
+
+\[\begin{align*}
+	A &amp;= A_1 + A_2 + A_3 \\
+	  &amp;= \int_0^2 \brk{y_2-y_1}\,dx + \int_2^4 \brk{y_1-y_2}\,dx + \int_4^5 \brk{y_2-y_1}\,dx \\
+	  &amp;= \int_0^2 \brk{(x^2-6x+8)-0}\,dx + \int_2^4 \brk{0-(x^2-6x+8)}\,dx \\ 
+	  		&amp;\qquad + \int_4^5 \brk{(x^2-6x+8)-0}\,dx \\
+	  &amp;= \int_0^2 \brk{x^2-6x+8}\,dx + \int_2^4 \brk{-x^2+6x-8}\,dx + \int_4^5 \brk{x^2-6x+8}\,dx \\
+	  &amp;= \int_0^2 \brk{x^2-6x+8}\,dx - \int_2^4 \brk{x^2-6x+8}\,dx + \int_4^5 \brk{x^2-6x+8}\,dx \\
+	  &amp;= \brk{\frac{x^3}{3}-3x^2+8x}_0^2 - \brk{\frac{x^3}{3}-3x^2+8x}_2^4 + \brk{\frac{x^3}{3}-3x^2+8x}_4^5 \\
+	  &amp;= \brk{\br{\frac{2^3}{3}-3(2)^2+8(2)}-\br{\frac{0^3}{3}-3(0)^2+8(0)}} + \left[\br{\frac{4^3}{3}-3(4)^2+8(4)} \right. \\ 
+	  		&amp;\qquad  - \left.\br{\frac{(2)^3}{3}-3(2)^2+8(2)} \right]
+			+ \brk{\br{\frac{5^3}{3}-3(5)^2+8(5)} - \br{\frac{4^3}{3}-3(4)^2+8(4)}} \\
+	&amp;= \brk{\frac{20}{3}-0} - \brk{\frac{16}{3}-\frac{20}{3}} + \brk{\frac{20}{3}-\frac{16}{3}} \\
+	&amp;= \frac{20}{3} - \frac{16}{3} + \frac{20}{3} + \frac{20}{3} - \frac{16}{3} \\
+	&amp;= \frac{28}{3}\un{sq.units}		\tagans
+\end{align*}\]
+
+<hr />
+<p>$\example{5}$ 
+Compute the area at the first quadrant of the region bounded by the function $y=3\cos\frac12x$, $x=0$, and $y=0$.</p>
+
+<p>$\solution$<br />
+$\typB{Considering a Vertical Strip,}$ <br />
+Graphing the bounded area gives us,</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/IC/IC-6.2.11.png" alt="my alt text" width="250px" />
+  <figcaption><em>
+</em></figcaption>
+</figure>
+
+<p>The lower limit of the area is the $y$-axis or $x=0$. However, we still need to solve for the upper limit, which is the $x$-coordinate of the point of intersection of the curve and the $x$-axis. Hence, equating the equations of the two curves,</p>
+
+\[\begin{align*}
+	3\cos\frac12x &amp;= 0 \\
+	\cos\frac12x &amp;= 0 \\
+	\frac12x &amp;= \cos^{-1}(0) \\
+	\frac12x &amp;= \frac{\pi}{2} \\
+	x &amp;= \pi
+\end{align*}\]
+
+<p>Hence,</p>
+
+\[\begin{align*}
+	A &amp;= \int_{x_1}^{x_2} \brk{y_2-y_1}\,dx \\
+	  &amp;= \int_0^\pi \brk{3\cos\frac12x - 0}\,dx \\
+	  &amp;= \brk{6\sin\frac12x}_0^{\pi} \\
+	  &amp;= \brk{6\sin\frac\pi2} - \brk{6\sin\frac02} \\
+	  &amp;= 6-0 \\
+	  &amp;= 6\un{sq.units}		\tagans
+\end{align*}\]
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Displaystyle -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+  var TEX = MathJax.InputJax.TeX;
+  var PREFILTER = TEX.prefilterMath;
+  TEX.Augment({
+  prefilterMath: function (math,displaymode,script) {
+  math = "\\displaystyle{"+math+"}";
+  return PREFILTER.call(TEX,math,displaymode,script);
+  }
+  });
+  });
+</script>
+
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- //assets/js/MathJax.js -->
+<!-- <script src="http://lemniscateinstitute.com/assets/js/MathJax.js"> -->
+<!-- <script type="text/javascript" src="../../assets/js/MathJax.js"> -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      availableFonts: ["TeX"],
+      styles: {".MathJax": {color: "#5C5A5A"}} 
+    },
+    tex2jax: {
+      inlineMath: [['$','$'],["\\(","\\)"]]},
+      displayMath: [ ['$$','$$'], ['\[','\]'] ],
+    TeX: {
+      extensions: ["AMSmath.js", "AMSsymbols.js", "color.js", "autoload-all.js"],
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    showProcessingMessages: false,
+    messageStyle: "none",
+    imageFont: null,
+    "AssistiveMML": { disabled: true }
+  });
+</script>
+
+<!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script> -->
+
+
+
+
+
+
+
+
+
+<!-- <div style="display:none">
+  \(
+    \newcommand{\CC}{\mathbf{C}}
+  \)
+</div> -->
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        CC: '{\\bf R}',
+        un: ['\\;\\mathrm{#1}',1],
+        x:  '{\\times}',
+        ohm: '{\\Omega}',
+        st:['{^{\\text{st}}}'],
+        nd:['{^{\\text{nd}}}'],
+        rd:['{^{\\text{rd}}}'],
+        nth:['{^{\\text{th}}}'],
+
+        br: ['\\left(#1\\right)',1],
+        brk: ['\\left[#1\\right]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbbrk: ['\\Biggl[#1\\Biggr]',1],
+        brv: ['\\left|#1\\right|',1],
+        brc: ['\\left\\{#1\\right\\}',1],
+
+        Dy: '{\\Delta y}',
+        Dx: '{\\Delta x}',
+        D: '{\\Delta}',
+        dydx: '{\\frac{dy}{dx}}',
+        ddx: '{\\frac{d}{dx}}',
+        ddu: '{\\frac{d}{du}}',
+        ddy: '{\\frac{d}{dy}}',
+        ddw: '{\\frac{d}{dw}}',
+        ddt: '{\\frac{d}{dt}}',
+        pd: ['\\frac{\\partial#1}{\\partial#2}',2],
+        ufrac: ['\\frac{\\text{#1}}{\\text{#2}}',2],
+        Ncancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\un{#4}}',4],
+        Dcancel: ['\\frac{#1 \\un{#2}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        NDcancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        
+        degg: '{^{\\circ}}',
+        degC: '{^{\\circ}\\mathrm{C}}',
+        degF: '{^{\\circ}\\mathrm{F}}',
+        tagans: '{\\tag{ans.}}',
+        tcA: ['\\color{colorA}{#1}',1],
+        tcB: ['\\color{colorB}{#1}',1],
+        tcAal: ['\\tcA{\\text{#1}}',1],
+        tcBal: ['\\tcB{\\text{#1}}',1],
+        typB: ['\\tcB{\\text{#1}}',1],
+        tcxA: ['\\tcA{\\text{#1}}',1],
+        tcxB: ['\\tcB{\\text{#1}}',1],
+        example: ['\\tcA{\\text{Example #1:}}',1],
+        For: ['\\tcB{\\text{For (#1):}}',1],
+        solution:  '\\tcB{\\textit{Solution:}}',
+        required:  '\\tcB{\\textit{Required:}}',
+        case: ['\\tcB{\\text{Case #1:}}',1],
+        rule: ['\\tcB{\\textbf{Rule #1:}\\text{ #2}}',2],
+        ubrace: ['\\underbrace{#1}_{\\tcAal{#2}}',2],
+        ubraces: ['\\underbrace{#1}_{\\substack{\\tcAal{#2} \\\\ \\tcAal{#3}}}',3],
+        given: '\\tcB{\\textit{Given:}}',
+        thrm: ['\\tcB{\\text{#1}}',1],
+        vv: ['\\overrightarrow{#1}',1],
+        eref: ['\\tcAal{Equation}\\,\\ref{#1}',1],
+        fref: ['\\tcAal{Figure}\\,#1',1],
+        tref: ['\\tcAal{Table}\\,#1',1],
+      }
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="PageNavigation">
+  
+    <a class="prev" href="/services/calculus/IC-6.1-introduction-to-plane-areas/">&laquo; Introduction to Plane Areas</a>
+  
+  
+    <a class="next" href="/services/calculus/IC-6.3-area-between-curves/">Area Between Curves &raquo;</a>
+  
+</div> -->
+
+
+
+<!-- <div class="PageNavigation">
+    <a class="prev" href="../IC-6.1-introduction-to-plane-areas">&laquo; </a> <a class="next" href="../IC-6.3-area-between-curves"> &raquo;</a>
+</div> -->
+
+
+
+<div class="PageNavigation">
+  <a class="prev" href="../IC-6.1-introduction-to-plane-areas">&laquo; Previous</a> 
+  <a class="next" href="../IC-6.3-area-between-curves">Next &raquo;</a>
+</div>
+
+
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h5 class="footer-title">&copy 2022 Lemniscate Institute</h5>
+          <!-- <h5 class="footer-title">Lemniscate Institute</h5> -->
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/services/">Courses</a>
+            </li>
+            
+            <!-- <li class="">
+              &copy 2021 Lemniscate Institute -->
+            </li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>
+
+
+
+
+
+

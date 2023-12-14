@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Vector Addition and Subtraction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" href="/images/logo/logo.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="" />
+  <meta name="twitter:card" content="" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:creator" content="" />
+
+   <!-- Add Slick Carousel CSS -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+   <!-- Add Slick Carousel theme CSS (optional) -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+</head>
+<body class='page '>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a>
+      <!-- <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a> -->
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a>
+      <!-- <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a> -->
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+    <div class="phoneContent">
+    <div class="phoneContent-header">
+            <b>Mobile Notice</b>
+    </div>
+        It seems that you are on your mobile phone, which means that the <b>screen's width is narrow</b> for some equations. For the best viewing experience, you can view this website in <b>landscape mode</b>.
+</div>  
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">Vector Addition and Subtraction</h1>
+          
+            <p style="color:#d02f5d"></pstyle>
+              <a href="/team">
+                Author | Engr. Nico O. Aspra, M.Eng., RMP, LPT
+              </a>
+            </p>
+          
+
+          $$
+  <!-- \definecolor{colorA}{rgb}{0.25, 0.51, 0.43}	
+  \definecolor{colorB}{rgb}{0.89, 0.04, 0.36}	 -->
+$$
+          <!-- <p style="color:#d02f5d"></pstyle>Author | Engr. Nico O. Aspra, M.Eng., RMP, LPT</p> -->
+          <!-- <a href="">Engr. Nico O. Aspra, M.Eng., RMP, LPT</a> -->
+          <!-- <br> -->
+
+          <!-- <div class="deskContent">Content for desktop</div> -->
+        <div class="content">
+          <p>Before we can learn how to add and subtract vectors, we must first familiarize ourselves with some of the common types of vectors. Therefore, in this section, we will explore only a few of its types that can help us better understand how vectors work.</p>
+
+<h3 id="equal-vectors">Equal Vectors</h3>
+<p>Vectors with the <strong>same magnitude and direction</strong> are considered equal regardless of their location. Thus, even if their start and end positions differ, they are still deemed equal as long as their attributes remain unchanged. With this in mind, we can reposition vectors without affecting their value.</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/phys1/phys1-2.2.1.png" alt="my alt text" width="200px" />
+  <figcaption><em><p>Figure 1: Equal vectors</p>
+</em></figcaption>
+</figure>
+
+<h3 id="negative-of-a-vector">Negative of a Vector</h3>
+<p>If two vectors have the <strong>same magnitude but opposite in direction</strong>, one vector is the negative vector of the other. In Figure 2, vector $\vv{B}$ is equal to the negative of vector $\vv{A}$, $\vv{B}=-\vv{A}$, or vice versa $\vv{A}=-\vv{B}$.</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/phys1/phys1-2.2.2.png" alt="my alt text" width="200px" />
+  <figcaption><em><p>Figure 2: Negative of a vector</p>
+</em></figcaption>
+</figure>
+
+<h1 id="vector-addition">Vector Addition</h1>
+
+<p>The <strong>addition of vectors</strong> is not as straightforward as adding scalar quantities.
+For us to fully grasp the concept, let us have an example. Say a man walks $7\un{m}$ to the right, then $5\un{m}$ to the opposite direction (see Figure 3), the total <strong>distance</strong> (scalar) traveled by the man is $5\un{m} + 7\un{m} = 12 \un{m}$, but its <strong>displacement</strong> (vector) is $2\un{m}$ to the right.
+Note that the direction of the resultant vector points the object’s initial position to its final position.</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/phys1/phys1-2.2.3.png" alt="my alt text" width="400px" />
+  <figcaption><em><p>Figure 3: Addition of parallel vectors</p>
+</em></figcaption>
+</figure>
+
+<p>On the other hand, to add vectors that are <strong>not parallel to one another</strong>, we will need some trigonometry skills. However, in this lesson, we will concentrate on its graphical representation in order to visualize the vectors before attempting to solve such problems.</p>
+
+<p>Consider Figure 4a, if we are to find the sum of the two vectors, $\vv{A}+\vv{B}$. We can solve it by placing the tail of vector $\vv{B}$ at the tip of the vector $\vv{A}$ (Figure 4b), then connecting the tail of $\vv{A}$ to the tip of $\vv{B}$; thus, giving us a resulting vector $\vv{R}$, which we now call the <strong>vector sum</strong> or the <strong>resultant</strong>. We would also arrive at the same results even if we reverse the order (Figure 4c). Furthermore, we could also add the vectors by constructing a parallelogram (Figure 4d).</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/phys1/phys1-2.2.4.png" alt="my alt text" width="600px" />
+  <figcaption><em><p>Figure 4: Addition of two non-parallel vectors</p>
+</em></figcaption>
+</figure>
+
+<p>This method can also be used when there are more than two vectors involved, and the order of the vectors would still not matter (Figure 5) $\vv{R}=\vv{A}+\vv{B}+\vv{C}$.</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/phys1/phys1-2.2.5.png" alt="my alt text" width="550px" />
+  <figcaption><em><p>Figure 5: Addition of three non-parallel vectors</p>
+</em></figcaption>
+</figure>
+
+<h1 id="vector-subtraction">Vector Subtraction</h1>
+
+<p>In subtracting vectors, say if we are to find the resultant of $\vv{A}-\vv{B}$ (Figure 6). Bear in mind that getting the negative of a vector causes it to point in the opposite direction. Thus, by finding the negative of the subtrahend, we may now add the vectors rather than subtract them.</p>
+
+\[\begin{align*}
+	\vv{R} &amp;= \vv{A}-\vv{B} \\
+	&amp;= \vv{A}+(-\vv{B})
+\end{align*}\]
+
+<figure style="text-align: center;">
+  <img src="/images/content/phys1/phys1-2.2.6.png" alt="my alt text" width="550px" />
+  <figcaption><em><p>Figure 6: Addition of negative of a vector</p>
+</em></figcaption>
+</figure>
+
+<hr />
+<p>$\example{1}$
+A man drove 3 km to the east then 5 km to the north. Determine how far and in what direction is he from the starting point.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<figure style="text-align: center;">
+  <img src="/images/content/phys1/phys1-2.2.7.png" alt="my alt text" width="180px" />
+  <figcaption><em>
+</em></figcaption>
+</figure>
+
+<p>Since the two vectors form a <strong>right angle</strong> with each other, the resultant can be easily determined by using the <strong>Pythagorean Theorem</strong>,</p>
+
+\[\begin{align*}
+	R &amp;= \sqrt{(3 \text{ km})^2+(5 \text{ km})^2}\\
+	&amp;= \sqrt{34 \text{ km}^2} \\
+	&amp;= 5.83 \text{ km}     \tagans
+\end{align*}\]
+
+<p>And for the direction,</p>
+
+\[\begin{align*}
+	\tan\theta &amp;= \frac{\text{opposite}}{\text{adjacent}}=\frac{5\text{ km}}{3\text{ km}}\\
+	\theta &amp;= \tan^{-1} \br{ \frac{5\text{ km}}{3\text{ km}} } \\
+	&amp;= 59.04 ^{\circ}       \tagans
+\end{align*}\]
+
+<p>Since the angle is measured from east towards north, $\theta=59.04 ^{\circ}$ north of east. Hence the magnitude and direction of the resultant is <strong>5.83 km at $59.04 ^{\circ}$ N of E</strong>.</p>
+
+
+</details>
+
+<hr />
+<p>$\example{2}$
+Given two vectors $\vv{A}$ and $\vv{B}$, find $\vv{A}-\vv{B}$.</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/phys1/phys1-2.2.8.png" alt="my alt text" width="300px" />
+  <figcaption><em>
+</em></figcaption>
+</figure>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>In this example, since we will be subtracting vectors, the first step the we need to do is reverse the direction of the negative vector. In this case,</p>
+
+\[\begin{align*}
+	R &amp;= \vv{A}-\vv{B} \\
+	  &amp;= \vv{A}+(-\vv{B})
+\end{align*}\]
+
+<figure style="text-align: center;">
+  <img src="/images/content/phys1/phys1-2.2.9.png" alt="my alt text" width="300px" />
+  <figcaption><em>
+</em></figcaption>
+</figure>
+
+<p>Then Solving for the magnitude of the resultant gives us,</p>
+
+\[\begin{align*}
+	R &amp;= \sqrt{(-7 \un{m})^2+(-10 \un{m})^2}\\
+	&amp;= \sqrt{149 \un{m}^2} \\
+	&amp;= 12.21 \un{m}		\tagans
+\end{align*}\]
+
+<p>And for the direction,</p>
+
+\[\begin{align*}
+	\tan\theta &amp;=\frac{-10\un{m}}{-7\un{m}}\\
+	\theta &amp;= \tan^{-1} \br{ \frac{-10\un{m}}{-7\un{m}} } \\
+	&amp;= 55.01 ^{\circ}
+\end{align*}\]
+
+<p>However, keep in mind that in a Cartesian Plane, angles are often measured from the positive $x$-axis. Thus, we should add $180\degg$ to the solved angle.</p>
+
+\[\begin{align*}
+	\theta &amp;= 180\degg + 55.01\degg \\
+		   &amp;= 235.01 \degg		\tagans
+\end{align*}\]
+
+<figure style="text-align: center;">
+  <img src="/images/content/phys1/phys1-2.2.10.png" alt="my alt text" width="300px" />
+  <figcaption><em>
+</em></figcaption>
+</figure>
+
+<p>Suppose you’re still wondering why we adjusted the angle and whether it had an effect on the value of the final answer. The answer is, of course, no! Try solving for the values of $\tan(55.01\degg)$ and $\tan(235.01\degg)$. Just make sure that your calculator is set in <strong>degrees mode</strong>. As you may have seen, the output of the two functions is identical. Hence, adjusting our angle from 55.01 to 235.01 degrees will not affect the value of our final answer.</p>
+
+<p>Therefore, the resultant of $\vv{A}-\vv{B} = 12.21 \un{m}$ with an angle of $235.01\degg$</p>
+
+
+</details>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Displaystyle -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+  var TEX = MathJax.InputJax.TeX;
+  var PREFILTER = TEX.prefilterMath;
+  TEX.Augment({
+  prefilterMath: function (math,displaymode,script) {
+  math = "\\displaystyle{"+math+"}";
+  return PREFILTER.call(TEX,math,displaymode,script);
+  }
+  });
+  });
+</script>
+
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- //assets/js/MathJax.js -->
+<!-- <script src="http://lemniscateinstitute.com/assets/js/MathJax.js"> -->
+<!-- <script type="text/javascript" src="../../assets/js/MathJax.js"> -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      availableFonts: ["TeX"],
+      styles: {".MathJax": {color: "#5C5A5A"}} 
+    },
+    tex2jax: {
+      inlineMath: [['$','$'],["\\(","\\)"]]},
+      displayMath: [ ['$$','$$'], ['\[','\]'] ],
+    TeX: {
+      extensions: ["AMSmath.js", "AMSsymbols.js", "color.js", "autoload-all.js"],
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    showProcessingMessages: false,
+    messageStyle: "none",
+    imageFont: null,
+    "AssistiveMML": { disabled: true }
+  });
+</script>
+
+<!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script> -->
+
+
+
+
+
+
+
+
+
+<!-- <div style="display:none">
+  \(
+    \newcommand{\CC}{\mathbf{C}}
+  \)
+</div> -->
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        CC: '{\\bf R}',
+        un: ['\\;\\mathrm{#1}',1],
+        x:  '{\\times}',
+        ohm: '{\\Omega}',
+        st:['{^{\\text{st}}}'],
+        nd:['{^{\\text{nd}}}'],
+        rd:['{^{\\text{rd}}}'],
+        nth:['{^{\\text{th}}}'],
+
+        br: ['\\left(#1\\right)',1],
+        brk: ['\\left[#1\\right]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbbrk: ['\\Biggl[#1\\Biggr]',1],
+        brv: ['\\left|#1\\right|',1],
+        brc: ['\\left\\{#1\\right\\}',1],
+
+        Dy: '{\\Delta y}',
+        Dx: '{\\Delta x}',
+        D: '{\\Delta}',
+        dydx: '{\\frac{dy}{dx}}',
+        ddx: '{\\frac{d}{dx}}',
+        ddu: '{\\frac{d}{du}}',
+        ddy: '{\\frac{d}{dy}}',
+        ddw: '{\\frac{d}{dw}}',
+        ddt: '{\\frac{d}{dt}}',
+        pd: ['\\frac{\\partial#1}{\\partial#2}',2],
+        ufrac: ['\\frac{\\text{#1}}{\\text{#2}}',2],
+        Ncancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\un{#4}}',4],
+        Dcancel: ['\\frac{#1 \\un{#2}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        NDcancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        
+        degg: '{^{\\circ}}',
+        degC: '{^{\\circ}\\mathrm{C}}',
+        degF: '{^{\\circ}\\mathrm{F}}',
+        tagans: '{\\tag{ans.}}',
+        tcA: ['\\color{colorA}{#1}',1],
+        tcB: ['\\color{colorB}{#1}',1],
+        tcAal: ['\\tcA{\\text{#1}}',1],
+        tcBal: ['\\tcB{\\text{#1}}',1],
+        typB: ['\\tcB{\\text{#1}}',1],
+        tcxA: ['\\tcA{\\text{#1}}',1],
+        tcxB: ['\\tcB{\\text{#1}}',1],
+        example: ['\\tcA{\\text{Example #1:}}',1],
+        For: ['\\tcB{\\text{For (#1):}}',1],
+        solution:  '\\tcB{\\textit{Solution:}}',
+        required:  '\\tcB{\\textit{Required:}}',
+        case: ['\\tcB{\\text{Case #1:}}',1],
+        rule: ['\\tcB{\\textbf{Rule #1:}\\text{ #2}}',2],
+        ubrace: ['\\underbrace{#1}_{\\tcAal{#2}}',2],
+        ubraces: ['\\underbrace{#1}_{\\substack{\\tcAal{#2} \\\\ \\tcAal{#3}}}',3],
+        given: '\\tcB{\\textit{Given:}}',
+        thrm: ['\\tcB{\\text{#1}}',1],
+        vv: ['\\overrightarrow{#1}',1],
+        eref: ['\\tcAal{Equation}\\,\\ref{#1}',1],
+        fref: ['\\tcAal{Figure}\\,#1',1],
+        tref: ['\\tcAal{Table}\\,#1',1],
+      }
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="PageNavigation">
+  
+    <a class="prev" href="/services/physics/2.1-introduction-to-scalars-and-vectors/">&laquo; Introduction to Scalars and Vectors</a>
+  
+  
+    <a class="next" href="/services/physics/2.3-components-of-vectors/">Component of Vectors &raquo;</a>
+  
+</div> -->
+
+
+
+<!-- <div class="PageNavigation">
+    <a class="prev" href="../2.1-introduction-to-scalars-and-vectors">&laquo; </a> <a class="next" href="../2.3-components-of-vectors"> &raquo;</a>
+</div> -->
+
+
+
+<div class="PageNavigation">
+  <a class="prev" href="../2.1-introduction-to-scalars-and-vectors">&laquo; Previous</a> 
+  <a class="next" href="../2.3-components-of-vectors">Next &raquo;</a>
+</div>
+
+
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h5 class="footer-title">&copy 2022 Lemniscate Institute</h5>
+          <!-- <h5 class="footer-title">Lemniscate Institute</h5> -->
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/services/">Courses</a>
+            </li>
+            
+            <!-- <li class="">
+              &copy 2021 Lemniscate Institute -->
+            </li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>
+
+
+
+
+
+

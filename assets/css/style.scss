@@ -1,0 +1,469 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+---
+
+// Colors
+// $primary: #E5261F;
+$primary: #d02f5d;
+$secondary: #f88379;
+$black: #2f2f41;
+$white: #ffffff;
+$white-offset: #fff6f8;
+$steel: #5C5A5A;
+
+// Links
+$link-color: $primary;
+$link-decoration: none;
+$link-hover-color: lighten($primary, 20%);
+$link-hover-decoration: underline;
+
+// Fonts
+$font-family-base: TeX;
+$font-family-heading: 'Playfair Display', serif, -apple-system;
+
+// Footer
+$footer-background-color: $primary;
+$footer-text-color: $white;
+$sub-footer-background-color: darken($primary, 10%);
+$sub-footer-text-color: $white;
+
+// Bootstrap
+@import 'bootstrap-variables';
+@import 'bootstrap/bootstrap-reboot';
+@import 'bootstrap/bootstrap-grid';
+// @import 'bootstrap/bootstrap'; // Uncomment this line to import the entire Bootstrap library
+
+
+// Libraries
+@import 'libraries/hamburgers/hamburgers';
+
+// Components
+@import 'components/type';
+@import 'components/page';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/sub-footer';
+@import 'components/logo';
+@import 'components/main-menu';
+@import 'components/main-menu-mobile';
+@import 'components/hamburger';
+@import 'components/buttons';
+@import 'components/call';
+@import 'components/title';
+@import 'components/content';
+@import 'components/intro';
+@import 'components/intro-image';
+@import 'components/strip';
+@import 'components/feature';
+@import 'components/social';
+
+// Pages
+@import 'pages/home';
+@import 'pages/team/team-summary';
+@import 'pages/services/page-services-single';
+
+body {
+  font-size: 18px;
+  line-height: 1.2;
+  font-family: $font-family-base;
+  @include media-breakpoint-up(md) {
+    font-size: 18px; //
+    line-height: 1.3;
+  }
+}
+
+
+// Youtube Import
+.youtube-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+.youtube-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+
+//
+// <details> tag
+//
+$details-background-color: rgba(208, 47, 93, .05);
+$details-border-color: rgba(208, 47, 93, .5);
+
+details {
+    // background: $details-background-color;
+    border-radius: 6px;
+    padding: 2px 2px 2px 10px;
+    // margin-bottom: 15px;
+}
+details[open] {
+    border: 2px dotted;
+    border-color: $details-border-color;
+    padding: 2px 2px 2px 2px;
+    margin: 0px 0px 0px 0px;
+    // margin-left: 10px;
+}
+summary {
+    margin: 0px 0px 0px 0px;
+    outline:none;
+    cursor: pointer;
+}
+details summary {
+    color: $primary;
+    background: $details-background-color;
+    border-radius: 6px;
+    padding: 2px 2px 2px 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+details[open] > summary {
+  background: $details-background-color;
+  border-radius: 6px;
+  padding: 2px 2px 2px 10px;
+  margin: 0px 0px 0px 0px;
+}
+// open summary
+// details > summary {
+//   background: $details-background-color;
+//   border-radius: 6px;
+//   padding: 2px 2px 2px 10px;
+//   margin: 0px 0px 0px 0px;
+// }
+
+
+
+
+// Next and Previous Page
+.PageNavigation {
+  font-size: 15px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+  // margin-left: 10px
+  margin: 10px 10px 0px 10px
+}
+
+.PageNavigation a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+
+.PageNavigation .next {
+  text-align: right;
+}
+
+
+
+
+table {
+  width: 100%;
+  color: $steel;
+}
+
+thead {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: $primary;
+  color: white;
+}
+
+th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+// .highlight .gs { color: #d60e0e } /* Generic.Strong */
+
+
+.content hr {
+  // display: block;
+  // height: 10px;
+  // border: 20px;
+  // border-top: 1px solid rgb(202, 33, 33);
+  // border-bottom: 1px solid rgb(57, 2, 2);
+  // color: solid rgb(202, 33, 33);
+  // margin: 1em 0;
+  // padding: 0;
+  // opacity: 100;
+  // border: 1px solid $primary;
+  height: 30px;
+  // border-bottom: 2px solid $primary;
+  border-bottom: 3px solid rgb(64, 130, 110);
+  opacity: 0.7;
+}
+
+
+
+
+@media all and (min-width: 600px) {
+  .deskContent {display:block;}
+  .phoneContent {display:none;}
+}
+
+@media all and (max-width: 600px) {
+  .deskContent {display:none;}
+  .phoneContent {display:block;}
+}
+
+.phoneContent {
+  background: $details-background-color;
+  // padding: 2px 2px 2px 2px;
+  border: 3px solid $primary;
+  border-radius:7px;
+  padding:10px;
+  margin:5px;
+  color: $steel;
+  // margin-bottom: 15px;
+}
+
+.phoneContent-header{
+  text-align: center;
+  top:10px;
+  left:0;
+  width:100%;
+  height:25px;
+  border-bottom: 2px solid $primary;
+  color: $primary;
+  // background:rgb(196, 13, 13);
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+.circle-image{
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+}
+.circle-image img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.slick-carousel {
+  height: 600px; /* Set your desired height */
+  background-color: #000000; /* Set your desired background color */
+  // background-color: #1a1a1a; /* Set your desired background color */
+  // max-width: 100%; /* Adjust this value as needed */
+  // overflow: hidden;
+  // max-width: 100%;
+}
+
+.slick-carousel img {
+  height: 600px; /* Set your desired height */
+  // width: 100%; /* Ensure the width is 100% to maintain aspect ratio */
+  // width: 100%;
+}
+
+
+/* Center the Carousel Container */
+.slick-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+/* Center Individual Slides */
+.slick-slide {
+  display: flex !important; /* Use !important to override Slick's default styles */
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+/* Adjust the position of Slick Carousel dots */
+.slick-carousel .slick-dots {
+  position: absolute;
+  top: 10px; /* Adjust the top position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2; /* Ensure the dots appear above the image */
+}
+
+/* Override Slick Carousel styles for dots */
+.slick-carousel .slick-dots .slick-active button:before,
+.slick-carousel .slick-dots button:before {
+  font-size: 15px !important; /* Set your desired font size */
+  color: #bbb !important; /* Set your desired color */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Container for the hover overlay and text */
+.slick-carousel .hover-overlay {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  color: #ffffff;
+  text-align: center;
+  white-space: normal !important; /* Adding !important to ensure it takes precedence */
+}
+
+/* Show the hover overlay when the carousel container is hovered */
+.slick-carousel:hover .hover-overlay {
+  opacity: 1;
+  pointer-events: auto; /* Enable pointer events when the overlay is visible */
+  // text-align: center;
+  // white-space: normal; /* Allows text to wrap */
+}
+
+.slick-carousel .hover-overlay .hover-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  pointer-events: auto; /* Ensure pointer events are enabled */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Ensure the link is above other elements */
+  // text-align: center;
+  // white-space: normal; /* Allows text to wrap */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Banner Styles */
+.banner {
+  text-align: left;
+  padding: 50px;
+  padding-left: 0px;
+  // padding-left: 120px;
+  background-color: lighten($primary, 0%); /* Choose your desired background color */
+  color: $white-offset; /* Choose your desired text color */
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.banner2 {
+  text-align: left;
+  padding: 50px;
+  padding-left: 0px;
+  // padding-left: 120px;
+  background-color: $white-offset; /* Choose your desired background color */
+  // background-color: $white-offset; /* Choose your desired background color */
+  color: $primary; /* Choose your desired text color */
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.banner-thin {
+  text-align: left;
+  padding: 10px;
+  padding-left: 0px;
+  // padding-left: 120px;
+  background-color: lighten($primary, 0%); /* Choose your desired background color */
+  color: $white-offset; /* Choose your desired text color */
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* Banner Heading */
+.banner h1 {
+  font-size: 36px; /* Choose your desired font size */
+  margin-bottom: 10px;
+}
+
+/* Banner Subtitle */
+.banner p {
+  font-size: 18px; /* Choose your desired font size */
+  margin: 0;
+}
+
+
+
+
+
+
+/* Style for the container holding logo and text */
+.logo-with-text {
+  display: flex;
+  align-items: center;
+  width: max-content; /* Ensures the container takes only as much width as needed */
+}
+
+/* Style for the logo image */
+.logo-with-text img {
+  width: 70px; /* Adjust the width of the logo as needed */
+  height: auto; /* Maintain the aspect ratio */
+  margin-right: 50px; /* Adjust the margin between logo and text */
+}
+
+/* Style for the text */
+.logo-with-text p {
+  margin: 0; /* Remove default margin to ensure alignment */
+}
+
+
+
+
+
+
+.wraptext {
+  word-wrap: break-word;
+}

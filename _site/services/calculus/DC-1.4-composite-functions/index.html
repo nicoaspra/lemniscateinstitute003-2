@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Composite Functions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" href="/images/logo/logo.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="" />
+  <meta name="twitter:card" content="" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:creator" content="" />
+
+   <!-- Add Slick Carousel CSS -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+   <!-- Add Slick Carousel theme CSS (optional) -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+</head>
+<body class='page '>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a>
+      <!-- <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a> -->
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a>
+      <!-- <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a> -->
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+    <div class="phoneContent">
+    <div class="phoneContent-header">
+            <b>Mobile Notice</b>
+    </div>
+        It seems that you are on your mobile phone, which means that the <b>screen's width is narrow</b> for some equations. For the best viewing experience, you can view this website in <b>landscape mode</b>.
+</div>  
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">Composite Functions</h1>
+          
+            <p style="color:#d02f5d"></pstyle>
+              <a href="/team">
+                Author | Engr. Nico O. Aspra, M.Eng., RMP, LPT
+              </a>
+            </p>
+          
+
+          $$
+  <!-- \definecolor{colorA}{rgb}{0.25, 0.51, 0.43}	
+  \definecolor{colorB}{rgb}{0.89, 0.04, 0.36}	 -->
+$$
+          <!-- <p style="color:#d02f5d"></pstyle>Author | Engr. Nico O. Aspra, M.Eng., RMP, LPT</p> -->
+          <!-- <a href="">Engr. Nico O. Aspra, M.Eng., RMP, LPT</a> -->
+          <!-- <br> -->
+
+          <!-- <div class="deskContent">Content for desktop</div> -->
+        <div class="content">
+          <p>Another method of combining functions is by <strong>composition</strong>, where a function contains another function. To visualize this, let’s say you want again an apple juice, but this time you want to pack it in a can, so you’ll need an additional canning machine. Let’s name the juicer $g$, the canning machine $f$, and the apple $x$. If we place the apple to the juicer, we’ll get an apple juice $g(x)$, and further placing this in the canning machine, we would get a canned apple juice $f(g(x))$.</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/DC/DC-1.4.1.png" alt="my alt text" width="500px" />
+  <figcaption><em><p>Figure 1</p>
+</em></figcaption>
+</figure>
+
+<p>If $f$ and $g$ are both functions of $x$, where $f$ is the outer function and $g$ is the inner function ($f$ is composed with $g$), the composite function is denoted as $(f \circ g)(x)=f(g(x))$, which is read as “$f$ of $g$ of $x$”.</p>
+
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(64, 130, 110, 0.9);
+border-radius:7px;
+padding:10px;
+margin:5px;">
+    $$\begin{align}
+	(f \circ g)(x)=f(g(x))
+    \end{align}$$
+</p>
+
+<p>For example, given two functions $f(x)=2x+5$ and $g(x)=3x-4$, determine $(f \circ g)(x)$</p>
+
+\[\begin{align*}
+	(f \circ g)(x) &amp;= f(g(x))
+\end{align*}\]
+
+<p>Start with the outer function $f$,</p>
+
+\[\begin{align*}
+	f( {\tcB{x}} ) &amp;= 2{\tcB{x}}+5 \\
+\end{align*}\]
+
+<p>Then replace $x$ with $g(x)$,</p>
+
+\[\begin{align*}
+	f( {\tcB{g(x)}} ) &amp;= 2({\tcB{g(x)}}) + 5
+\end{align*}\]
+
+<p>Since $g(x)=3x-4$,</p>
+
+\[\begin{align*}
+	f({\tcB{g(x)}}) &amp;= 2({\tcB{3x-4}}) + 5 \\
+	&amp;= 6x-8+5 \\
+	&amp;= 6x-3
+\end{align*}\]
+
+<p>Hence, $(f \circ g)= 6x-3$</p>
+
+<hr />
+<p>$\example{1}$
+If $ f(x)=x^2 $ and $ g(x)=x+1 $, find:
+<strong>a.</strong> $ (f \circ g)(x) $,
+<strong>b.</strong> $ (g \circ f)(x) $,
+<strong>c.</strong> $ (f \circ f)(x) $,
+<strong>d.</strong> $ (g \circ g)(x) $</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>$\For{a}$ <br />
+\(\begin{align*}
+	(f \circ g)(x) &amp;=  f(g(x)) \\ 
+	f(x) &amp;= x^2 \\
+	f(g(x)) &amp;=	[g(x)]^2 \\
+	&amp;= (x+1)^2 \\
+	&amp;= x^2+2x+1		\tagans
+\end{align*}\)</p>
+
+<p>$\For{b}$ <br />
+\(\begin{align*}
+	(g \circ f)(x) &amp;=  g(f(x)) \\
+	g(x) &amp;= x+1 \\
+	g(f(x)) &amp;= f(x)+1\\
+	&amp;= x^2+1			\tagans
+\end{align*}\)</p>
+
+<p>$\For{c}$ <br />
+\(\begin{align*}
+	(f \circ f)(x) &amp;=  f(f(x)) \\
+	f(x) &amp;= x^2 \\
+	f(f(x)) &amp;= [f(x)]^2 \\
+	&amp;= (x^2)^2 \\
+	&amp;= x^4			\tagans
+\end{align*}\)</p>
+
+<p>$\For{d}$ <br />
+\(\begin{align*}
+	(g \circ g)(x) &amp;=  g(g(x)) \\
+	g(x) &amp;= x+1 \\
+	g(g(x)) &amp;= [g(x)]+1 \\
+	&amp;= (x+1)+1 \\
+	&amp;= x+2			\tagans
+\end{align*}\)</p>
+
+
+</details>
+
+<hr />
+<p>$\example{2}$ 
+If $ g(x)= 2x+1$ and $ h(x)=3-x^2$, find:
+<strong>a.</strong> $ g(h(0)) $,
+<strong>b.</strong> $ h(g(2)) $,
+<strong>c.</strong> $ g(g(-3)) $,
+<strong>d.</strong> $ h(h(1/2)) $</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>$\For{a}$ <br />
+\(\begin{align*}
+	g(x) &amp;= 2x+1 \\
+	g(h(x)) &amp;= 2(3-x^2)+1 \\
+	g(h(0)) &amp;= 2[3-(0)^2]+1 \\
+	&amp;= 2(3)+1 \\
+	&amp;= 7		\tagans
+\end{align*}\)</p>
+
+<p>$\For{b}$ <br />
+\(\begin{align*}
+	h(x) &amp;= 3-x^2 \\
+	h(g(x)) &amp;= 3-(2x+1)^2 \\
+	h(g(2)) &amp;= 3-[2(2)+1]^2 \\
+	&amp;= 3-(5)^2 \\
+	&amp;= -22	\tagans
+\end{align*}\)</p>
+
+<p>$\For{c}$ <br />
+\(\begin{align*}
+	g(x) &amp;= 2x+1 \\
+	g(g(x)) &amp;= 2(2x+1)+1 \\
+	g(g(-3)) &amp;= 2[2(-3)+1]+1 \\
+	&amp;= 2(-5)+1 \\
+	&amp;= -9	\tagans
+\end{align*}\)</p>
+
+<p>$\For{d}$ <br />
+\(\begin{align*}
+	h(x) &amp;= 3-x^2 \\
+	h(h(x)) &amp;= 3-(3-x^2)^2 \\
+	h(h(1/2)) &amp;= 3-[3-(1/2)^2]^2 \\
+	&amp;= 3-\br{ 3-\frac{1}{4} }^2 \\
+	&amp;= 3-\br{ \frac{11}{4} }^2 \\
+	&amp;= -\frac{73}{16}	\tagans
+\end{align*}\)</p>
+
+
+</details>
+
+<hr />
+<p>$\example{3}$
+If $ f(x)=x+3$, $ g(x)=(x+1)^2$ and $ h(x)=\frac{1}{x}$, find:
+<strong>a.</strong> $ f(g(h(x))) $,
+<strong>b.</strong> $ g(h(f(x))) $,
+<strong>c.</strong> $ h(f(g(2))) $,
+<strong>d.</strong> $ h(g(f(x))) $,
+<strong>e.</strong> $ f(h(g(x))) $,
+<strong>f.</strong> $ g(f(h(1/2))) $</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>$\For{a}$ <br />
+\(\begin{align*}
+	f(x) &amp;= x+3 \\
+	f(g(x)) &amp;= (x+1)^2+3 \\
+	f(g(h(x))) &amp;= \br{ \frac{1}{x}+1 }^2+3 \\
+	&amp;= \br{ \frac{1}{x^2}+\frac{2}{x}+1 }+3 \\
+	&amp;= \frac{1}{x^2}+\frac{2}{x}+4	\tagans
+\end{align*}\)</p>
+
+<p>$\For{b}$ <br />
+\(\begin{align*}
+	g(x) &amp;= (x+1)^2 \\
+	g(h(x)) &amp;= \br{ \frac{1}{x}+1 }^2 \\
+	g(h(f(x))) &amp;= \br{ \frac{1}{x+3}+1 }^2 \\
+	&amp;= \br{ \frac{1}{x+3}+\frac{x+3}{x+3} }^2 \\
+	&amp;= \br{ \frac{x+4}{x+3} }^2 \\    
+	&amp;= \frac{(x+4)^2}{(x+3)^2}	\tagans
+\end{align*}\)</p>
+
+<p>$\For{c}$ <br />
+\(\begin{align*}
+	h(x) &amp;= \frac{1}{x} \\
+	h(f(x)) &amp;= \frac{1}{x+3} \\
+	h(f(g(x))) &amp;= \frac{1}{(x+1)^2+3} \\
+	h(f(g(2))) &amp;= \frac{1}{(2+1)^2+3} \\
+	&amp;= \frac{1}{12}			\tagans
+\end{align*}\)</p>
+
+<p>$\For{d}$ <br />
+\(\begin{align*}
+	h(x) &amp;= \frac{1}{x} \\
+	h(g(x)) &amp;= \frac{1}{(x+1)^2} \\
+	h(g(f(x))) &amp;= \frac{1}{[(x+3)+1]^2} \\
+	&amp;= \frac{1}{(x+4)^2}		\tagans
+\end{align*}\)</p>
+
+<p>$\For{e}$ <br />
+\(\begin{align*}
+	f(x) &amp;= x+3 \\
+	f(h(x)) &amp;= \frac{1}{x}+3 \\
+	f(h(g(x))) &amp;= \frac{1}{(x+1)^2}+3  \\
+	&amp;= \frac{1+3(x+1)^2}{(x+1)^2} \\
+	&amp;= \frac{1+3(x^2+2x+1)}{\left(x+1\right)^2} \\
+	&amp;= \frac{3x^2+6x+4}{\left(x+1\right)^2}	\tagans
+\end{align*}\)</p>
+
+<p>$\For{f}$ <br />
+\(\begin{align*}
+	g(x) &amp;= (x+1)^2 \\
+	g(f(x)) &amp;= (x+3+1)^2 \\
+	g(f(h(x))) &amp;= \br{ \frac{1}{x}+4 }^2  \\
+	g(f(h(1/2))) &amp;= \br{ \frac{1}{\frac{1}{2}}+4 }^2  \\
+	&amp;= (2+4)^2 \\
+	&amp;= 36		\tagans
+\end{align*}\)</p>
+
+
+</details>
+
+<hr />
+<p>$\example{4}$
+If $ f(x)= \frac{2}{x+1}$ and $ f(g(x))=x$, determine $g(x)$.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>In this case, the composed function is one of the given,<br />
+\(\begin{align*}
+	f(g(x)) &amp;= x
+\end{align*}\)</p>
+
+<p>Start with $f(x)$</p>
+
+\[\begin{align*}
+	f(x) &amp;= \frac{2}{x+1} \\
+	f(g(x)) &amp;= \frac{2}{ g(x) +1}
+\end{align*}\]
+
+<p>Since $f(g(x))=x$,</p>
+
+\[\begin{align*}
+	\frac{2}{ g(x) +1} &amp;= x \\
+	g(x) +1 &amp;= \frac{2}{x} \\
+	g(x) &amp;= \frac{2}{x} -1		\tag*{(ans.)}
+\end{align*}\]
+
+<p>You can check your answer by composing the function,</p>
+
+\[\begin{align*}
+	f(x) &amp;= \frac{2}{x+1} \\
+	f(g(x)) &amp;= 	\frac{2}{\br{ \frac{2}{x} -1 }+1} \\
+	&amp;= \frac{2}{\frac{2}{x}} \\
+	&amp;= x
+\end{align*}\]
+
+
+</details>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Displaystyle -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+  var TEX = MathJax.InputJax.TeX;
+  var PREFILTER = TEX.prefilterMath;
+  TEX.Augment({
+  prefilterMath: function (math,displaymode,script) {
+  math = "\\displaystyle{"+math+"}";
+  return PREFILTER.call(TEX,math,displaymode,script);
+  }
+  });
+  });
+</script>
+
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- //assets/js/MathJax.js -->
+<!-- <script src="http://lemniscateinstitute.com/assets/js/MathJax.js"> -->
+<!-- <script type="text/javascript" src="../../assets/js/MathJax.js"> -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      availableFonts: ["TeX"],
+      styles: {".MathJax": {color: "#5C5A5A"}} 
+    },
+    tex2jax: {
+      inlineMath: [['$','$'],["\\(","\\)"]]},
+      displayMath: [ ['$$','$$'], ['\[','\]'] ],
+    TeX: {
+      extensions: ["AMSmath.js", "AMSsymbols.js", "color.js", "autoload-all.js"],
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    showProcessingMessages: false,
+    messageStyle: "none",
+    imageFont: null,
+    "AssistiveMML": { disabled: true }
+  });
+</script>
+
+<!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script> -->
+
+
+
+
+
+
+
+
+
+<!-- <div style="display:none">
+  \(
+    \newcommand{\CC}{\mathbf{C}}
+  \)
+</div> -->
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        CC: '{\\bf R}',
+        un: ['\\;\\mathrm{#1}',1],
+        x:  '{\\times}',
+        ohm: '{\\Omega}',
+        st:['{^{\\text{st}}}'],
+        nd:['{^{\\text{nd}}}'],
+        rd:['{^{\\text{rd}}}'],
+        nth:['{^{\\text{th}}}'],
+
+        br: ['\\left(#1\\right)',1],
+        brk: ['\\left[#1\\right]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbbrk: ['\\Biggl[#1\\Biggr]',1],
+        brv: ['\\left|#1\\right|',1],
+        brc: ['\\left\\{#1\\right\\}',1],
+
+        Dy: '{\\Delta y}',
+        Dx: '{\\Delta x}',
+        D: '{\\Delta}',
+        dydx: '{\\frac{dy}{dx}}',
+        ddx: '{\\frac{d}{dx}}',
+        ddu: '{\\frac{d}{du}}',
+        ddy: '{\\frac{d}{dy}}',
+        ddw: '{\\frac{d}{dw}}',
+        ddt: '{\\frac{d}{dt}}',
+        pd: ['\\frac{\\partial#1}{\\partial#2}',2],
+        ufrac: ['\\frac{\\text{#1}}{\\text{#2}}',2],
+        Ncancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\un{#4}}',4],
+        Dcancel: ['\\frac{#1 \\un{#2}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        NDcancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        
+        degg: '{^{\\circ}}',
+        degC: '{^{\\circ}\\mathrm{C}}',
+        degF: '{^{\\circ}\\mathrm{F}}',
+        tagans: '{\\tag{ans.}}',
+        tcA: ['\\color{colorA}{#1}',1],
+        tcB: ['\\color{colorB}{#1}',1],
+        tcAal: ['\\tcA{\\text{#1}}',1],
+        tcBal: ['\\tcB{\\text{#1}}',1],
+        typB: ['\\tcB{\\text{#1}}',1],
+        tcxA: ['\\tcA{\\text{#1}}',1],
+        tcxB: ['\\tcB{\\text{#1}}',1],
+        example: ['\\tcA{\\text{Example #1:}}',1],
+        For: ['\\tcB{\\text{For (#1):}}',1],
+        solution:  '\\tcB{\\textit{Solution:}}',
+        required:  '\\tcB{\\textit{Required:}}',
+        case: ['\\tcB{\\text{Case #1:}}',1],
+        rule: ['\\tcB{\\textbf{Rule #1:}\\text{ #2}}',2],
+        ubrace: ['\\underbrace{#1}_{\\tcAal{#2}}',2],
+        ubraces: ['\\underbrace{#1}_{\\substack{\\tcAal{#2} \\\\ \\tcAal{#3}}}',3],
+        given: '\\tcB{\\textit{Given:}}',
+        thrm: ['\\tcB{\\text{#1}}',1],
+        vv: ['\\overrightarrow{#1}',1],
+        eref: ['\\tcAal{Equation}\\,\\ref{#1}',1],
+        fref: ['\\tcAal{Figure}\\,#1',1],
+        tref: ['\\tcAal{Table}\\,#1',1],
+      }
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="PageNavigation">
+  
+    <a class="prev" href="/services/calculus/DC-1.3-combining-functions/">&laquo; Combining Functions</a>
+  
+  
+    <a class="next" href="/services/calculus/DC-1.6-graph-of-functions/">Graph of Functions &raquo;</a>
+  
+</div> -->
+
+
+
+<!-- <div class="PageNavigation">
+    <a class="prev" href="../DC-1.3-combining-functions">&laquo; </a> <a class="next" href="../DC-1.6-graph-of-functions"> &raquo;</a>
+</div> -->
+
+
+
+<div class="PageNavigation">
+  <a class="prev" href="../DC-1.3-combining-functions">&laquo; Previous</a> 
+  <a class="next" href="../DC-1.6-graph-of-functions">Next &raquo;</a>
+</div>
+
+
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h5 class="footer-title">&copy 2022 Lemniscate Institute</h5>
+          <!-- <h5 class="footer-title">Lemniscate Institute</h5> -->
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/services/">Courses</a>
+            </li>
+            
+            <!-- <li class="">
+              &copy 2021 Lemniscate Institute -->
+            </li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>
+
+
+
+
+
+

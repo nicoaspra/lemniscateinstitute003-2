@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Average and Instantaneous Velocity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" href="/images/logo/logo.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="" />
+  <meta name="twitter:card" content="" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:creator" content="" />
+
+   <!-- Add Slick Carousel CSS -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+   <!-- Add Slick Carousel theme CSS (optional) -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+</head>
+<body class='page '>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a>
+      <!-- <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a> -->
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a>
+      <!-- <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a> -->
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+    <div class="phoneContent">
+    <div class="phoneContent-header">
+            <b>Mobile Notice</b>
+    </div>
+        It seems that you are on your mobile phone, which means that the <b>screen's width is narrow</b> for some equations. For the best viewing experience, you can view this website in <b>landscape mode</b>.
+</div>  
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">Average and Instantaneous Velocity</h1>
+          
+            <p style="color:#d02f5d"></pstyle>
+              <a href="/team">
+                Author | Engr. Nico O. Aspra, M.Eng., RMP, LPT
+              </a>
+            </p>
+          
+
+          $$
+  <!-- \definecolor{colorA}{rgb}{0.25, 0.51, 0.43}	
+  \definecolor{colorB}{rgb}{0.89, 0.04, 0.36}	 -->
+$$
+          <!-- <p style="color:#d02f5d"></pstyle>Author | Engr. Nico O. Aspra, M.Eng., RMP, LPT</p> -->
+          <!-- <a href="">Engr. Nico O. Aspra, M.Eng., RMP, LPT</a> -->
+          <!-- <br> -->
+
+          <!-- <div class="deskContent">Content for desktop</div> -->
+        <div class="content">
+          <p>A well-known application of the rate of change is when it involves motion. Moreover, in <a href="../../physics/3.2-speed-and-velocity">physics</a>, velocity is a fundamental concept that must be learned at the start of the course.</p>
+
+<p>To understand the difference between Average and Instantaneous Velocity, consider Figure 1, which represents a <strong>position vs. time graph</strong>, where the vertical axis represents the <strong>object’s position</strong> $s$ and the horizontal axis (independent variable) represents the <strong>time</strong> $t$.</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/DC/DC-3.5.1.png" alt="my alt text" width="600px" />
+  <figcaption><em><p>Figure 1: Graphical representation of average and instantaneous velocities</p>
+</em></figcaption>
+</figure>
+
+<p><strong>Average velocity</strong> is defined as the change of the displacement $\D{s}$ of an object divided by the time interval $\D{t}$. Graphically, the average velocity can be expressed as the slope of the secant line connecting the two positions (Figure 1a).</p>
+
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(64, 130, 110, 0.9);
+border-radius:7px;
+padding:10px;
+margin:5px;">
+    $$\begin{align}
+	 	\overline{v}=\frac{\Delta s}{\Delta t}
+	\end{align}$$
+</p>
+
+<p><strong>Instantaneous velocity</strong>, on the other hand, is the velocity of the object at a specific instant. To understand this, let us have a simple example.</p>
+
+<p>Suppose a stray dog chased a student, his initial instinct tells him to run as fast as possible, say he is running at a rate of 10 m/s, but as time passed by, he starts slowing down to a rate of 4 m/s, then somehow realized that the dog already stopped chasing him, so he then stopped running.</p>
+
+<p><strong>Instantaneous velocity</strong>, is the <em>velocity at a certain instant</em>, so at the time he hit his velocity at 10 m/s that was his <em>instantaneous velocity at that certain moment</em>. And at the time he stopped, he has an instantaneous velocity of 0 m/s. Hence, instantaneous velocity is denoted as,</p>
+
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(64, 130, 110, 0.9);
+border-radius:7px;
+padding:10px;
+margin:5px;">
+    $$\begin{align}
+ 	v = \frac{ds}{dt} = \lim_{\Delta t \to 0} \frac{\Delta{s}}{\Delta{t}}
+ \end{align}$$
+</p>
+
+<p>Instantaneous velocity can be represented as the derivative of the function at a specific point. Graphically, the instantaneous velocity is the slope of the tangent line at a particular time (Figure 1b).</p>
+
+<hr />
+<p>$\example{1}$
+What is the instantaneous velocity of a car at $t= 5$ sec if its displacement is defined by the equation: $s=2t^2+3t-5$ meters.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>From the given equation, the displacement is a function of its time. To determine the instantaneous velocity of the car at a specific instant, differentiate the function with respect to time,</p>
+
+\[\begin{align*}
+	s+\D{s} &amp;= 2(t+\D{t})^2+3(t+\D{t})-5 \\
+	\D{s} &amp;= \cancel{2t^2}+4t\D{t}+2\D{t}^2+\cancel{3t}+3\D{t}-\cancel{5} - (\cancel{2t^2}+\cancel{3t}-\cancel{5}) \\
+	&amp;= 4t\D{t}+2\D{t}^2+3\D{t} \\
+	\frac{\D s}{\D t} &amp;= \frac{\cancel{\D t}(4t+2\D{t}+3)}{\cancel{\D t}} \\
+	\frac{ds}{dt} &amp;= \lim_{\D t\to 0} (4t+2\D{t}+3) \\
+	&amp;= 4t+3
+\end{align*}\]
+
+<p>At $t=5\un{sec}$,</p>
+
+\[\begin{align*}
+	&amp;= 4(5)+3 \\
+	&amp;= 23 \un{m/s}		\tagans
+\end{align*}\]
+
+
+</details>
+
+<hr />
+<p>$\example{2}$
+A ball is thrown vertically upward with the displacement from its initial point defined by the equation: $s=160t-16t^2$ ft, what is the height of the ball in ft. at the moment it stopped rising?</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>When a ball is thrown upward, it will eventually stop rising at its peak. And the instantaneous velocity of the ball when it reaches its peak is zero.</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/DC/DC-3.5.2.png" alt="my alt text" width="250px" />
+  <figcaption><em>
+</em></figcaption>
+</figure>
+
+<p>Differentiate $s$ with respect to $t$,</p>
+
+\[\begin{align*}
+	s+\D{s} &amp;= 160(t+\D t)-16(t+\D t)^2 \\
+	\D{s} &amp;= \cancel{160t}+160\D t-\cancel{16t^2}-32t\D{t}-16\D{t}^2 - (\cancel{160t}-\cancel{16t^2}) \\
+	&amp;= 160\D{t}-32t\D{t}-16\D{t}^2 \\
+	\frac{\D s}{\D t} &amp;= \frac{\cancel{\D t} (160-32t-16\D{t})}{\cancel{\D t}} \\
+	\frac{ds}{dt} &amp;= \lim_{\D t\to 0} (160-32t-16\D{t}) \\
+	&amp;= 160-32t
+\end{align*}\]
+
+<p>At the peak of flight of the ball, $\frac{ds}{dt}=0$,</p>
+
+\[\begin{align*}
+	0 &amp;= 160-32t \\
+	t &amp;= \frac{160}{32} \\
+	&amp;= 5
+\end{align*}\]
+
+<p>Thus, it takes 5 sec for the ball to reach the peak. So, substitute $t=5$ to the function,</p>
+
+\[\begin{align*}
+	s &amp;= 160(5)-16(5)^2 \\
+	&amp;= 400\un{ft} 		\tagans
+\end{align*}\]
+
+<p>Hence, the ball <strong>will stop rising</strong> after it reaches the height of <strong>400 ft</strong>.</p>
+
+
+</details>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Displaystyle -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+  var TEX = MathJax.InputJax.TeX;
+  var PREFILTER = TEX.prefilterMath;
+  TEX.Augment({
+  prefilterMath: function (math,displaymode,script) {
+  math = "\\displaystyle{"+math+"}";
+  return PREFILTER.call(TEX,math,displaymode,script);
+  }
+  });
+  });
+</script>
+
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- //assets/js/MathJax.js -->
+<!-- <script src="http://lemniscateinstitute.com/assets/js/MathJax.js"> -->
+<!-- <script type="text/javascript" src="../../assets/js/MathJax.js"> -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      availableFonts: ["TeX"],
+      styles: {".MathJax": {color: "#5C5A5A"}} 
+    },
+    tex2jax: {
+      inlineMath: [['$','$'],["\\(","\\)"]]},
+      displayMath: [ ['$$','$$'], ['\[','\]'] ],
+    TeX: {
+      extensions: ["AMSmath.js", "AMSsymbols.js", "color.js", "autoload-all.js"],
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    showProcessingMessages: false,
+    messageStyle: "none",
+    imageFont: null,
+    "AssistiveMML": { disabled: true }
+  });
+</script>
+
+<!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script> -->
+
+
+
+
+
+
+
+
+
+<!-- <div style="display:none">
+  \(
+    \newcommand{\CC}{\mathbf{C}}
+  \)
+</div> -->
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        CC: '{\\bf R}',
+        un: ['\\;\\mathrm{#1}',1],
+        x:  '{\\times}',
+        ohm: '{\\Omega}',
+        st:['{^{\\text{st}}}'],
+        nd:['{^{\\text{nd}}}'],
+        rd:['{^{\\text{rd}}}'],
+        nth:['{^{\\text{th}}}'],
+
+        br: ['\\left(#1\\right)',1],
+        brk: ['\\left[#1\\right]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbbrk: ['\\Biggl[#1\\Biggr]',1],
+        brv: ['\\left|#1\\right|',1],
+        brc: ['\\left\\{#1\\right\\}',1],
+
+        Dy: '{\\Delta y}',
+        Dx: '{\\Delta x}',
+        D: '{\\Delta}',
+        dydx: '{\\frac{dy}{dx}}',
+        ddx: '{\\frac{d}{dx}}',
+        ddu: '{\\frac{d}{du}}',
+        ddy: '{\\frac{d}{dy}}',
+        ddw: '{\\frac{d}{dw}}',
+        ddt: '{\\frac{d}{dt}}',
+        pd: ['\\frac{\\partial#1}{\\partial#2}',2],
+        ufrac: ['\\frac{\\text{#1}}{\\text{#2}}',2],
+        Ncancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\un{#4}}',4],
+        Dcancel: ['\\frac{#1 \\un{#2}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        NDcancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        
+        degg: '{^{\\circ}}',
+        degC: '{^{\\circ}\\mathrm{C}}',
+        degF: '{^{\\circ}\\mathrm{F}}',
+        tagans: '{\\tag{ans.}}',
+        tcA: ['\\color{colorA}{#1}',1],
+        tcB: ['\\color{colorB}{#1}',1],
+        tcAal: ['\\tcA{\\text{#1}}',1],
+        tcBal: ['\\tcB{\\text{#1}}',1],
+        typB: ['\\tcB{\\text{#1}}',1],
+        tcxA: ['\\tcA{\\text{#1}}',1],
+        tcxB: ['\\tcB{\\text{#1}}',1],
+        example: ['\\tcA{\\text{Example #1:}}',1],
+        For: ['\\tcB{\\text{For (#1):}}',1],
+        solution:  '\\tcB{\\textit{Solution:}}',
+        required:  '\\tcB{\\textit{Required:}}',
+        case: ['\\tcB{\\text{Case #1:}}',1],
+        rule: ['\\tcB{\\textbf{Rule #1:}\\text{ #2}}',2],
+        ubrace: ['\\underbrace{#1}_{\\tcAal{#2}}',2],
+        ubraces: ['\\underbrace{#1}_{\\substack{\\tcAal{#2} \\\\ \\tcAal{#3}}}',3],
+        given: '\\tcB{\\textit{Given:}}',
+        thrm: ['\\tcB{\\text{#1}}',1],
+        vv: ['\\overrightarrow{#1}',1],
+        eref: ['\\tcAal{Equation}\\,\\ref{#1}',1],
+        fref: ['\\tcAal{Figure}\\,#1',1],
+        tref: ['\\tcAal{Table}\\,#1',1],
+      }
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="PageNavigation">
+  
+    <a class="prev" href="/services/calculus/DC-3.4-rate-of-change/">&laquo; Rate of Change</a>
+  
+  
+    <a class="next" href="/services/calculus/DC-4.1-differentiation-and-its-rules-for-algebraic-functions/">Differentiation and its Rules for Algebraic Functions &raquo;</a>
+  
+</div> -->
+
+
+
+<!-- <div class="PageNavigation">
+    <a class="prev" href="../DC-3.4-rate-of-change">&laquo; </a> <a class="next" href="../DC-4.1-differentiation-and-its-rules-for-algebraic-functions"> &raquo;</a>
+</div> -->
+
+
+
+<div class="PageNavigation">
+  <a class="prev" href="../DC-3.4-rate-of-change">&laquo; Previous</a> 
+  <a class="next" href="../DC-4.1-differentiation-and-its-rules-for-algebraic-functions">Next &raquo;</a>
+</div>
+
+
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h5 class="footer-title">&copy 2022 Lemniscate Institute</h5>
+          <!-- <h5 class="footer-title">Lemniscate Institute</h5> -->
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/services/">Courses</a>
+            </li>
+            
+            <!-- <li class="">
+              &copy 2021 Lemniscate Institute -->
+            </li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>
+
+
+
+
+
+

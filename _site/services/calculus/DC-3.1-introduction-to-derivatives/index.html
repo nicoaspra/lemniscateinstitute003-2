@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Introduction to Derivatives</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" href="/images/logo/logo.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="" />
+  <meta name="twitter:card" content="" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:creator" content="" />
+
+   <!-- Add Slick Carousel CSS -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+   <!-- Add Slick Carousel theme CSS (optional) -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+</head>
+<body class='page '>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a>
+      <!-- <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a> -->
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a>
+      <!-- <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a> -->
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+    <div class="phoneContent">
+    <div class="phoneContent-header">
+            <b>Mobile Notice</b>
+    </div>
+        It seems that you are on your mobile phone, which means that the <b>screen's width is narrow</b> for some equations. For the best viewing experience, you can view this website in <b>landscape mode</b>.
+</div>  
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">Introduction to Derivatives</h1>
+          
+            <p style="color:#d02f5d"></pstyle>
+              <a href="/team">
+                Author | Engr. Nico O. Aspra, M.Eng., RMP, LPT
+              </a>
+            </p>
+          
+
+          $$
+  <!-- \definecolor{colorA}{rgb}{0.25, 0.51, 0.43}	
+  \definecolor{colorB}{rgb}{0.89, 0.04, 0.36}	 -->
+$$
+          <!-- <p style="color:#d02f5d"></pstyle>Author | Engr. Nico O. Aspra, M.Eng., RMP, LPT</p> -->
+          <!-- <a href="">Engr. Nico O. Aspra, M.Eng., RMP, LPT</a> -->
+          <!-- <br> -->
+
+          <!-- <div class="deskContent">Content for desktop</div> -->
+        <div class="content">
+          <h1 id="introduction">Introduction</h1>
+<p>In this lesson, we will try to establish the fundamental notions of derivatives. But before we begin, let us review some of the concepts necessary to adequately comprehend derivatives, as this concept distinguishes Differential Calculus from other branches of mathematics that you may have studied in your earlier years.</p>
+
+<h2 id="increments">Increments</h2>
+<p>The increment of the variable indicates the change of the value of a variable. The increment is represented by the symbol $\Delta$ (delta), and is written before the variable to denote change. For example, if $x$ changes from $x_1$ to $x_2$, the increment of $x$ is equal to  $x_2- x_1$.</p>
+
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(64, 130, 110, 0.9);
+border-radius:7px;
+padding:10px;
+margin:5px;">
+    $$\begin{align}
+        \Delta x=x_2- x_1
+    \end{align}$$
+</p>
+
+<h1 id="the-derivative">The Derivative</h1>
+
+<p>To understand what a derivative is, let us start by recalling the <strong>slope of a line</strong>. A slope is commonly denoted by the symbol “$m$,” known simply as the “<em>rise over run</em>” or the “ratio of the difference of the $y$-coordinates and the difference of the $x$-coordinates between two specified positions” (see Figure 1). Furthermore, the slope of a line can be represented by any two points on the same plane, and the slope <strong>remains constant</strong> regardless of how far or close the points are separated, which is what defines it as a line.</p>
+
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(64, 130, 110, 0.9);
+border-radius:7px;
+padding:10px;
+margin:5px;">
+    $$\begin{align}
+	    m = \frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1}
+    \end{align}$$
+</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/DC/DC-3.1.1.png" alt="my alt text" width="300px" />
+  <figcaption><em><p>Figure 1: Slope of a line</p>
+</em></figcaption>
+</figure>
+
+<p>However, if a graph does not represent a line (Figure 2a), getting the slope is not as easy as determining the slope of a line since its slope varies from one point to the other (Figure 2b). Nevertheless, what makes calculus so remarkable is that we can use the concept of limits to find the slope of the tangent line at any point on the curve.</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/DC/DC-3.1.2.png" alt="my alt text" width="550px" />
+  <figcaption><em><p>Figure 2: Slope of a curve</p>
+</em></figcaption>
+</figure>
+
+<p>To determine the slope of a tangent line, we will start by locating two points on the curve, then connect these points with a line (Figure 3a). Bear in mind that our objective is to determine the slope at a single point. Therefore, let us bring the two points relatively close to each other (Figure 3b). And as the points get closer and closer to each other, the change in $x$ “$\Delta x$” approaches zero. Thus, $\lim_{\Dx\to 0} \frac{\Delta y}{\Delta x}$.</p>
+
+<p>The slope of the tangent line is denoted as $\frac{dy}{dx}$, and this is what we call a <strong>derivative</strong>. Hence,</p>
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(64, 130, 110, 0.9);
+border-radius:7px;
+padding:10px;
+margin:5px;">
+    $$\begin{align}
+	\frac{dy}{dx} = \lim_{\Dx\to 0} \frac{\Delta y}{\Delta x}
+	\label{eq:the derivative 1}
+    \end{align}$$
+</p>
+
+<p>Which is read as the “derivative of $y$ with respect to $x$ is equal to the limit of the ratio of ${\Delta y}/{\Delta x}$ as $\Delta x$ approaches 0”.</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/DC/DC-3.1.3.png" alt="my alt text" width="550px" />
+  <figcaption><em><p>Figure 3: Slope of the tangent line of a curve</p>
+</em></figcaption>
+</figure>
+
+<figure style="text-align: center;">
+  <img src="/images/content/DC/DC-3.1.4.gif" alt="my alt text" width="250px" />
+  <figcaption><em><p>Figure 4: Approaching $\D{x}$ to zero (0)</p>
+</em></figcaption>
+</figure>
+
+<p><strong>Differentiation</strong> is the process of finding the derivative. And to evaluate the derivative of a function, consider the function,</p>
+
+\[\begin{align*}
+	y &amp;= f(x)
+\end{align*}\]
+
+<p>Then add $\Delta x$ and $\Delta y$ to $x$ and $y$ respectively,</p>
+
+\[\begin{align*}
+	y+\Delta y &amp;= f(x+\Delta x) \\
+	\Delta y &amp;= f(x+\Delta x)-y
+\end{align*}\]
+
+<p>Since $y=f(x)$,</p>
+
+\[\begin{align*}
+	\Delta y &amp;= f(x+\Delta x)-f(x)
+\end{align*}\]
+
+<p>Divide both sides by $\Delta x$,</p>
+
+\[\begin{align*}
+	\frac{\Delta y}{\Delta x} &amp;= \frac{f(x+\Delta x)-f(x)}{\Delta x}
+\end{align*}\]
+
+<p>From $\eref{eq:the derivative 1}$,</p>
+
+\[\begin{align*}
+	\frac{dy}{dx} &amp;= \lim_{\Dx\to 0} \frac{\Delta y}{\Delta x} \\
+	&amp;= \lim_{\Dx\to 0} \frac{f(x+\Delta x)-f(x)}{\Delta x} \\
+\end{align*}\]
+
+<p>Therefore, the derivative of $y$ with respect to $x$ is,</p>
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(64, 130, 110, 0.9);
+border-radius:7px;
+padding:10px;
+margin:5px;">
+    $$\begin{align}
+	\frac{dy}{dx} = \lim_{\Dx\to 0} \frac{f(x+\Delta x)-f(x)}{\Delta x}
+	\label{eq:the derivative delta notation}
+    \end{align}$$
+</p>
+
+<div class="youtube-wrapper">
+    <iframe src="https://www.youtube.com/embed/5cucs3LFbMs" allowfullscreen=""></iframe>
+  </div>
+
+<p><!-- https://www.chunkhang.com/blog/responsive-youtube-video-with-jekyll --></p>
+
+<hr />
+<p>$\example{1}$
+Differentiate the function $y=5x+2$</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>Add $\Delta x$ and $\Delta y$ to $x$ and $y$ respectively,</p>
+
+\[\begin{align*}
+%	y+\Dy &amp;= f(x+\Dx) \\
+	y+\Dy &amp;= 5(x+\Dx)+2 \\
+	&amp;= 5x+5\Dx+2 \\
+	\Dy &amp;= 5x+5\Dx+2 -y 
+\end{align*}\]
+
+<p>Since $y=5x+2$,</p>
+
+\[\begin{align*}
+	\Dy &amp;= 5x+5\Dx+2 -(5x+2) \\
+	&amp;= \cancel{5x}+5\Dx+\cancel{2} -\cancel{5x}-\cancel{2} \\
+	&amp;= 5\Dx 
+\end{align*}\]
+
+<p>Divide both sides by $\Dx$,</p>
+
+\[\begin{align*}
+	\frac{\Dy}{\Dx} &amp;= \frac{5\cancel{\Dx} }{\cancel{\Dx}} \\
+	&amp;= 5 
+\end{align*}\]
+
+<p>Thus,</p>
+
+\[\begin{align*}
+	\dydx &amp;= \lim_{\Dx\to 0} 5 \\
+	&amp;= 5		\tagans
+\end{align*}\]
+
+
+</details>
+
+<hr />
+<p>$\example{2}$
+Differentiate the function $y=3-2x+x^2$</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>Add $\Delta x$ and $\Delta y$ to $x$ and $y$ respectively,</p>
+
+\[\begin{align*}
+	y+\Dy &amp;= 3-2(x+\Dx)+(x+\Dx)^2 \\
+	&amp;= 3-2x-2\Dx+x^2+2x\Dx+\Dx^2 \\
+	\Dy &amp;= 3-2x-2\Dx+x^2+2x\Dx+\Dx^2 -y 
+\end{align*}\]
+
+<p>Since $3-2x+x^2$,</p>
+
+\[\begin{align*}
+	\Dy &amp;= 3-2x-2\Dx+x^2+2x\Dx+\Dx^2 -(3-2x+x^2) \\
+	&amp;= \cancel{3}-\cancel{2x}-2\Dx+\cancel{x^2}+2x\Dx+\Dx^2 - \cancel{3}+\cancel{2x}-\cancel{x^2} \\
+	&amp;= -2\Dx+2x\Dx+\Dx^2 
+\end{align*}\]
+
+<p>Divide both sides by $\Dx$,</p>
+
+\[\begin{align*}
+	\frac{\Dy}{\Dx} &amp;= \frac{\cancel{\Dx}(-2+2x+\Dx)}{\cancel{\Dx}} \\
+	&amp;= -2+2x+\Dx 
+\end{align*}\]
+
+<p>Thus,</p>
+
+\[\begin{align*}
+	\dydx &amp;= \lim_{\Dx\to 0} (-2+2x+\Dx) \\
+	&amp;= -2+2x+0 \\
+	&amp;= 2x-2		\tagans
+\end{align*}\]
+
+
+</details>
+
+<hr />
+<p>$\example{3}$
+Differentiate the function $x=\frac{1}{t^2}$</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>Add $\Delta x$ and $\Delta t$ to $x$ and $t$ respectively,</p>
+
+\[\begin{align*}
+	x+\Dx &amp;= \frac{1}{(t+\D t)^2} \\
+	\Dx &amp;= \frac{1}{(t+\D t)^2} - \frac{1}{t^2} \\
+	&amp;=\frac{(1)t^2-(1)(t+\D t)^2}{t^2(t+\D t)^2} \\
+	&amp;=\frac{t^2-(t^2+2t\D t+\D t^2)}{t^2(t+\D t)^2} \\
+	&amp;=\frac{-2t\D t-\D t^2}{t^2(t+\D t)^2} 
+\end{align*}\]
+
+<p>Divide both sides by $\D t$,</p>
+
+\[\begin{align*}
+	\frac{\Dx}{\D t} &amp;= \frac{\cancel{\D t} (-2t-\D t)}{t^2(t+\D t)^2} \cdot \frac{1}{\cancel{\D t}} 
+\end{align*}\]
+
+<p>Thus,</p>
+
+\[\begin{align*}
+	\frac{dx}{dt} &amp;= \lim_{\D t\to 0} \frac{-2t-\D t}{t^2(t+\D t)^2} \\
+	&amp;= \frac{-2t-0}{t^2(t+0)^2}	\\
+	&amp;= \frac{-2t}{t^4} \\
+	&amp;= -\frac{2}{t^3}		\tagans
+\end{align*}\]
+
+
+</details>
+
+<hr />
+<p>$\example{4}$
+Differentiate the function $x=\frac{y-2}{2y+5}$</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>Add $\Delta x$ and $\Delta y$ to $x$ and $y$ respectively,</p>
+
+\[\begin{align*}
+	x+\Dx &amp;= \frac{(y+\Dy)-2}{2(y+\Dy)+5} \\
+	\Dx &amp;= \frac{y+\Dy-2}{2y+2\Dy+5} - \frac{y-2}{2y+5} \\
+	&amp;=\frac{(y+\Dy-2)(2y+5)-(y-2)(2y+2\Dy+5)}{(2y+2\Dy+5)(2y+5)} \\
+	&amp;=\frac{(2y^2+2y\Dy-4y+5y+5\Dy-10)-(2y^2+2y\Dy+5y-4y-4\Dy-10)}{(2y+2\Dy+5)(2y+5)} \\
+	&amp;=\frac{5\Dy+4\Dy}{(2y+2\Dy+5)(2y+5)} \\
+	&amp;=\frac{9\Dy}{(2y+2\Dy+5)(2y+5)} 
+\end{align*}\]
+
+<p>Divide both sides by $\D y$,</p>
+
+\[\begin{align*}
+	&amp;=\frac{9\cancel{\Dy}}{(2y+2\Dy+5)(2y+5)} \cdot \frac{1}{\cancel{\Dy}} 
+\end{align*}\]
+
+<p>Thus,</p>
+
+\[\begin{align*}
+	\frac{dx}{dy} &amp;= \lim_{\Dy\to 0} \frac{9}{(2y+2\Dy+5)(2y+5)} \\
+	&amp;= \frac{9}{(2y+2(0)+5)(2y+5)}	\\
+	&amp;= \frac{9}{(2y+5)(2y+5)} \\
+	&amp;= \frac{9}{(2y+5)^2}		\tagans
+\end{align*}\]
+
+
+</details>
+
+<hr />
+<p>$\example{5}$
+Find the value of the derivative: $\frac{dz}{dw}$ at $w=3$, if $z=\sqrt{1+w}$.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>Add $\Delta z$ and $\Delta w$ to $z$ and $w$ respectively,</p>
+
+\[\begin{align*}
+	z + \D z &amp;= \sqrt{1+(w+\D w)} \\
+	\D z &amp;= \sqrt{1+w+\D w} - \sqrt{1+w} 
+\end{align*}\]
+
+<p>To combine the terms, multiply both the numerator and the denominator by the conjugate,</p>
+
+\[\begin{align*}
+	&amp;= \br{ \sqrt{1+w+\D w} - \sqrt{1+w} } \cdot \frac{\sqrt{1+w+\D w} + \sqrt{1+w}}{\sqrt{1+w+\D w} + \sqrt{1+w}} 
+\end{align*}\]
+
+<p>If you can recall in algebra, multiplying an expression by its conjugate results to the square of the difference of the two terms $(a+b)(a-b)=a^2-b^2$,</p>
+
+\[\begin{align*}
+	&amp;= \frac{ \br{ \sqrt{1+w+\D w} }^2 - \br {\sqrt{1+w} }^2 }{\sqrt{1+w+\D w} + \sqrt{1+w}} \\
+	&amp;= \frac{\cancel{1}+\cancel{w}+\D w-\cancel{1}-\cancel{w}}{\sqrt{1+w+\D w} + \sqrt{1+w}} \\
+	&amp;= \frac{\D w}{\sqrt{1+w+\D w} + \sqrt{1+w}} 
+\end{align*}\]
+
+<p>Divide both sides by $\D w$,</p>
+
+\[\begin{align*}
+	\frac{\D z}{\D w} &amp;=\frac{\cancel{\D w}}{\sqrt{1+w+\D w} + \sqrt{1+w}} \cdot \frac{1}{\cancel{\D w}}
+\end{align*}\]
+
+<p>Thus,</p>
+
+\[\begin{align*}
+	\frac{dz}{dw} &amp;= \lim_{\D w\to 0} \frac{1}{\sqrt{1+w+\D w} + \sqrt{1+w}} \\
+	&amp;= \frac{1}{\sqrt{1+w+0} + \sqrt{1+w}} \\
+	&amp;= \frac{1}{2\sqrt{1+w}}
+\end{align*}\]
+
+<p>At $w=3$, substitute $w$ with 3,</p>
+
+\[\begin{align*}
+	&amp;= \frac{1}{2\sqrt{1+3}} \\
+	&amp;= \frac{1}{4}		\tagans
+\end{align*}\]
+
+
+</details>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Displaystyle -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+  var TEX = MathJax.InputJax.TeX;
+  var PREFILTER = TEX.prefilterMath;
+  TEX.Augment({
+  prefilterMath: function (math,displaymode,script) {
+  math = "\\displaystyle{"+math+"}";
+  return PREFILTER.call(TEX,math,displaymode,script);
+  }
+  });
+  });
+</script>
+
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- //assets/js/MathJax.js -->
+<!-- <script src="http://lemniscateinstitute.com/assets/js/MathJax.js"> -->
+<!-- <script type="text/javascript" src="../../assets/js/MathJax.js"> -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      availableFonts: ["TeX"],
+      styles: {".MathJax": {color: "#5C5A5A"}} 
+    },
+    tex2jax: {
+      inlineMath: [['$','$'],["\\(","\\)"]]},
+      displayMath: [ ['$$','$$'], ['\[','\]'] ],
+    TeX: {
+      extensions: ["AMSmath.js", "AMSsymbols.js", "color.js", "autoload-all.js"],
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    showProcessingMessages: false,
+    messageStyle: "none",
+    imageFont: null,
+    "AssistiveMML": { disabled: true }
+  });
+</script>
+
+<!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script> -->
+
+
+
+
+
+
+
+
+
+<!-- <div style="display:none">
+  \(
+    \newcommand{\CC}{\mathbf{C}}
+  \)
+</div> -->
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        CC: '{\\bf R}',
+        un: ['\\;\\mathrm{#1}',1],
+        x:  '{\\times}',
+        ohm: '{\\Omega}',
+        st:['{^{\\text{st}}}'],
+        nd:['{^{\\text{nd}}}'],
+        rd:['{^{\\text{rd}}}'],
+        nth:['{^{\\text{th}}}'],
+
+        br: ['\\left(#1\\right)',1],
+        brk: ['\\left[#1\\right]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbbrk: ['\\Biggl[#1\\Biggr]',1],
+        brv: ['\\left|#1\\right|',1],
+        brc: ['\\left\\{#1\\right\\}',1],
+
+        Dy: '{\\Delta y}',
+        Dx: '{\\Delta x}',
+        D: '{\\Delta}',
+        dydx: '{\\frac{dy}{dx}}',
+        ddx: '{\\frac{d}{dx}}',
+        ddu: '{\\frac{d}{du}}',
+        ddy: '{\\frac{d}{dy}}',
+        ddw: '{\\frac{d}{dw}}',
+        ddt: '{\\frac{d}{dt}}',
+        pd: ['\\frac{\\partial#1}{\\partial#2}',2],
+        ufrac: ['\\frac{\\text{#1}}{\\text{#2}}',2],
+        Ncancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\un{#4}}',4],
+        Dcancel: ['\\frac{#1 \\un{#2}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        NDcancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        
+        degg: '{^{\\circ}}',
+        degC: '{^{\\circ}\\mathrm{C}}',
+        degF: '{^{\\circ}\\mathrm{F}}',
+        tagans: '{\\tag{ans.}}',
+        tcA: ['\\color{colorA}{#1}',1],
+        tcB: ['\\color{colorB}{#1}',1],
+        tcAal: ['\\tcA{\\text{#1}}',1],
+        tcBal: ['\\tcB{\\text{#1}}',1],
+        typB: ['\\tcB{\\text{#1}}',1],
+        tcxA: ['\\tcA{\\text{#1}}',1],
+        tcxB: ['\\tcB{\\text{#1}}',1],
+        example: ['\\tcA{\\text{Example #1:}}',1],
+        For: ['\\tcB{\\text{For (#1):}}',1],
+        solution:  '\\tcB{\\textit{Solution:}}',
+        required:  '\\tcB{\\textit{Required:}}',
+        case: ['\\tcB{\\text{Case #1:}}',1],
+        rule: ['\\tcB{\\textbf{Rule #1:}\\text{ #2}}',2],
+        ubrace: ['\\underbrace{#1}_{\\tcAal{#2}}',2],
+        ubraces: ['\\underbrace{#1}_{\\substack{\\tcAal{#2} \\\\ \\tcAal{#3}}}',3],
+        given: '\\tcB{\\textit{Given:}}',
+        thrm: ['\\tcB{\\text{#1}}',1],
+        vv: ['\\overrightarrow{#1}',1],
+        eref: ['\\tcAal{Equation}\\,\\ref{#1}',1],
+        fref: ['\\tcAal{Figure}\\,#1',1],
+        tref: ['\\tcAal{Table}\\,#1',1],
+      }
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="PageNavigation">
+  
+    <a class="prev" href="/services/calculus/DC-2.7-continuity/">&laquo; Continuity</a>
+  
+  
+    <a class="next" href="/services/calculus/DC-3.2-notation-of-derivatives/">Notation of Derivatives &raquo;</a>
+  
+</div> -->
+
+
+
+<!-- <div class="PageNavigation">
+    <a class="prev" href="../DC-2.7-continuity">&laquo; </a> <a class="next" href="../DC-3.2-notation-of-derivatives"> &raquo;</a>
+</div> -->
+
+
+
+<div class="PageNavigation">
+  <a class="prev" href="../DC-2.7-continuity">&laquo; Previous</a> 
+  <a class="next" href="../DC-3.2-notation-of-derivatives">Next &raquo;</a>
+</div>
+
+
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h5 class="footer-title">&copy 2022 Lemniscate Institute</h5>
+          <!-- <h5 class="footer-title">Lemniscate Institute</h5> -->
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/services/">Courses</a>
+            </li>
+            
+            <!-- <li class="">
+              &copy 2021 Lemniscate Institute -->
+            </li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Equation of Tangent and Normal Lines</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" href="/images/logo/logo.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="" />
+  <meta name="twitter:card" content="" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:creator" content="" />
+
+   <!-- Add Slick Carousel CSS -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+   <!-- Add Slick Carousel theme CSS (optional) -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+</head>
+<body class='page '>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a>
+      <!-- <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a> -->
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a>
+      <!-- <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a> -->
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+    <div class="phoneContent">
+    <div class="phoneContent-header">
+            <b>Mobile Notice</b>
+    </div>
+        It seems that you are on your mobile phone, which means that the <b>screen's width is narrow</b> for some equations. For the best viewing experience, you can view this website in <b>landscape mode</b>.
+</div>  
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">Equation of Tangent and Normal Lines</h1>
+          
+            <p style="color:#d02f5d"></pstyle>
+              <a href="/team">
+                Author | Engr. Nico O. Aspra, M.Eng., RMP, LPT
+              </a>
+            </p>
+          
+
+          $$
+  <!-- \definecolor{colorA}{rgb}{0.25, 0.51, 0.43}	
+  \definecolor{colorB}{rgb}{0.89, 0.04, 0.36}	 -->
+$$
+          <!-- <p style="color:#d02f5d"></pstyle>Author | Engr. Nico O. Aspra, M.Eng., RMP, LPT</p> -->
+          <!-- <a href="">Engr. Nico O. Aspra, M.Eng., RMP, LPT</a> -->
+          <!-- <br> -->
+
+          <!-- <div class="deskContent">Content for desktop</div> -->
+        <div class="content">
+          <p>From the previous section, we have already learned how we can determine the slope of either a tangent or a normal line through differentiation, or in the case of normal lines, getting the negative reciprocal of the slope of the tangent line. In this section, we will learn how to utilize their slopes to find the general equation of such lines.</p>
+
+<p>In determining the equation of a line, there are different methods available. However in our case, since we can easily determine the slope of the line by differentiation and the point will most likely be available, we can specifically use the Point-Slope Form (\(\eref{eq:pt-slope of a line}\)) .</p>
+
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(64, 130, 110, 0.9);
+border-radius:7px;
+padding:10px;
+margin:5px;">
+    $$\begin{align}
+        y-y_1=m(x-x_1)
+        \label{eq:pt-slope of a line}
+    \end{align}$$
+</p>
+
+<p>Point-slope Form, by the name suggests, can be used to determine the equation of a line by using two parameters, namely: a point, and a slope of a line. To understand more how we can use this form, it is best to solve some problems.</p>
+
+<hr />
+<p>$\example{1}$
+Find the equation of the tangent and normal lines to the curve $y=x^3+3x^2+1$ at point $(1,5)$.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>To get the slope of the tangent, differentiate the function with respect to $x$,</p>
+
+\[\begin{align*}
+	\ddx\br{y} &amp;= \ddx\br{x^3+3x^2+1} \\
+	\dydx &amp;= 3x^2+6x \\
+\end{align*}\]
+
+<p>Then to find the slope of the tangent line at point $(1,5)$, replace the independent variable $x$ with 1.</p>
+
+\[\begin{align*}
+	y-y_1 &amp;= m_T (x-x_1) \\
+	m_T &amp;= \dydx = 3(1)^2+6(1) \\
+	&amp;= 9
+\end{align*}\]
+
+<p>Thus, the equation of the tangent line at point $(1,5)$ with a slope of 9 can be determined by using the Poin-Slope Form ($\eref{eq:pt-slope of a line}$)</p>
+
+\[\begin{align*}
+	y-(5) &amp;= 9[x-(1)] \\
+	y-5 &amp;= 9x -9 \\
+	9x-y &amp;= 4	\tagans
+\end{align*}\]
+
+<p>And for the slope of the normal line, get the negative reciprocal of the slope of the tangent,</p>
+
+\[\begin{align*}
+	m_N &amp;= -\frac{1}{m_T} \\
+	&amp;= -\frac{1}{9} 
+\end{align*}\]
+
+<p>Hence, the equation of the normal line at point $(1,5)$ with a slope of $-\frac{1}{9}$ is,</p>
+
+\[\begin{align*}
+	y-y_1 &amp;= m_N (x-x_1) \\
+	y-(5) &amp;= -\frac{1}{9}[x-(1)] \\
+	9y-45 &amp;= -x+1 \\
+	x+9y &amp;= 46 	\tagans
+\end{align*}\]
+
+<p>Therefore, the equation of the tangent and normal lines are $9x-y = 4$ and $x+9y = 46$ respectively.</p>
+
+
+</details>
+
+<hr />
+<p>$\example{2}$
+Find the equation of the tangent and normal lines to the curve $x^2+y^2+6x-8y=0$ at the origin.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>In this example, since we are given an implicit function, the first step that we need to do is differentiate the given equation through Implicit Differentiation.</p>
+
+\[\begin{align*}
+	\ddx\br{x^2+y^2+6x-8y} &amp;= \ddx\br{0} \\
+	2x+2y y' + 6 - 8 y' &amp;= 0 \\
+	(2y-8) y' &amp;= -2x-6 \\
+	y' &amp;= \frac{-2x-6}{2y-8} \\
+		  &amp;= \frac{-x-3}{y-4}
+\end{align*}\]
+
+<p>To determine the slope of the tangent line at the origin, which has a coordinates of $(0,0)$, substitute the variables of the derivative with the respective values of the coordinates.</p>
+
+\[\begin{align*}
+	m_T &amp;= y' = \frac{-0-3}{0-4} \\
+	      &amp;= \frac34 
+\end{align*}\]
+
+<p>Solving for the equation of the tangent line using the Point-Slope Form ($\eref{eq:pt-slope of a line}$) gives us,</p>
+
+\[\begin{align*}
+	y-y_1 &amp;= m_T (x-x_1) \\
+	y-0 &amp;= \frac34[x-0] \\
+	y &amp;= \frac34x \\
+	4y &amp;= 3x \\
+	4y-3x &amp;= 0			\tagans
+\end{align*}\]
+
+<p>Then for the equation of the normal line, we can directly plug the slope to the Point-Slope Form,</p>
+
+\[\begin{align*}
+	y-y_1 &amp;= m_N (x-x_1) \\
+	y-y_1 &amp;= -\frac{1}{m_T} (x-x_1) \\
+	y-0 &amp;= -\frac43 (x-0) \\
+	3y &amp;= -4x \\
+	4x+3y &amp;= 0	\tagans
+\end{align*}\]
+
+
+</details>
+
+<hr />
+<p>$\example{3}$
+Find the equation of the tangent and normal lines to the curve $y=(x+4)^2$ at the point where the curve intersects the $y$-axis.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>In this example, the coordinates of the point are not given. However, it is stated that the point is located where the curve intersects the $y$-axis. Thus, graphing the curve can give us a clearer picture of where it is located.</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/DC/DC-5.2.1.png" alt="my alt text" width="250px" />
+  <figcaption><em>
+</em></figcaption>
+</figure>
+
+<p>Mathematically, we can solve the intersection point by equating the equation of the curve and the $y$-axis. If you can recall, the equation of the $y$-axis is $x=0$, since every point that lies on the $y$-axis has an $x$-coordinate of 0. Thus, replacing 0 to $y=(x+4)^2$ will give us the $y$-coordinate of the intersection point.</p>
+
+\[\begin{align*}
+	y &amp;= (x+4)^2 \\
+	  &amp;= (0+4)^2 \\
+	  &amp;= 16
+\end{align*}\]
+
+<p>Hence, the point of intersection is at $(0,16)$</p>
+
+<p>Since we already have the coordinates of the point, we can now solve the problem by the same method as our previous examples. To start, differentiate the equation of the curve with respect to $x$.</p>
+
+\[\begin{align*}
+	\ddx\br{y} &amp;= \ddx\brk{(x+4)^2} \\
+	y' &amp;= 2(x+4)
+\end{align*}\]
+
+<p>At $(0,16)$,</p>
+
+\[\begin{align*}
+	m_T &amp;= y' = 2(0+4) \\
+	    &amp;= 8
+\end{align*}\]
+
+<p>Solving for the equation of the tangent line using the Point-Slope Form ($\eref{eq:pt-slope of a line}$) gives us,</p>
+
+\[\begin{align*}
+	y-y_1 &amp;= m_T (x-x_1) \\
+	y-16 &amp;= 8[x-0] \\
+	y-16 &amp;= 8x \\
+	8x-y &amp;= -16		\tagans
+\end{align*}\]
+
+<p>Then for the equation of the normal line,</p>
+
+\[\begin{align*}
+	y-y_1 &amp;= -\frac{1}{m_T} (x-x_1) \\
+	y-16 &amp;= -\frac18 (x-0) \\
+	8(y-16) &amp;= -x \\
+	8y-128 &amp;= -x \\
+	x+8y &amp;= 128			\tagans
+\end{align*}\]
+
+<p>To visualize, we can graph the tangent and normal lines of the curve $y=(x+4)^2$ at $(0,16)$.</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/DC/DC-5.2.2.png" alt="my alt text" width="250px" />
+  <figcaption><em>
+</em></figcaption>
+</figure>
+
+
+</details>
+
+<hr />
+<p>$\example{4}$
+Find the equation of the tangent and normal lines to the curve $a^2y-x^3=0$ at point $(a,a)$.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>In this example, we can treat $a$ as a constant. Thus,</p>
+
+\[\begin{align*}
+	\ddx\br{a^2y-x^3} &amp;= \ddx\br{0} \\
+	a^2 y'-3x^2 &amp;= 0 \\
+	y' &amp;= \frac{3x^2}{a^2}
+\end{align*}\]
+
+<p>To solve for the slope at $(a,a)$, we can replace $x$ and $y$ with $a$. However, in this case, we only have the variable $x$. Thus,</p>
+
+\[\begin{align*}
+	m_T &amp;= y' = \frac{3\cancel{a^2}}{\cancel{a^2}} \\
+	   &amp;= 3
+\end{align*}\]
+
+<p>Solving for the equation of the tangent line gives us,</p>
+
+\[\begin{align*}
+	y-y_1 &amp;= m_T (x-x_1) \\
+	y-a &amp;= 3(x-a) \\
+	y-a &amp;= 3x-3a \\
+	3x-y &amp;= -a+3a \\
+	3x-y &amp;= 2a		\tagans
+\end{align*}\]
+
+<p>Then for the equation of the normal line,</p>
+
+\[\begin{align*}
+	y-y_1 &amp;= -\frac{1}{m_T} (x-x_1) \\
+	y-a &amp;= -\frac13 (x-a) \\
+	3(y-a) &amp;= -x+a \\
+	3y-3a &amp;= -x+a \\
+	x+3y &amp;= 4a			\tagans
+\end{align*}\]
+
+
+</details>
+
+<hr />
+<p>$\example{5}$
+Find the equation of the tangent and normal lines to the curve $x^2+4x-y-2=0$ where the slope of the tangent is 6.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>In this example, instead of having a point as one of its given, we have the slope of the tangent. To solve for the point, we can first differentiate the function.</p>
+
+\[\begin{align*}
+	\ddx\br{x^2+4x-y-2} &amp;= \ddx\br{0} \\
+	2x+4-y' &amp;= 0 \\
+	y' &amp;= 2x+4
+\end{align*}\]
+
+<p>Since the tangent is equal to the derivative, we can use this parameter to solve for the $x$-coordinate of the point of tangency.</p>
+
+\[\begin{align*}
+	y' &amp;= 6 \\
+	2x+4 &amp;= 6 \\
+	x &amp;= \frac{6-4}{2} \\
+	  &amp;= 1
+\end{align*}\]
+
+<p>Then to solve for the $y$-coordinate, substitute the value of $x$ to the equation  of the curve.</p>
+
+\[\begin{align*}
+	x^2+4x-y-2 &amp;= 0 \\
+	y &amp;= (1)^2+4(1)-2 \\
+	y &amp;= 3
+\end{align*}\]
+
+<p>Hence, the point of tangency is at $(0,-2)$. With this, we can now solve for the equation of the tangent line.</p>
+
+\[\begin{align*}
+	y-y_1 &amp;= m_T (x-x_1) \\
+	y-3 &amp;= 6 (x-1) \\
+	y-3 &amp;= 6x-6 \\
+	6x-y &amp;= 3		\tagans
+\end{align*}\]
+
+<p>Then for the equation of the normal line,</p>
+
+\[\begin{align*}
+	y-y_1 &amp;= -\frac{1}{m_T} (x-x_1) \\
+	y-3 &amp;= -\frac16 (x-1) \\
+	6(y-3) &amp;= -x+1 \\
+	6y-18 &amp;= -x+1 \\
+	x+6y &amp;= 19		\tagans
+\end{align*}\]
+
+
+</details>
+
+<hr />
+<p>$\example{6}$
+At point $(1,1)$, the tangent line to the curve $y = x^3$ intersects the $x$-axis at $x=$ ?</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>In this example, we need to find the $x$-coordinate of the tangent line were it intersects the $x$-axis. To visualize, let us first try to plot the given function.</p>
+
+<figure style="text-align: center;">
+  <img src="/images/content/DC/DC-5.2.3.png" alt="my alt text" width="250px" />
+  <figcaption><em>
+</em></figcaption>
+</figure>
+
+<p>We can start by first differentiating the equation of the curve to determine its slope.</p>
+
+\[\begin{align*}
+	\ddx\br{y} &amp;= \ddx\br{x^3} \\
+	y' &amp;= 3x^2
+\end{align*}\]
+
+<p>At $(1,1)$,</p>
+
+\[\begin{align*}
+	m_T &amp;= y' = 3(1)^2 \\
+	   &amp;= 3
+\end{align*}\]
+
+<p>Then we can now use the slope to solve for the equation of the tangent line,</p>
+
+\[\begin{align*}
+	y-y_1 &amp;= m_T (x-x_1) \\
+	y-1 &amp;= 3(x-1) \\
+	y-1 &amp;= 3x-3 \\
+	3x-y &amp;= 2
+\end{align*}\]
+
+<p>Since all points tha lie on the $x$-axis have a $y$-coordinate of 0, we can substitute this to the equation of the line to get its $x$-coordinate where it intersects the $x$-axis.</p>
+
+\[\begin{align*}
+	3x-(0) &amp;= 2 \\
+	x &amp;= \frac23	\tagans
+\end{align*}\]
+
+
+</details>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Displaystyle -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+  var TEX = MathJax.InputJax.TeX;
+  var PREFILTER = TEX.prefilterMath;
+  TEX.Augment({
+  prefilterMath: function (math,displaymode,script) {
+  math = "\\displaystyle{"+math+"}";
+  return PREFILTER.call(TEX,math,displaymode,script);
+  }
+  });
+  });
+</script>
+
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- //assets/js/MathJax.js -->
+<!-- <script src="http://lemniscateinstitute.com/assets/js/MathJax.js"> -->
+<!-- <script type="text/javascript" src="../../assets/js/MathJax.js"> -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      availableFonts: ["TeX"],
+      styles: {".MathJax": {color: "#5C5A5A"}} 
+    },
+    tex2jax: {
+      inlineMath: [['$','$'],["\\(","\\)"]]},
+      displayMath: [ ['$$','$$'], ['\[','\]'] ],
+    TeX: {
+      extensions: ["AMSmath.js", "AMSsymbols.js", "color.js", "autoload-all.js"],
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    showProcessingMessages: false,
+    messageStyle: "none",
+    imageFont: null,
+    "AssistiveMML": { disabled: true }
+  });
+</script>
+
+<!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script> -->
+
+
+
+
+
+
+
+
+
+<!-- <div style="display:none">
+  \(
+    \newcommand{\CC}{\mathbf{C}}
+  \)
+</div> -->
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        CC: '{\\bf R}',
+        un: ['\\;\\mathrm{#1}',1],
+        x:  '{\\times}',
+        ohm: '{\\Omega}',
+        st:['{^{\\text{st}}}'],
+        nd:['{^{\\text{nd}}}'],
+        rd:['{^{\\text{rd}}}'],
+        nth:['{^{\\text{th}}}'],
+
+        br: ['\\left(#1\\right)',1],
+        brk: ['\\left[#1\\right]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbbrk: ['\\Biggl[#1\\Biggr]',1],
+        brv: ['\\left|#1\\right|',1],
+        brc: ['\\left\\{#1\\right\\}',1],
+
+        Dy: '{\\Delta y}',
+        Dx: '{\\Delta x}',
+        D: '{\\Delta}',
+        dydx: '{\\frac{dy}{dx}}',
+        ddx: '{\\frac{d}{dx}}',
+        ddu: '{\\frac{d}{du}}',
+        ddy: '{\\frac{d}{dy}}',
+        ddw: '{\\frac{d}{dw}}',
+        ddt: '{\\frac{d}{dt}}',
+        pd: ['\\frac{\\partial#1}{\\partial#2}',2],
+        ufrac: ['\\frac{\\text{#1}}{\\text{#2}}',2],
+        Ncancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\un{#4}}',4],
+        Dcancel: ['\\frac{#1 \\un{#2}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        NDcancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        
+        degg: '{^{\\circ}}',
+        degC: '{^{\\circ}\\mathrm{C}}',
+        degF: '{^{\\circ}\\mathrm{F}}',
+        tagans: '{\\tag{ans.}}',
+        tcA: ['\\color{colorA}{#1}',1],
+        tcB: ['\\color{colorB}{#1}',1],
+        tcAal: ['\\tcA{\\text{#1}}',1],
+        tcBal: ['\\tcB{\\text{#1}}',1],
+        typB: ['\\tcB{\\text{#1}}',1],
+        tcxA: ['\\tcA{\\text{#1}}',1],
+        tcxB: ['\\tcB{\\text{#1}}',1],
+        example: ['\\tcA{\\text{Example #1:}}',1],
+        For: ['\\tcB{\\text{For (#1):}}',1],
+        solution:  '\\tcB{\\textit{Solution:}}',
+        required:  '\\tcB{\\textit{Required:}}',
+        case: ['\\tcB{\\text{Case #1:}}',1],
+        rule: ['\\tcB{\\textbf{Rule #1:}\\text{ #2}}',2],
+        ubrace: ['\\underbrace{#1}_{\\tcAal{#2}}',2],
+        ubraces: ['\\underbrace{#1}_{\\substack{\\tcAal{#2} \\\\ \\tcAal{#3}}}',3],
+        given: '\\tcB{\\textit{Given:}}',
+        thrm: ['\\tcB{\\text{#1}}',1],
+        vv: ['\\overrightarrow{#1}',1],
+        eref: ['\\tcAal{Equation}\\,\\ref{#1}',1],
+        fref: ['\\tcAal{Figure}\\,#1',1],
+        tref: ['\\tcAal{Table}\\,#1',1],
+      }
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="PageNavigation">
+  
+    <a class="prev" href="/services/calculus/DC-5.1-tangents-and-normals-to-plane-curves/">&laquo; Tangents and Normals to Plane Curves</a>
+  
+  
+    <a class="next" href="/services/calculus/DC-5.3-increasing-and-decreasing-functions/">Increasing and Decreasing Functions &raquo;</a>
+  
+</div> -->
+
+
+
+<!-- <div class="PageNavigation">
+    <a class="prev" href="../DC-5.1-tangents-and-normals-to-plane-curves">&laquo; </a> <a class="next" href="../DC-5.3-increasing-and-decreasing-functions"> &raquo;</a>
+</div> -->
+
+
+
+<div class="PageNavigation">
+  <a class="prev" href="../DC-5.1-tangents-and-normals-to-plane-curves">&laquo; Previous</a> 
+  <a class="next" href="../DC-5.3-increasing-and-decreasing-functions">Next &raquo;</a>
+</div>
+
+
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h5 class="footer-title">&copy 2022 Lemniscate Institute</h5>
+          <!-- <h5 class="footer-title">Lemniscate Institute</h5> -->
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/services/">Courses</a>
+            </li>
+            
+            <!-- <li class="">
+              &copy 2021 Lemniscate Institute -->
+            </li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>
+
+
+
+
+
+

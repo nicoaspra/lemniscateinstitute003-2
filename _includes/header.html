@@ -1,0 +1,14 @@
+<div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img height="{{ site.logo.desktop_height }}" alt="{{ site.title }}" src="{{ site.logo.desktop | relative_url }}" /></a>
+      <!-- <a href="{{ site.baseurl }}"><img height="{{ site.logo.desktop_height }}" alt="{{ site.title }}" src="{{ site.logo.desktop | relative_url }}" /></a> -->
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img alt="{{ site.title }}" src="{{ site.logo.mobile | relative_url }}" /></a>
+      <!-- <a href="{{ site.baseurl }}"><img alt="{{ site.title }}" src="{{ site.logo.mobile | relative_url }}" /></a> -->
+    </div>
+    {% include main-menu.html %}
+    {% include hamburger.html %}
+  </div>
+</div>

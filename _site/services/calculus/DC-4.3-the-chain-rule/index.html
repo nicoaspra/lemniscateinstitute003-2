@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The Chain Rule</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" href="/images/logo/logo.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="" />
+  <meta name="twitter:card" content="" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:creator" content="" />
+
+   <!-- Add Slick Carousel CSS -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+   <!-- Add Slick Carousel theme CSS (optional) -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+</head>
+<body class='page '>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a>
+      <!-- <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a> -->
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a>
+      <!-- <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a> -->
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+    <div class="phoneContent">
+    <div class="phoneContent-header">
+            <b>Mobile Notice</b>
+    </div>
+        It seems that you are on your mobile phone, which means that the <b>screen's width is narrow</b> for some equations. For the best viewing experience, you can view this website in <b>landscape mode</b>.
+</div>  
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">The Chain Rule</h1>
+          
+            <p style="color:#d02f5d"></pstyle>
+              <a href="/team">
+                Author | Engr. Nico O. Aspra, M.Eng., RMP, LPT
+              </a>
+            </p>
+          
+
+          $$
+  <!-- \definecolor{colorA}{rgb}{0.25, 0.51, 0.43}	
+  \definecolor{colorB}{rgb}{0.89, 0.04, 0.36}	 -->
+$$
+          <!-- <p style="color:#d02f5d"></pstyle>Author | Engr. Nico O. Aspra, M.Eng., RMP, LPT</p> -->
+          <!-- <a href="">Engr. Nico O. Aspra, M.Eng., RMP, LPT</a> -->
+          <!-- <br> -->
+
+          <!-- <div class="deskContent">Content for desktop</div> -->
+        <div class="content">
+          <p>Functions may not always appear as simple as the examples given from the past sections. Hence, differentiating complexly structured functions such as a <a href="../DC-1.4-composite-functions">composite function</a> cannot be easily solved by the previously discussed rules. With this in mind, we will introduce the Chain Rule in this section to differentiate composite functions. Notably, this rule is essential and may be <strong>one of the most widely used rules</strong> in Calculus. It may seem ambiguous now, but composite functions appear more frequently than it seems.</p>
+
+<p>To start our discussion, let us first describe what the Chain Rule is and how to use it. Consider the composite function $y=f(g(x))$, let $u=g(x)$ so that we could simplify the function to  $y=f(u)$. Where $f(u)$ is the outer function and $g(x)$ is the inner function, given that $f(u)$ is differentiable to $g(x)$ and $g(x)$ is differentiable to $x$. The derivative of the composite function $f(g(x))$ with respect to $x$ is equal to the <em>product of the derivative of the outer function and the derivative of the inner function</em>.</p>
+
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(64, 130, 110, 0.9);
+border-radius:7px;
+padding:10px;
+margin:5px;">
+    $$\begin{align}
+	(f \circ g)'(x) = f'(g(x)) \cdot g'(x)
+	\label{eq:chain rule lagranges notation}
+    \end{align}$$
+</p>
+
+<p>In Leibniz’s Notation, if $u=g(x)$ so that $y=f(u)$, then</p>
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(64, 130, 110, 0.9);
+border-radius:7px;
+padding:10px;
+margin:5px;">
+    $$\begin{align}
+	\frac{dy}{dx}=\frac{dy}{du} \cdot \frac{du}{dx}
+	\label{eq:chain rule leibnizs notation}
+    \end{align}$$
+</p>
+
+<p>Where $dy/du$ is the derivative of the outer function $y=f(u)$ and $du/dx$ is the derivative of the inner function $u=g(x)$. To illustrate how the chain rule works, consider the following example.</p>
+
+<hr />
+<p>$\example{1}$
+Differentiate the function $y = (x^2+x)^3$.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+\[\begin{align*}
+	\text{Let: } u &amp;= x^2+x &amp; \\
+	y &amp;= u^3
+\end{align*}\]
+
+<p>Differentiate the function with respect to $u$,</p>
+
+\[\begin{align*}
+	\frac{d}{du}\br{y} &amp;= \frac{d}{du}\br{u^3} \\
+	\frac{dy}{du} &amp;= 3u^{2}
+\end{align*}\]
+
+<p>Then differentiate $u=x^2+x$ with respect to $x$,</p>
+
+\[\begin{align*}
+	\ddx\br{u} &amp;= \ddx\br{x^2+x} \\
+	\frac{du}{dx} &amp;= 2x+1 \\
+\end{align*}\]
+
+<p>Thus, applying the Chain Rule gives us,</p>
+
+\[\begin{align*}
+	\dydx &amp;= 3u^2 \cdot (2x+1) \quad \tcA{\dydx=\frac{dy}{du}\cdot\frac{du}{dx}} \\
+\end{align*}\]
+
+<p>Since $u=x^2+x$,</p>
+
+\[\begin{align*}
+	\dydx &amp;= 3(x^2+x)^2 (2x+1)	\tagans
+\end{align*}\]
+
+
+</details>
+
+<hr />
+
+<h2 id="general-power-rule">General Power Rule</h2>
+
+<p>The General Power Rule is a <strong>special case of the chain rule</strong>. 
+This rule is meant to evaluate functions in the form of $y=[f(x)]^n$ or $y=u^n$, given that $u$ is a function of $x$.</p>
+
+<p>The derivative of the function $y=u^n$ with respect to $x$ is equal to the product of the exponent $n$, the power of a function with the exponent diminished by one $u^{n-1}$, and the derivative of the inner function ${du}/{dx}$.</p>
+
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(64, 130, 110, 0.9);
+border-radius:7px;
+padding:10px;
+margin:5px;">
+    $$\begin{align}
+	\frac{d}{dx}(u^n)=nu^{n-1} \frac{du}{dx}
+    \end{align}$$
+</p>
+
+<p>And we can also prove this by using the Chain Rule ($\eref{eq:chain rule leibnizs notation}$). Consider the function $y=u^n$.</p>
+
+<p>Differentiate the function with respect to $u$,</p>
+
+\[\begin{align*}
+	\frac{d}{du}\br{y} &amp;= \frac{d}{du}\br{u^n} \\
+	\frac{dy}{du} &amp;= nu^{n-1} \\
+\end{align*}\]
+
+<p>Then differentiate $u$ with respect to $x$,</p>
+
+\[\begin{align*}
+	\ddx\br{u} &amp;= \frac{du}{dx} \\
+\end{align*}\]
+
+<p>Thus, applying the Chain Rule,</p>
+
+\[\begin{align*}
+	\dydx &amp;= \frac{dy}{du}\cdot\frac{du}{dx} \\
+	&amp;= nu^{n-1}\frac{du}{dx}
+\end{align*}\]
+
+<hr />
+<p>$\example{2}$
+Differentiate the function $y=(7x^2+1)^5$.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>Apply the General Power Rule,
+\(\begin{align*}
+	\ddx\br{y} &amp;= \ddx\brk{(7x^2+1)^5} \\
+	\dydx &amp;= 5(7x^2+1)^4 \cdot \ubraces{\ddx\br{7x^2+1}}{derivative of the}{inner function} \qquad \tcA{u=7x^2+1} \\
+	&amp;= 5(7x^2+1)^4 (14x) \\
+	&amp;= 70x(7x^2+1)^4		\tagans
+\end{align*}\)</p>
+
+
+</details>
+
+<hr />
+<p>$\example{3}$
+Differentiate the function $y=\br{5-\frac{x}{3}}^{-4}$.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>Apply the General Power Rule,
+\(\begin{align*}
+	\ddx\br{y} &amp;= \ddx\brk{ \br{5-\frac{x}{3}}^{-4} } \\
+	\dydx &amp;= -4 \br{5-\frac{x}{3}}^{-5} \cdot \ddx\br{5-\frac{x}{3}} \qquad \tcA{u=5-\frac{x}{3}} \\
+	&amp;= -\frac{4}{\br{5-\frac{x}{3}}^{5} } \br{-\frac{1}{3}} \\
+	&amp;= \frac{4}{3 \br{5-\frac{x}{3}}^{5} }		\tagans
+\end{align*}\)</p>
+
+
+</details>
+
+<!-- \note{This can still be simplified} -->
+
+<hr />
+<p>$\example{4}$
+Differentiate the function $y = \frac{1}{(5x^2+1)^2}+(x^2+2)^{1/3}$.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>Simplify the expression,</p>
+
+\[\begin{align*}
+	y &amp;= (5x^2+1)^{-2}+(x^2+2)^{1/3} \\
+\end{align*}\]
+
+<p>Then differentiate the function by applying the Sum Rule along with the General Power Rule,</p>
+
+\[\begin{align*}
+	\ddx\br{y} &amp;= \ddx\brk{(5x^2+1)^{-2}+(x^2+2)^{1/3}} \\
+	\dydx &amp;= \ubrace{ -2(5x^2+1)^{-3} \cdot \ddx\br{5x^2+1} }{derivative of $(5x^2+1)^{-2}$} + 
+		\ubrace{ \frac{1}{3}(x^2+2)^{\frac{1}{3}-1} \cdot \ddx\br{x^2+2} }{derivative of $(x^2+2)^{1/3}$} \\
+	&amp;= -2(5x^2+1)^{-3} (10x) + \frac{1}{3}(x^2+2)^{-2/3} (2x) \\
+	&amp;= -\frac{20x}{(5x^2+1)^{3}} + \frac{2x}{3(x^2+2)^{2/3}}
+\end{align*}\]
+
+
+</details>
+
+<hr />
+<p>$\example{5}$
+Differentiate the function $x = \sqrt{5t^4-t^2+2t+7}$.</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>Express the radical as a power of a rational exponent,</p>
+
+\[\begin{align*}
+	x &amp;= \br{5t^4-t^2+2t+7}^{1/2} \\
+\end{align*}\]
+
+<p>Then differentiate the function,</p>
+
+\[\begin{align*}
+	\ddt\br{x} &amp;= \ddt\brk{\br{5t^4-t^2+2t+7}^{1/2}} \\
+	\frac{dx}{dt} &amp;= \frac{1}{2}\br{5t^4-t^2+2t+7}^{\frac{1}{2}-1} 
+		\cdot \ddt\br{5t^4-t^2+2t+7} \\
+	&amp;= \frac{1}{2}\br{5t^4-t^2+2t+7}^{-1/2} \br{20x^3-2t+2} \\
+	&amp;= \frac{\cancel{2} (10x^3-t+1)}{\cancel{2} (5t^4-t^2+2t+7)^{1/2}} \\
+	&amp;= \frac{10x^3-t+1}{\sqrt{5t^4-t^2+2t+7}}		\tagans
+\end{align*}\]
+
+
+</details>
+
+<hr />
+<p>$\example{6}$
+Find the slope at point $(1,9)$ of the curve $y = (2x-1)^3(x+2)^2$</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>Apply the Product Rule along with the General Power Rule,
+\(\begin{align*}
+	\ddx\br{y} &amp;= \ddx\brk{(2x-1)^3(x+2)^2} \\
+	\dydx &amp;= \ubrace{(2x-1)^3 \cdot\ddx\brk{(x+2)^2}}{$u\cdot\frac{dv}{dx}$} + \ubrace{(x+2)^2 \cdot\ddx\brk{(2x-1)^3}}{$v\cdot\frac{du}{dx}$} 
+		\quad \tcA{\ddx{uv}=u\frac{dv}{dx}+v\frac{du}{dx}} \\
+	&amp;= (2x-1)^3 [2(x+2)(1)] + (x+2)^2 [3(2x-1)^2(2)] \\
+	&amp;= 2(2x-1)^3 (x+2) + 6(x+2)^2 (2x-1)^2 \\
+\end{align*}\)</p>
+
+<p>At point $(1,9)$,</p>
+
+\[\begin{align*}
+	&amp;= 2[2(1)-1]^3 [(1)+2] + 6[(1)+2]^2 [2(1)-1]^2 \\
+	&amp;= 60		\tagans
+\end{align*}\]
+
+
+</details>
+
+<hr />
+<p>$\example{7}$
+Differentiate the function $\textstyle{ y = \sqrt{1+\sqrt{x+1}} }$</p>
+
+<details style="text-align:left;">
+    <summary style="text-align:left;">$\solution$
+    </summary>
+    <br />
+    
+<p>There are situations when we must use the chain rule multiple times to determine the derivative. This particular example is one of its instances. To start, let us first express the radical as a power of a rational exponent.</p>
+
+\[\begin{align*}
+	y &amp;= \br{1+(x+1)^{1/2} }^{1/2} \\
+\end{align*}\]
+
+<p>Differentiate the function by applying the chain rule more than once,</p>
+
+\[\begin{align*}
+	\ddx\br{y} &amp;= \ddx\brk{ \br{1+(x+1)^{1/2} }^{1/2} } \\
+	\dydx &amp;= \frac{1}{2} \brk{1+(x+1)^{1/2} }^{1/2-1} \cdot\ddx\brk{1+(x+1)^{1/2} } \\
+	&amp;= \frac{1}{2} \brk{1+(x+1)^{1/2} }^{-1/2} \brk{0+\frac{1}{2}(x+1)^{1/2-1} \cdot \ddx\br{x+1} } \\
+	&amp;= \frac{1}{2} \brk{1+(x+1)^{1/2} }^{-1/2} \brk{\frac{1}{2}(x+1)^{-1/2} (1) } \\
+	&amp;= \frac{1}{4} \brk{1+(x+1)^{1/2} }^{-1/2} (x+1)^{-1/2} \\
+	&amp;= \frac{1}{4} \bbbrk{ \brk{ 1+(x+1)^{1/2} } (x+1) }^{-1/2} \\
+	&amp;= \frac{1}{4\brk{ (1+\sqrt{x+1})(x+1) }^{1/2}} \\
+	&amp;= \frac{1}{4\sqrt{ (1+\sqrt{x+1})(x+1) } }		\tagans
+\end{align*}\]
+
+
+</details>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Displaystyle -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+  var TEX = MathJax.InputJax.TeX;
+  var PREFILTER = TEX.prefilterMath;
+  TEX.Augment({
+  prefilterMath: function (math,displaymode,script) {
+  math = "\\displaystyle{"+math+"}";
+  return PREFILTER.call(TEX,math,displaymode,script);
+  }
+  });
+  });
+</script>
+
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- //assets/js/MathJax.js -->
+<!-- <script src="http://lemniscateinstitute.com/assets/js/MathJax.js"> -->
+<!-- <script type="text/javascript" src="../../assets/js/MathJax.js"> -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      availableFonts: ["TeX"],
+      styles: {".MathJax": {color: "#5C5A5A"}} 
+    },
+    tex2jax: {
+      inlineMath: [['$','$'],["\\(","\\)"]]},
+      displayMath: [ ['$$','$$'], ['\[','\]'] ],
+    TeX: {
+      extensions: ["AMSmath.js", "AMSsymbols.js", "color.js", "autoload-all.js"],
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    showProcessingMessages: false,
+    messageStyle: "none",
+    imageFont: null,
+    "AssistiveMML": { disabled: true }
+  });
+</script>
+
+<!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script> -->
+
+
+
+
+
+
+
+
+
+<!-- <div style="display:none">
+  \(
+    \newcommand{\CC}{\mathbf{C}}
+  \)
+</div> -->
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        CC: '{\\bf R}',
+        un: ['\\;\\mathrm{#1}',1],
+        x:  '{\\times}',
+        ohm: '{\\Omega}',
+        st:['{^{\\text{st}}}'],
+        nd:['{^{\\text{nd}}}'],
+        rd:['{^{\\text{rd}}}'],
+        nth:['{^{\\text{th}}}'],
+
+        br: ['\\left(#1\\right)',1],
+        brk: ['\\left[#1\\right]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbbrk: ['\\Biggl[#1\\Biggr]',1],
+        brv: ['\\left|#1\\right|',1],
+        brc: ['\\left\\{#1\\right\\}',1],
+
+        Dy: '{\\Delta y}',
+        Dx: '{\\Delta x}',
+        D: '{\\Delta}',
+        dydx: '{\\frac{dy}{dx}}',
+        ddx: '{\\frac{d}{dx}}',
+        ddu: '{\\frac{d}{du}}',
+        ddy: '{\\frac{d}{dy}}',
+        ddw: '{\\frac{d}{dw}}',
+        ddt: '{\\frac{d}{dt}}',
+        pd: ['\\frac{\\partial#1}{\\partial#2}',2],
+        ufrac: ['\\frac{\\text{#1}}{\\text{#2}}',2],
+        Ncancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\un{#4}}',4],
+        Dcancel: ['\\frac{#1 \\un{#2}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        NDcancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        
+        degg: '{^{\\circ}}',
+        degC: '{^{\\circ}\\mathrm{C}}',
+        degF: '{^{\\circ}\\mathrm{F}}',
+        tagans: '{\\tag{ans.}}',
+        tcA: ['\\color{colorA}{#1}',1],
+        tcB: ['\\color{colorB}{#1}',1],
+        tcAal: ['\\tcA{\\text{#1}}',1],
+        tcBal: ['\\tcB{\\text{#1}}',1],
+        typB: ['\\tcB{\\text{#1}}',1],
+        tcxA: ['\\tcA{\\text{#1}}',1],
+        tcxB: ['\\tcB{\\text{#1}}',1],
+        example: ['\\tcA{\\text{Example #1:}}',1],
+        For: ['\\tcB{\\text{For (#1):}}',1],
+        solution:  '\\tcB{\\textit{Solution:}}',
+        required:  '\\tcB{\\textit{Required:}}',
+        case: ['\\tcB{\\text{Case #1:}}',1],
+        rule: ['\\tcB{\\textbf{Rule #1:}\\text{ #2}}',2],
+        ubrace: ['\\underbrace{#1}_{\\tcAal{#2}}',2],
+        ubraces: ['\\underbrace{#1}_{\\substack{\\tcAal{#2} \\\\ \\tcAal{#3}}}',3],
+        given: '\\tcB{\\textit{Given:}}',
+        thrm: ['\\tcB{\\text{#1}}',1],
+        vv: ['\\overrightarrow{#1}',1],
+        eref: ['\\tcAal{Equation}\\,\\ref{#1}',1],
+        fref: ['\\tcAal{Figure}\\,#1',1],
+        tref: ['\\tcAal{Table}\\,#1',1],
+      }
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="PageNavigation">
+  
+    <a class="prev" href="/services/calculus/DC-4.2-higher-order-derivatives/">&laquo; Higher Order Derivatives</a>
+  
+  
+    <a class="next" href="/services/calculus/DC-4.4-implicit-differentiation/">Implicit Differentiation &raquo;</a>
+  
+</div> -->
+
+
+
+<!-- <div class="PageNavigation">
+    <a class="prev" href="../DC-4.2-higher-order-derivatives">&laquo; </a> <a class="next" href="../DC-4.4-implicit-differentiation"> &raquo;</a>
+</div> -->
+
+
+
+<div class="PageNavigation">
+  <a class="prev" href="../DC-4.2-higher-order-derivatives">&laquo; Previous</a> 
+  <a class="next" href="../DC-4.4-implicit-differentiation">Next &raquo;</a>
+</div>
+
+
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h5 class="footer-title">&copy 2022 Lemniscate Institute</h5>
+          <!-- <h5 class="footer-title">Lemniscate Institute</h5> -->
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/services/">Courses</a>
+            </li>
+            
+            <!-- <li class="">
+              &copy 2021 Lemniscate Institute -->
+            </li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>
+
+
+
+
+
+

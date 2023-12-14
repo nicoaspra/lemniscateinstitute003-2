@@ -1,0 +1,22 @@
+<details>
+    <summary>{{ include.summary | markdownify | remove: '<p>' | remove: '</p>' }}
+    </summary>
+    <br>
+    {{ include.details | markdownify }}
+</details>
+
+
+
+<!-- <details>
+    <summary>{{ includes.title }}</summary>
+    
+    {{ includes.description }}
+    </details> -->
+
+<!-- 
+<details>
+    <summary>{{ includes.title | markdownify | remove: '<p>' | remove: '</p>' }}
+    </summary>
+    <br>
+    {{ includes.description | markdownify }}
+</details> -->

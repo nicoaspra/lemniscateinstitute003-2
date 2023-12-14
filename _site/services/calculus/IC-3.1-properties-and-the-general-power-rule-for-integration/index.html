@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Properties and the General Power Rule for Integration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon-32x32.svg">
+  <link rel="apple-touch-icon" href="/images/logo/logo.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="" />
+  <meta name="twitter:card" content="" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:creator" content="" />
+
+   <!-- Add Slick Carousel CSS -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+   <!-- Add Slick Carousel theme CSS (optional) -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+</head>
+<body class='page '>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a>
+      <!-- <a href="/"><img height="36px" alt="Lemniscate Institute" src="/images/logo/logo.svg" /></a> -->
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a>
+      <!-- <a href="/"><img alt="Lemniscate Institute" src="/images/logo/logo-mobile.svg" /></a> -->
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Courses</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+    <div class="phoneContent">
+    <div class="phoneContent-header">
+            <b>Mobile Notice</b>
+    </div>
+        It seems that you are on your mobile phone, which means that the <b>screen's width is narrow</b> for some equations. For the best viewing experience, you can view this website in <b>landscape mode</b>.
+</div>  
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">Properties and the General Power Rule for Integration</h1>
+          
+            <p style="color:#d02f5d"></pstyle>
+              <a href="/team">
+                Authors | <br> Engr. Nico O. Aspra, M.Eng., RMP, LPT  <br> Engr. Pee Jay N. Gealone
+              </a>
+            </p>
+          
+
+          $$
+  <!-- \definecolor{colorA}{rgb}{0.25, 0.51, 0.43}	
+  \definecolor{colorB}{rgb}{0.89, 0.04, 0.36}	 -->
+$$
+          <!-- <p style="color:#d02f5d"></pstyle>Author | Engr. Nico O. Aspra, M.Eng., RMP, LPT  <br> Engr. Pee Jay N. Gealone</p> -->
+          <!-- <a href="">Engr. Nico O. Aspra, M.Eng., RMP, LPT  <br> Engr. Pee Jay N. Gealone</a> -->
+          <!-- <br> -->
+
+          <!-- <div class="deskContent">Content for desktop</div> -->
+        <div class="content">
+          <h2 id="introduction">Introduction</h2>
+<p>In the previous lesson, we have established that integration (indefinite integral in particular) is simply the reverse of differentiation. Hence, this lesson will investigate the general power rule, which is one of the most common and valuable basic integration processes.</p>
+
+<p>The general power rule for integration can be associated as the inverse of the general power rule for differentiation.
+You can also have an in-depth review of the power rule for differentiation before starting this lesson for a deeper understanding of the topic.</p>
+
+<h2 id="properties-of-indefinite-integral">Properties of Indefinite Integral</h2>
+<p>Before we start our discussion with the general power rule, let us first introduce the properties of indefinite integrals. These properties are a prerequisite before introducing the different processes of applying integration techniques in a differential function.</p>
+
+<p>For the following formulas for evaluating indefinite integrals, let $u$, $v$ and $w$ be a function of $x$; $a$ and $n$ as constants; and $C$ as the constant of integration.</p>
+
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(64, 130, 110, 0.9);
+border-radius:7px;
+padding:10px;
+margin:5px;">
+    $$\begin{align}
+        \int du &amp;= u+C \\
+        \int a\,du &amp;= a\int du \\
+        \int (du\pm dv\pm dw) &amp;= \int du \pm \int dv \pm \int dw
+    \end{align}$$
+</p>
+
+<h2 id="the-general-power-rule-for-integration">The General Power Rule for Integration</h2>
+<p>If you could recall, the steps in differentiating using the power rule include <strong>multiplying the exponent $n$ of the variable to the term</strong> then <strong>reducing the value of the exponent by one</strong> ($n-1$). However, in integration, it is the reverse of that. The first step is <strong>adding one to the exponent</strong> ($n+1$), then dividing the whole term with the same value of the variable’s new exponent ($n+1$). The equation below, shows the formula described.</p>
+
+<p align="center" style="background-color:rgba(64, 130, 110, 0.07);
+border: 3px solid rgba(64, 130, 110, 0.9);
+border-radius:7px;
+padding:10px;
+margin:5px;">
+    $$\begin{align}
+        \int u^n \,du = \frac{u^{n+1}}{n+1} + C \quad\text{where: $n\neq -1$}
+    \end{align}$$
+</p>
+
+<!-- - Assuming that you have already reviewed the concepts of differentials, we can observe that the general power formula for differentials follows two basic steps: (1) multiplying the function with the original exponent $n$, and (2) subtracting one from the original exponent $n$. Interestingly, it can be observed that we can apply anti-differentiation (integration) through \textit{reversing the steps} mentioned. Thus, for the general power rule for integration, we add one from the exponent $n$ then divide the function with the new exponent $n+1$. $\eref{eq:integration - general power rule}$ shows the formula described. -->
+
+<p>Let us now try some problems to illustrate the general power rule for integration.</p>
+
+<hr />
+<p>$\example{1}$
+Evaluate the integral: $\int x^3 \,dx$</p>
+
+<p>$\solution$ <br />
+\(\begin{align*}
+	\int x^3 \,dx &amp;= \frac{x^{3+1}}{3+1}+C \\
+	&amp;= \frac{x^4}{4}+C	\tagans
+\end{align*}\)</p>
+
+<hr />
+<p>$\example{2}$
+Evaluate the integral: $\int (2y^3-3y^2+1) \,dy$</p>
+
+<p>$\solution$ <br />
+\(\begin{align*}
+	\int (2y^3-3y^2+1) \,dy &amp;= \int 2y^3 \,dy - \int 3y^2 \,dy + \int 1 \,dy \\
+	&amp;= 2\int y^3 \,dy - 3\int y^2 \,dy + \int dy \\
+	&amp;= 2\cdot\frac{y^{3+1}}{3+1}-3\cdot\frac{y^{2+1}}{2+1}+\frac{y^{0+1}}{0+1}+C  \qquad\tcA{y^0=1}\\
+	&amp;= 2\cdot\frac{y^4}{4}-\cancel{3}\cdot\frac{y^3}{\cancel{3}}+\frac{y}{1}+C \\
+	&amp;= \frac{y^4}{2}-y^3+y+C	\tagans
+\end{align*}\)</p>
+
+<hr />
+<p>$\example{3}$
+Evaluate the integral: $\int \br{5x^{-2}+\frac{2}{x^3}-3\sqrt{x}} \,dx$</p>
+
+<p>$\solution$ <br />
+\(\begin{align*}
+	\int \br{5x^{-2}+\frac{2}{x^3}-3\sqrt{x}} \,dx &amp;= \int \br{5x^{-2}+2x^{-3}-3x^{1/2}} \,dx \\
+	&amp;= \frac{5x^{-2+1}}{-2+1}+\frac{2x^{-3+1}}{-3+1}-\frac{3x^{\frac12+1}}{\frac12+1}+C \\
+	&amp;= \frac{5x^{-1}}{-1}+\frac{\cancel{2}x^{-2}}{-\cancel{2}}+\frac{\cancel{3}x^{3/2}}{\cancel{3}/2}+C \\
+	&amp;= -\frac{5}{x}-\frac{1}{x^2}+2x^{3/2}+C 		\tagans
+\end{align*}\)</p>
+
+<hr />
+<p>$\example{4}$
+Evaluate the integral: $\int \frac{3\sqrt{x}+2x^3}{x} \,dx$</p>
+
+<p>$\solution$ <br />
+If the case where the integrand is a fraction, where the numerator can be divided by the denominator,</p>
+
+\[\begin{align*}
+	\int \frac{3\sqrt{x}+2x^3}{x} \,dx &amp;= \int \frac{3x^{1/2}+2x^3}{x} \,dx \\
+	&amp;= \int \br{\frac{3x^{1/2}}{x}+\frac{2x^3}{x}} \,dx \\
+	&amp;= \int \br{3x^{-1/2}+2x^2} \,dx \\
+	&amp;= \frac{3x^{1/2}}{1/2}+\frac{2x^3}{3}+C \\
+	&amp;= 6\sqrt{x}+\frac23x^3+C 		\tagans
+\end{align*}\]
+
+<hr />
+<p>$\example{5}$
+Evaluate the integral: $\int (5x-2)^3 \,dx$</p>
+
+<p>$\solution$ <br />
+If we have encountered this type of problem while differentiating, we would probably use the chain rule. But in integration, we must first make sure that the integrand follows the format of the formulas of integration, which in this case is the ``General Power Rule for Integration’’. To simplify the integral, let $5x-2$ be represented by a variable,</p>
+
+<p>Let: $u = 5x-2 $</p>
+
+<p>Then,</p>
+
+\[\int (5x-2)^3 \,dx = \int u^3 dx\]
+
+<p>However, in performing integration, the integrand must contain a uniform variable. In this case, we need to express all the variables in terms of $u$. Thus, even $dx$ must be replaced, to do that, we can first solve for the differential of $u$. Hence,</p>
+
+\[\begin{align*}
+    d(u) &amp;= d(5x-2) &amp; \\
+	du &amp;= 5\,dx \\
+	dx &amp;= \frac15 du
+\end{align*}\]
+
+<p>Thus,</p>
+
+\[\begin{align*}  
+    \int (5x-2)^3 \,dx &amp;= \int u^3 \br{\frac15 du} \\
+	&amp;= \frac15 \int u^3\,du \\
+	&amp;= \frac15\br{\frac{u^4}{4}}+C \\
+	&amp;= \frac{u^4}{20}+C
+\end{align*}\]
+
+<p>But $u=5x-2$,</p>
+
+\[\begin{align*} 
+	\int (5x-2)^3 \,dx &amp;= \frac{(5x-2)^4}{20}+C	\tagans
+\end{align*}\]
+
+<hr />
+<p>$\example{6}$
+Evaluate the integral: $\int x\sqrt{2x^2-7} \,dx$</p>
+
+<p>$\solution$ <br />
+In this example, to simplify the integral, we can replace the function inside the square root by a variable $u$. Furthermore, to simplify the process, we can immediately solve for its differential before replacing the previous variable to the integrand.</p>
+
+<p>Let:</p>
+
+\[\begin{align*}
+	\quad u &amp;= 2x^2-7 &amp; \\
+	du &amp;= 4x \,dx  \\
+	x\,dx &amp;= \frac14 du
+\end{align*}\]
+
+\[\begin{align*}
+	\int x\sqrt{2x^2-7} \,dx &amp;= \int x(2x^2-7)^{1/2}\,dx \\
+	&amp;= \int (2x^2-7)^{1/2} \br{x\,dx} \\
+	&amp;= \int u^{1/2} \br{\frac14 du} \\
+	&amp;= \frac14\br{\frac{u^{3/2}}{3/2}}+C \\
+	&amp;= \frac{2u^{3/2}}{12}+C \\
+	&amp;= \frac{u^{3/2}}{6}+C \\
+\end{align*}\]
+
+<p>Since $u=2x^2-7$,</p>
+
+\[\begin{align*}
+	\int x\sqrt{2x^2-7} \,dx &amp;= \frac{(2x^2-7)^{3/2}}{6}+C	\tagans
+\end{align*}\]
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Displaystyle -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+  var TEX = MathJax.InputJax.TeX;
+  var PREFILTER = TEX.prefilterMath;
+  TEX.Augment({
+  prefilterMath: function (math,displaymode,script) {
+  math = "\\displaystyle{"+math+"}";
+  return PREFILTER.call(TEX,math,displaymode,script);
+  }
+  });
+  });
+</script>
+
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- //assets/js/MathJax.js -->
+<!-- <script src="http://lemniscateinstitute.com/assets/js/MathJax.js"> -->
+<!-- <script type="text/javascript" src="../../assets/js/MathJax.js"> -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      availableFonts: ["TeX"],
+      styles: {".MathJax": {color: "#5C5A5A"}} 
+    },
+    tex2jax: {
+      inlineMath: [['$','$'],["\\(","\\)"]]},
+      displayMath: [ ['$$','$$'], ['\[','\]'] ],
+    TeX: {
+      extensions: ["AMSmath.js", "AMSsymbols.js", "color.js", "autoload-all.js"],
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    showProcessingMessages: false,
+    messageStyle: "none",
+    imageFont: null,
+    "AssistiveMML": { disabled: true }
+  });
+</script>
+
+<!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script> -->
+
+
+
+
+
+
+
+
+
+<!-- <div style="display:none">
+  \(
+    \newcommand{\CC}{\mathbf{C}}
+  \)
+</div> -->
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        CC: '{\\bf R}',
+        un: ['\\;\\mathrm{#1}',1],
+        x:  '{\\times}',
+        ohm: '{\\Omega}',
+        st:['{^{\\text{st}}}'],
+        nd:['{^{\\text{nd}}}'],
+        rd:['{^{\\text{rd}}}'],
+        nth:['{^{\\text{th}}}'],
+
+        br: ['\\left(#1\\right)',1],
+        brk: ['\\left[#1\\right]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbrk: ['\\Bigl[#1\\Bigr]',1],
+        bbbrk: ['\\Biggl[#1\\Biggr]',1],
+        brv: ['\\left|#1\\right|',1],
+        brc: ['\\left\\{#1\\right\\}',1],
+
+        Dy: '{\\Delta y}',
+        Dx: '{\\Delta x}',
+        D: '{\\Delta}',
+        dydx: '{\\frac{dy}{dx}}',
+        ddx: '{\\frac{d}{dx}}',
+        ddu: '{\\frac{d}{du}}',
+        ddy: '{\\frac{d}{dy}}',
+        ddw: '{\\frac{d}{dw}}',
+        ddt: '{\\frac{d}{dt}}',
+        pd: ['\\frac{\\partial#1}{\\partial#2}',2],
+        ufrac: ['\\frac{\\text{#1}}{\\text{#2}}',2],
+        Ncancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\un{#4}}',4],
+        Dcancel: ['\\frac{#1 \\un{#2}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        NDcancel: ['\\frac{#1 \\cancel{\\mathrm{#2}}}{#3 \\cancel{\\mathrm{#4}}}',4],
+        
+        degg: '{^{\\circ}}',
+        degC: '{^{\\circ}\\mathrm{C}}',
+        degF: '{^{\\circ}\\mathrm{F}}',
+        tagans: '{\\tag{ans.}}',
+        tcA: ['\\color{colorA}{#1}',1],
+        tcB: ['\\color{colorB}{#1}',1],
+        tcAal: ['\\tcA{\\text{#1}}',1],
+        tcBal: ['\\tcB{\\text{#1}}',1],
+        typB: ['\\tcB{\\text{#1}}',1],
+        tcxA: ['\\tcA{\\text{#1}}',1],
+        tcxB: ['\\tcB{\\text{#1}}',1],
+        example: ['\\tcA{\\text{Example #1:}}',1],
+        For: ['\\tcB{\\text{For (#1):}}',1],
+        solution:  '\\tcB{\\textit{Solution:}}',
+        required:  '\\tcB{\\textit{Required:}}',
+        case: ['\\tcB{\\text{Case #1:}}',1],
+        rule: ['\\tcB{\\textbf{Rule #1:}\\text{ #2}}',2],
+        ubrace: ['\\underbrace{#1}_{\\tcAal{#2}}',2],
+        ubraces: ['\\underbrace{#1}_{\\substack{\\tcAal{#2} \\\\ \\tcAal{#3}}}',3],
+        given: '\\tcB{\\textit{Given:}}',
+        thrm: ['\\tcB{\\text{#1}}',1],
+        vv: ['\\overrightarrow{#1}',1],
+        eref: ['\\tcAal{Equation}\\,\\ref{#1}',1],
+        fref: ['\\tcAal{Figure}\\,#1',1],
+        tref: ['\\tcAal{Table}\\,#1',1],
+      }
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="PageNavigation">
+  
+    <a class="prev" href="/services/calculus/IC-1.4-antiderivatives/">&laquo; Antiderivatives</a>
+  
+  
+    <a class="next" href="/services/calculus/IC-3.2-exponential-and-logarithmic-functions/">Exponential and Logarithmic Functions &raquo;</a>
+  
+</div> -->
+
+
+
+<!-- <div class="PageNavigation">
+    <a class="prev" href="../IC-1.4-antiderivatives">&laquo; </a> <a class="next" href="../IC-3.2-exponential-and-logarithmic-functions"> &raquo;</a>
+</div> -->
+
+
+
+<div class="PageNavigation">
+  <a class="prev" href="../IC-1.4-antiderivatives">&laquo; Previous</a> 
+  <a class="next" href="../IC-3.2-exponential-and-logarithmic-functions">Next &raquo;</a>
+</div>
+
+
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h5 class="footer-title">&copy 2022 Lemniscate Institute</h5>
+          <!-- <h5 class="footer-title">Lemniscate Institute</h5> -->
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/services/">Courses</a>
+            </li>
+            
+            <!-- <li class="">
+              &copy 2021 Lemniscate Institute -->
+            </li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>
+
+
+
+
+
+

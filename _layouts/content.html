@@ -1,0 +1,70 @@
+---
+layout: default
+---
+
+
+{% include mobile-notice.html %}
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">{{page.title}}</h1>
+          {% if page.authornum == 1 %}
+            <p style="color:#d02f5d"></pstyle>
+              <a href="/team">
+                Author | {{page.author}}
+              </a>
+            </p>
+          {% elsif page.authornum ==0 %}
+        
+          {% else page.authornum %}
+            <p style="color:#d02f5d"></pstyle>
+              <a href="/team">
+                Authors | <br> {{page.author}}
+              </a>
+            </p>
+          {% endif %}
+
+          {% include texmacros.html %}
+          <!-- <p style="color:#d02f5d"></pstyle>Author | {{page.author}}</p> -->
+          <!-- <a href="{{ page.authorlink }}">{{ page.author }}</a> -->
+          <!-- <br> -->
+
+          <!-- <div class="deskContent">Content for desktop</div> -->
+        <div class="content">
+          {{content}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+{% include mathjaxequations.html %}
+
+
+<!-- <div class="PageNavigation">
+  {% if page.previous.url %}
+    <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+  {% endif %}
+  {% if page.next.url %}
+    <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+  {% endif %}
+</div> -->
+
+
+
+<!-- <div class="PageNavigation">
+    <a class="prev" href="{{page.prevcontenturl}}">&laquo; {{page.prevcontent}}</a> <a class="next" href="{{page.nextcontenturl}}">{{page.nextcontent}} &raquo;</a>
+</div> -->
+
+
+
+<div class="PageNavigation">
+  <a class="prev" href="{{page.prevcontenturl}}">&laquo; Previous</a> 
+  <a class="next" href="{{page.nextcontenturl}}">Next &raquo;</a>
+</div>
+
